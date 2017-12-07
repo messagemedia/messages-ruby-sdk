@@ -2,15 +2,12 @@
 
 The MessageMedia Messages API provides a number of endpoints for building powerful two-way messaging applications.
 
-## How to Build
+## How to Install
 
 This client library is a Ruby gem which can be compiled and used in your Ruby and Ruby on Rails project. This library requires a few gems from the RubyGems repository.
 
 1. Open the command line interface or the terminal and navigate to the folder containing the source code.
-2. Run ``` gem build message_media_messages.gemspec ``` to build the gem.
-3. Once built, the gem can be installed on the current work environment using ``` gem install message_media_messages-1.0.0.gem ```
-
-![Building Gem](https://apidocs.io/illustration/ruby?step=buildSDK&workspaceFolder=MessageMediaMessages-Ruby&workspaceName=MessageMediaMessages-Ruby&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0)
+2. Run ``` gem install messagemedia_messages_sdk-1.1.0.gem ``` to install the gem.
 
 ## How to Use
 
