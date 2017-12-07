@@ -18,6 +18,7 @@ require_relative 'message_media_messages/http/http_response.rb'
 require_relative 'message_media_messages/http/http_context.rb'
 require_relative 'message_media_messages/http/faraday_client.rb'
 require_relative 'message_media_messages/http/auth/basic_auth.rb'
+require_relative 'message_media_messages/http/auth/hmac_auth.rb'
 
 # Models
 require_relative 'message_media_messages/models/base_model.rb'
@@ -45,6 +46,5 @@ require_relative 'message_media_messages/configuration.rb'
 # Controllers
 require_relative 'message_media_messages/controllers/base_controller.rb'
 require_relative 'message_media_messages/controllers/messages_controller.rb'
-require_relative 'message_media_messages/controllers' \
-                 '/delivery_reports_controller.rb'
+require_relative 'message_media_messages/controllers/delivery_reports_controller.rb'
 require_relative 'message_media_messages/controllers/replies_controller.rb'
