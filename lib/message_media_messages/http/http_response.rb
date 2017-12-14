@@ -7,9 +7,9 @@ module MessageMediaMessages
     attr_accessor :status_code, :headers, :raw_body
 
     # The constructor
-    # @param [Integer] The status code returned by the server.
-    # @param [Hash] The headers sent by the server in the response.
-    # @param [String] The raw body of the response.
+    # @param [Integer] status_code The status code returned by the server.
+    # @param [Hash] headers The headers sent by the server in the response.
+    # @param [String] raw_body The raw body of the response.
     def initialize(status_code,
                    headers,
                    raw_body)

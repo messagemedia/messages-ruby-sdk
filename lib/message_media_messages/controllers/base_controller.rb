@@ -1,6 +1,8 @@
 # This file was automatically generated for MessageMedia by APIMATIC v2.0
 # ( https://apimatic.io ).
 
+require 'message_media_messages/configuration.rb'
+
 module MessageMediaMessages
   # Base controller.
   class BaseController
@@ -13,6 +15,7 @@ module MessageMediaMessages
       @global_headers = {
         'user-agent' => 'messagemedia-messages-ruby-sdk-1.0.0'
       }
+
       @logger = Logging.logger[self]
       @logger.info("Instantiated controller class.")
     end
@@ -22,6 +25,14 @@ module MessageMediaMessages
         if value.nil?
           raise ArgumentError, "Required parameter #{_name} cannot be nil."
         end
+      end
+    end
+
+    def apply_authentication(request, url, body=nil)
+      if Configuration.hmac_auth_user_name == nil or Configuration.hmac_auth_password == nil
+        BasicAuth.apply(request)
+      else
+        HmacAuth.apply(request, url, body)
       end
     end
 
@@ -49,8 +60,14 @@ module MessageMediaMessages
       context
     end
 
+    def add_account_header(headers, account_header_value)
+      if headers != nil && account_header_value != nil
+        headers["account"] = account_header_value
+      end
+    end
+
     def validate_response(context)
-      raise APIException.new 'HTTP Response Not OK', context unless
+      raise APIException.new 'HTTP Response Not OK. ' + context.response.raw_body, context unless
         context.response.status_code.between?(200, 208) # [200,208] = HTTP OK
     end
   end

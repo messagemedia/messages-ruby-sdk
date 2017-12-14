@@ -3,6 +3,7 @@
 
 module MessageMediaMessages
   # API utility class
+  # noinspection RubyClassMethodNamingConvention
   class APIHelper
     # Serializes an array parameter (creates key value pairs).
     # @param [String] The name of the parameter.
@@ -41,8 +42,6 @@ module MessageMediaMessages
 
       # Iterate and append parameters.
       parameters.each do |key, value|
-        replace_value = ''
-
         if value.nil?
           replace_value = ''
         elsif value.instance_of? Array

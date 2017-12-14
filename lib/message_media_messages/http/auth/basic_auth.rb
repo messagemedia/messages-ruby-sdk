@@ -9,7 +9,7 @@ module MessageMediaMessages
     # Add basic authentication to the request.
     # @param [HttpRequest] The HttpRequest object to which authentication will
     # be added.
-    def self.apply(http_request)
+    def self.apply(http_request, url=nil, body=nil)
       username = Configuration.basic_auth_user_name
       password = Configuration.basic_auth_password
       value = Base64.strict_encode64("#{username}:#{password}")

@@ -3,6 +3,7 @@
 
 module MessageMediaMessages
   # RepliesController
+  # noinspection RubyResolve,RubyInstanceMethodNamingConvention,RubyStringKeysInHashInspection
   class RepliesController < BaseController
     @instance = RepliesController.new
 
@@ -36,49 +37,58 @@ module MessageMediaMessages
     # Up to 100 replies can be confirmed in a single confirm replies request.
     # @param [ConfirmRepliesAsReceivedRequest] body Required parameter:
     # Example:
+    # @param [Object] account_header_value The account id to pass to the API
     # @return Mixed response from the API call
-    def create_confirm_replies_as_received(body)
+    def create_confirm_replies_as_received(body, account_header_value=nil)
       begin
         @logger.info("create_confirm_replies_as_received called.")
+        
+        request_url = '/v1/replies/confirmed'
+        
         # Prepare query url.
         @logger.info("Preparing query URL for create_confirm_replies_as_received.")
-        _query_builder = Configuration.base_uri.dup
-        _query_builder << '/v1/replies/confirmed'
-        _query_url = APIHelper.clean_url _query_builder
+        query_builder = Configuration.base_uri.dup
+        query_builder << request_url
+        query_url = APIHelper.clean_url query_builder
   
         # Prepare headers.
         @logger.info("Preparing headers for create_confirm_replies_as_received.")
-        _headers = {
+        headers = {
           'accept' => 'application/json',
           'content-type' => 'application/json; charset=utf-8'
         }
-  
+
+        add_account_header(headers, account_header_value)
+
+        json_body = body.to_json
+
         # Prepare and execute HttpRequest.
         @logger.info('Preparing and executing HttpRequest for create_confirm_replies_as_received.')
-        _request = @http_client.post(
-          _query_url,
-          headers: _headers,
-          parameters: body.to_json
+        request = @http_client.post(
+          query_url,
+          headers: headers,
+          parameters: json_body
         )
-        BasicAuth.apply(_request)
-        _context = execute_request(_request, name: 'create_confirm_replies_as_received')
+
+        apply_authentication(request, request_url, json_body)
+
+        context = execute_request(request, name: 'create_confirm_replies_as_received')
   
         # Validate response against endpoint and global error codes.
         @logger.info("Validating response for create_confirm_replies_as_received.")
-        if _context.response.status_code == 400
+        if context.response.status_code == 400
           raise APIException.new(
             '',
-            _context
+            context
           )
         end
-        validate_response(_context)
+        validate_response(context)
   
         # Return appropriate response type.
         @logger.info("Returning response for create_confirm_replies_as_received.")
-        decoded = APIHelper.json_deserialize(_context.response.raw_body) unless
-          _context.response.raw_body.nil? ||
-          _context.response.raw_body.to_s.strip.empty?
-        decoded
+        return APIHelper.json_deserialize(context.response.raw_body) unless
+                context.response.raw_body.nil? ||
+                context.response.raw_body.to_s.strip.empty?
 
       rescue Exception => e
         @logger.error(e)
@@ -168,35 +178,42 @@ module MessageMediaMessages
     # *Note: It is recommended to use the Webhooks feature to receive reply
     # messages rather than polling
     # the check replies endpoint.*
+    # @param [Object] account_header_value The account id to pass to the API
     # @return CheckRepliesResponse response from the API call
-    def get_check_replies
+    def get_check_replies(account_header_value=nil)
       begin
         @logger.info("get_check_replies called.")
+        
+        request_url = '/v1/replies'
         # Prepare query url.
         @logger.info("Preparing query URL for get_check_replies.")
-        _query_builder = Configuration.base_uri.dup
-        _query_builder << '/v1/replies'
-        _query_url = APIHelper.clean_url _query_builder
+        query_builder = Configuration.base_uri.dup
+        query_builder << request_url
+        query_url = APIHelper.clean_url query_builder
   
         # Prepare headers.
         @logger.info("Preparing headers for get_check_replies.")
-        _headers = {
+        headers = {
           'accept' => 'application/json'
         }
-  
+
+        add_account_header(headers, account_header_value)
+
         # Prepare and execute HttpRequest.
         @logger.info('Preparing and executing HttpRequest for get_check_replies.')
-        _request = @http_client.get(
-          _query_url,
-          headers: _headers
+        request = @http_client.get(
+          query_url,
+          headers: headers
         )
-        BasicAuth.apply(_request)
-        _context = execute_request(_request, name: 'get_check_replies')
-        validate_response(_context)
+
+        apply_authentication(request, request_url)
+
+        context = execute_request(request, name: 'get_check_replies')
+        validate_response(context)
   
         # Return appropriate response type.
         @logger.info("Returning response for get_check_replies.")
-        decoded = APIHelper.json_deserialize(_context.response.raw_body)
+        decoded = APIHelper.json_deserialize(context.response.raw_body)
         CheckRepliesResponse.from_hash(decoded)
 
       rescue Exception => e

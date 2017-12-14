@@ -3,6 +3,7 @@
 
 module MessageMediaMessages
   # MessagesController
+  # noinspection RubyResolve,RubyInstanceMethodNamingConvention,RubyStringKeysInHashInspection
   class MessagesController < BaseController
     @instance = MessagesController.new
 
@@ -36,58 +37,67 @@ module MessageMediaMessages
     # returned*
     # @param [String] message_id Required parameter: Example:
     # @param [CancelScheduledMessageRequest] body Required parameter: Example:
+    # @param [Object] account_header_value The account id to pass to the API
     # @return Mixed response from the API call
-    def update_cancel_scheduled_message(message_id,
-                                        body)
+    def update_cancel_scheduled_message(message_id, body, account_header_value=nil)
       begin
         @logger.info("update_cancel_scheduled_message called.")
+
+        request_url = '/v1/messages/{messageId}'
+        request_url = APIHelper.append_url_with_template_parameters(
+            request_url,
+            'messageId' => message_id
+        )
+
         # Prepare query url.
         @logger.info("Preparing query URL for update_cancel_scheduled_message.")
-        _query_builder = Configuration.base_uri.dup
-        _query_builder << '/v1/messages/{messageId}'
-        _query_builder = APIHelper.append_url_with_template_parameters(
-          _query_builder,
-          'messageId' => message_id
-        )
-        _query_url = APIHelper.clean_url _query_builder
-  
+        query_builder = Configuration.base_uri.dup
+        query_builder << request_url
+        query_url = APIHelper.clean_url query_builder
+
         # Prepare headers.
         @logger.info("Preparing headers for update_cancel_scheduled_message.")
-        _headers = {
+        headers = {
           'accept' => 'application/json',
           'content-type' => 'application/json; charset=utf-8'
         }
-  
+
+        add_account_header(headers, account_header_value)
+
+        json_body = body.to_json
+
         # Prepare and execute HttpRequest.
         @logger.info('Preparing and executing HttpRequest for update_cancel_scheduled_message.')
-        _request = @http_client.put(
-          _query_url,
-          headers: _headers,
-          parameters: body.to_json
+        request = @http_client.put(
+          query_url,
+          headers: headers,
+          parameters: json_body
         )
-        BasicAuth.apply(_request)
-        _context = execute_request(_request, name: 'update_cancel_scheduled_message')
-  
+
+        apply_authentication(request, request_url, json_body)
+
+        context = execute_request(request, name: 'update_cancel_scheduled_message')
+
         # Validate response against endpoint and global error codes.
         @logger.info("Validating response for update_cancel_scheduled_message.")
-        if _context.response.status_code == 400
+        if context.response.status_code == 400
           raise APIException.new(
             '',
-            _context
+            context
           )
-        elsif _context.response.status_code == 404
+        elsif context.response.status_code == 404
           raise APIException.new(
             '',
-            _context
+            context
           )
         end
-        validate_response(_context)
-  
+        validate_response(context)
+
         # Return appropriate response type.
         @logger.info("Returning response for update_cancel_scheduled_message.")
-        decoded = APIHelper.json_deserialize(_context.response.raw_body) unless
-          _context.response.raw_body.nil? ||
-          _context.response.raw_body.to_s.strip.empty?
+        decoded = APIHelper.json_deserialize(context.response.raw_body) unless
+          context.response.raw_body.nil? ||
+          context.response.raw_body.to_s.strip.empty?
         decoded
 
       rescue Exception => e
@@ -127,50 +137,58 @@ module MessageMediaMessages
     # the request, then
     # a HTTP 404 Not Found response will be returned*
     # @param [String] message_id Required parameter: Example:
+    # @param [Object] account_header_value The account id to pass to the API
     # @return Mixed response from the API call
-    def get_message_status(message_id)
+    def get_message_status(message_id, account_header_value=nil)
       begin
         @logger.info("get_message_status called.")
+
+        request_url = '/v1/messages/{messageId}'
+        request_url = APIHelper.append_url_with_template_parameters(
+            request_url,
+            'messageId' => message_id
+        )
+
         # Prepare query url.
         @logger.info("Preparing query URL for get_message_status.")
-        _query_builder = Configuration.base_uri.dup
-        _query_builder << '/v1/messages/{messageId}'
-        _query_builder = APIHelper.append_url_with_template_parameters(
-          _query_builder,
-          'messageId' => message_id
-        )
-        _query_url = APIHelper.clean_url _query_builder
+        query_builder = Configuration.base_uri.dup
+        query_builder << request_url
+        query_url = APIHelper.clean_url query_builder
   
         # Prepare headers.
         @logger.info("Preparing headers for get_message_status.")
-        _headers = {
+        headers = {
           'accept' => 'application/json'
         }
-  
+
+        add_account_header(headers, account_header_value)
+
         # Prepare and execute HttpRequest.
         @logger.info('Preparing and executing HttpRequest for get_message_status.')
-        _request = @http_client.get(
-          _query_url,
-          headers: _headers
+        request = @http_client.get(
+          query_url,
+          headers: headers
         )
-        BasicAuth.apply(_request)
-        _context = execute_request(_request, name: 'get_message_status')
+
+        apply_authentication(request, request_url)
+
+        context = execute_request(request, name: 'get_message_status')
   
         # Validate response against endpoint and global error codes.
         @logger.info("Validating response for get_message_status.")
-        if _context.response.status_code == 404
+        if context.response.status_code == 404
           raise APIException.new(
             '',
-            _context
+            context
           )
         end
-        validate_response(_context)
+        validate_response(context)
   
         # Return appropriate response type.
         @logger.info("Returning response for get_message_status.")
-        decoded = APIHelper.json_deserialize(_context.response.raw_body) unless
-          _context.response.raw_body.nil? ||
-          _context.response.raw_body.to_s.strip.empty?
+        decoded = APIHelper.json_deserialize(context.response.raw_body) unless
+          context.response.raw_body.nil? ||
+          context.response.raw_body.to_s.strip.empty?
         decoded
 
       rescue Exception => e
@@ -285,46 +303,55 @@ module MessageMediaMessages
     # valid for the request to be successful.
     # If any messages in the request are invalid, no messages will be sent.*
     # @param [SendMessagesRequest] body Required parameter: Example:
+    # @param [Object] account_header_value The account id to pass to the API
     # @return SendMessagesResponse response from the API call
-    def create_send_messages(body)
+    def create_send_messages(body, account_header_value=nil)
       begin
         @logger.info("create_send_messages called.")
+
+        request_url = '/v1/messages'
         # Prepare query url.
         @logger.info("Preparing query URL for create_send_messages.")
-        _query_builder = Configuration.base_uri.dup
-        _query_builder << '/v1/messages'
-        _query_url = APIHelper.clean_url _query_builder
+        query_builder = Configuration.base_uri.dup
+        query_builder << request_url
+        query_url = APIHelper.clean_url query_builder
   
         # Prepare headers.
         @logger.info("Preparing headers for create_send_messages.")
-        _headers = {
+        headers = {
           'accept' => 'application/json',
           'content-type' => 'application/json; charset=utf-8'
         }
-  
+
+        add_account_header(headers, account_header_value)
+
+        json_body = body.to_json
+
         # Prepare and execute HttpRequest.
         @logger.info('Preparing and executing HttpRequest for create_send_messages.')
-        _request = @http_client.post(
-          _query_url,
-          headers: _headers,
-          parameters: body.to_json
+        request = @http_client.post(
+          query_url,
+          headers: headers,
+          parameters: json_body
         )
-        BasicAuth.apply(_request)
-        _context = execute_request(_request, name: 'create_send_messages')
+
+        apply_authentication(request, request_url, json_body)
+
+        context = execute_request(request, name: 'create_send_messages')
   
         # Validate response against endpoint and global error codes.
         @logger.info("Validating response for create_send_messages.")
-        if _context.response.status_code == 400
+        if context.response.status_code == 400
           raise APIException.new(
             '',
-            _context
+            context
           )
         end
-        validate_response(_context)
+        validate_response(context)
   
         # Return appropriate response type.
         @logger.info("Returning response for create_send_messages.")
-        decoded = APIHelper.json_deserialize(_context.response.raw_body)
+        decoded = APIHelper.json_deserialize(context.response.raw_body)
         SendMessagesResponse.from_hash(decoded)
 
       rescue Exception => e
