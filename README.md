@@ -1,4 +1,5 @@
-# Getting started
+# MessageMedia Messages Ruby SDK
+[![Travis Build Status](https://api.travis-ci.org/messagemedia/messages-ruby-sdk.svg?branch=master)](https://travis-ci.org/messagemedia/messages-ruby-sdk)
 
 The MessageMedia Messages API provides a number of endpoints for building powerful two-way messaging applications.
 
