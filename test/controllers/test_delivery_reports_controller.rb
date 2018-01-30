@@ -99,7 +99,7 @@ class DeliveryReportsControllerTests < ControllerTestBase
       # Perform the API call through the SDK function
       self.class.controller.get_check_delivery_reports('INVALID ACCOUNT')
     rescue APIException => api_exception
-      assert_equal('HTTP Response Not OK. {"message":"Invalid authentication credentials}' + "\n",
+      assert_equal('HTTP Response Not OK. {"message":"Invalid authentication credentials"}' + "\n",
                    api_exception.message,'Make sure we''ve got our error message')
       # Test response code
       assert_equal(@response_catcher.response.status_code, 403)
@@ -154,7 +154,7 @@ class DeliveryReportsControllerTests < ControllerTestBase
       # Perform the API call through the SDK function
       self.class.controller.create_confirm_delivery_reports_as_received(body, 'INVALID ACCOUNT')
     rescue APIException => api_exception
-      assert_equal('HTTP Response Not OK. {"message":"Invalid account \'INVALID ACCOUNT\' in header Account"}' + "\n",
+      assert_equal('HTTP Response Not OK. {"message":"Invalid authentication credentials"}' + "\n",
                    api_exception.message,'Make sure we''ve got our error message')
       # Test response code
       assert_equal(@response_catcher.response.status_code, 403)
