@@ -4,8 +4,8 @@
 The MessageMedia Messages API provides a number of endpoints for building powerful two-way messaging applications.
 
 ## ⭐️ Install via .gem file
-* Download [messagemedia_messages_sdk-1.1.0.gem](https://github.com/messagemedia/messages-ruby-sdk/releases/download/v1.0.0/messagemedia_messages_sdk-1.0.0.gem)
-run `gem install messagemedia_messages_sdk-1.1.0.gem`
+* Download [messagemedia_messages_sdk-1.0.0.gem](https://github.com/messagemedia/messages-ruby-sdk/releases/download/v1.0.0/messagemedia_messages_sdk-1.0.0.gem)
+run `gem install messagemedia_messages_sdk-1.0.0.gem`
 
 ## 🎬 Get Started
 It's easy to get started. Simply enter the API Key and secret you obtained from the [MessageMedia Developers Portal](https://developers.messagemedia.com) into the code snippet below and a mobile number you wish to send to.
