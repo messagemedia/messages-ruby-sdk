@@ -56,7 +56,7 @@ class RepliesControllerTests < ControllerTestBase
       # Perform the API call through the SDK function
       self.class.controller.create_confirm_replies_as_received(body, 'INVALID ACCOUNT')
     rescue APIException => api_exception
-      assert_equal('HTTP Response Not OK. {"message":"Invalid authentication credentials"}' + "\n",
+      assert_equal('{"message":"Invalid account \'INVALID ACCOUNT\' in header Accountication credentials"}' + "\n",
                    api_exception.message,'Make sure we''ve got our error message')
 
       # Test response code
@@ -154,7 +154,7 @@ class RepliesControllerTests < ControllerTestBase
     # Perform the API call through the SDK function
       self.class.controller.get_check_replies('INVALID ACCOUNT')
     rescue APIException => api_exception
-      assert_equal('HTTP Response Not OK. {"message":"Invalid authentication credentials"}' + "\n",
+      assert_equal('HTTP Response Not OK. {"message":"Invalid account \'INVALID ACCOUNT\' in header Account"}' + "\n",
                    api_exception.message,'Make sure we''ve got our error message')
       # Test response code
       assert_equal(@response_catcher.response.status_code, 403)
