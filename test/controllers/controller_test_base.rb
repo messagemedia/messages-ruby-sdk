@@ -3,11 +3,10 @@
 require 'json'
 require 'test/unit'
 require 'message_media_messages.rb'
-require 'message_media_messages/configuration.rb'
 require_relative '../test_helper.rb'
+require 'message_media_messages/configuration.rb'
 require_relative '../http_response_catcher.rb'
 
-# noinspection RubyClassVariableUsageInspection
 class ControllerTestBase < Test::Unit::TestCase
   include MessageMediaMessages
 
@@ -16,7 +15,7 @@ class ControllerTestBase < Test::Unit::TestCase
   end
 
   # Called only once for a test class before any test has executed.
-  def self.startup		
+  def self.startup
     @@api_client = MessageMediaMessagesClient.new
     @@request_timeout = 30
     @@assert_precision = 0.01
