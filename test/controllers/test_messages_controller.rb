@@ -156,7 +156,7 @@ class MessagesControllerTests < ControllerTestBase
       # Perform the API call through the SDK function
       self.class.controller.create_send_messages(body, 'INVALID ACCOUNT')
     rescue APIException => api_exception
-      assert_equal('HTTP Response Not OK. {"message":"Invalid authentication credentials"}' + "\n",
+      assert_equal('HTTP Response Not OK. {"message":"Invalid account /'INVALID ACCOUNT/' in header Account"}' + "\n",
                    api_exception.message,'Make sure we''ve got our error message')
       # Test response code
       assert_equal(@response_catcher.response.status_code, 403)
