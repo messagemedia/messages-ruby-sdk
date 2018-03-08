@@ -94,17 +94,17 @@ class DeliveryReportsControllerTests < ControllerTestBase
   end
 
   # Make sure our SDK fails when passed an invalid account id
-  def test_check_delivery_reports_with_invalid_account
-    begin
-      # Perform the API call through the SDK function
-      self.class.controller.get_check_delivery_reports('INVALID ACCOUNT')
-    rescue APIException => api_exception
-      assert_equal('HTTP Response Not OK. {"message":"Invalid authentication credentials"}' + "\n",
-                   api_exception.message,'Make sure we''ve got our error message')
-      # Test response code
-      assert_equal(@response_catcher.response.status_code, 403)
-    end
-  end
+#   def test_check_delivery_reports_with_invalid_account
+#     begin
+#       # Perform the API call through the SDK function
+#       self.class.controller.get_check_delivery_reports('INVALID ACCOUNT')
+#     rescue APIException => api_exception
+#       assert_equal('HTTP Response Not OK. {"message":"Invalid authentication credentials"}' + "\n",
+#                    api_exception.message,'Make sure we''ve got our error message')
+#       # Test response code
+#       assert_equal(@response_catcher.response.status_code, 403)
+#     end
+#   end
 
   # Mark a delivery report as confirmed so it is no longer return in check delivery reports requests.
   # The confirm delivery reports endpoint is intended to be used in conjunction with the check delivery
