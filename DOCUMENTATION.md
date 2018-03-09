@@ -19,7 +19,7 @@ Our API returns standard HTTP success or error status codes. For errors, we will
 | basic_auth_password | The password to use with basic authentication |
 
 HTTP Status Codes
-| Code | Title | Description |
+| Code      | Title       | Description |
 |-----------|-------------|-------------|
 | 202 | OK | The request was successful |
 | 202 | Async | The resource was asynchronously created |
