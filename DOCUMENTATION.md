@@ -13,6 +13,11 @@ Requests are authenticated using HTTP Basic Auth or by signing with a HMAC signa
 
 Our API returns standard HTTP success or error status codes. For errors, we will also include extra information about what went wrong encoded in the response as JSON. The various HTTP status codes we might return are listed below.
 
+| Parameter | Description |
+|-----------|-------------|
+| basic_auth_user_name | The username to use with basic authentication |
+| basic_auth_password | The password to use with basic authentication |
+
 HTTP Status Codes
 | Code | Title | Description |
 |-----------|-------------|-------------|
