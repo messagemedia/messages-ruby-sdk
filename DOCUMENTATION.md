@@ -3,16 +3,27 @@
 
 The MessageMedia Messages API provides a number of endpoints for building powerful two-way messaging applications.
 
-## How to Install
+## Authentication
 
-This client library is a Ruby gem which can be compiled and used in your Ruby and Ruby on Rails project. This library requires a few gems from the RubyGems repository.
+Authentication is done via API keys. Sign up at https://developers.messagemedia.com/register/ to get your API keys.
 
-1. Open the command line interface or the terminal and navigate to the folder containing the source code.
-2. Run ``` gem install messagemedia_messages_sdk-1.1.0.gem ``` to install the gem.
+Requests are authenticated using HTTP Basic Auth or by signing with a HMAC signature. Provide your API keys as the basic auth username and basic auth password.
 
-## How to Use
+## Errors
 
-The following section explains how to use the MessageMediaMessages Ruby Gem in a new Rails project using RubyMine&trade;. The basic workflow presented here is also applicable if you prefer using a different editor or IDE.
+Our API returns standard HTTP success or error status codes. For errors, we will also include extra information about what went wrong encoded in the response as JSON. The various HTTP status codes we might return are listed below.
+
+HTTP Status Codes
+| Code | Title | Description |
+|-----------|-------------|-------------|
+| 202 | OK | The request was successful
+| 202 | Async | The resource was asynchronously created
+| 400 | Bad Request | Bad request
+| 401 | Unauthorized | Your API key is invalid
+| 402 | Over Quota | Over plan quota on this endpoint
+| 404 | Not Found |	The resource does not exist
+| 50X | Internal Server Error | An error occurred with our API
+
 
 ### 1. Starting a new project
 
