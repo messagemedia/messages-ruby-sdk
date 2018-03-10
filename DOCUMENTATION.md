@@ -49,20 +49,28 @@ To protect the stability of the API and keep it available to all users, MessageM
 
 ## Getting Started
 
-This documentation will guide on how to install and run the SDK on:
+This documentation will guide on how to get up and running with the SDK on:
 * Vanilla Ruby
 * Ruby on Rails
 
 ## Vanilla Ruby
 
 ### 1. Pre-requisites
+* [Ruby](https://www.ruby-lang.org/en/downloads/)
+
+To check if Ruby was successfully installed on Windows: 
+1. Open the command prompt
+2. Type ``` ruby -v ``` and press Enter
+3. You should see the current ruby version displayed on the command prompt
+
+To check if Ruby was successfully installed on MAC:
+1. Open the terminal
+2. Type``` which -a ruby ``` and press Enter
+3. You should see the current ruby version displayed on the terminal
+
+### 2. Downloading the SDK
 
 
-### 2. Add reference of the gem
-
-In order to use the MessageMediaMessages gem in the new project we must add a gem reference. Locate the ```Gemfile``` in the *Project Explorer* window under the ``` TestApp ``` project node. The file contains references to all gems being used in the project. Here, add the reference to the library gem by adding the following line: ``` gem 'message_media_messages', '~> 1.0.0' ```
-
-![Add references of the Gemfile](https://apidocs.io/illustration/ruby?step=addReference&workspaceFolder=MessageMediaMessages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0)
 
 ### 3. Adding a new Rails Controller
 
