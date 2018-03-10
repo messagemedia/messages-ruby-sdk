@@ -57,6 +57,10 @@ This documentation will guide on how to get up and running with the SDK on:
 
 ### 1. Pre-requisites
 * [Ruby](https://www.ruby-lang.org/en/downloads/)
+* Text Editor (We've provided a list of suggestions)
+  * [Atom](https://atom.io/)
+  * [Notepad++](https://notepad-plus-plus.org/)
+  * [Visual Studio Code](https://code.visualstudio.com/)
 
 To check if Ruby was successfully installed on Windows: 
 1. Open the command prompt
@@ -65,30 +69,54 @@ To check if Ruby was successfully installed on Windows:
 
 To check if Ruby was successfully installed on MAC:
 1. Open the terminal
-2. Type``` which -a ruby ``` and press Enter
+2. Run the command ``` which -a ruby ``` 
 3. You should see the current ruby version displayed on the terminal
 
 ### 2. Downloading the SDK
+The SDK can be downloaded directly from Github. On the right side of the main page of the master branch, click on the green button that says "Clone or download" and then click on "Download ZIP". Extract this folder to your desktop. Now create a folder on your desktop called "mm_ruby". We will use this in the next step.
 
+### 3. Getting the neccessary components ready
+Inside the extracted folder (messages-ruby-sdk-master), you will find a lot of files that you can explore if you're interested in the structure of the SDK. For now we're going to focus on two certain components. Click on the "lib" folder and inside you will find a file and a folder called "message_media_messages". Copy-paste both of these into the "mm_ruby" folder created earlier. We're halfway through!
 
+### 3. Creating the main file
+Open your text editor and copy-paste this chunk of code into it:
 
-### 3. Adding a new Rails Controller
+```
+$LOAD_PATH.unshift('.')
+require 'message_media_messages.rb'
 
-Once the ``` TestApp ``` project is created, a folder named ``` controllers ``` will be visible in the *Project Explorer* under the following path: ``` TestApp > app > controllers ```. Right click on this folder and select ``` New -> Run Rails Generator... ```.
+basic_auth_user_name = 'YOUR_API_KEY' # 
+basic_auth_password = 'YOUR_API_SECRET' 
 
-![Run Rails Generator on Controllers Folder](https://apidocs.io/illustration/ruby?step=addCode0&workspaceFolder=MessageMediaMessages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0)
+client = MessageMediaMessages::MessageMediaMessagesClient.new(
+  basic_auth_user_name: basic_auth_user_name,
+  basic_auth_password: basic_auth_password
+)
 
-Selecting the said option will popup a small window where the generator names are displayed. Here, select the ``` controller ``` template.
+messages = client.messages
+body_value = '{
+   "messages":[
+      {
+         "content":"Greeting from MessageMedia!",
+         "destination_number":"MOBILE_NUMBER"
+      }
+   ]
+}';
 
-![Create a new Controller](https://apidocs.io/illustration/ruby?step=addCode1&workspaceFolder=MessageMediaMessages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0)
+body = JSON.parse(body_value);
 
-Next, a popup window will ask you for a Controller name and included Actions. For controller name provide ``` Hello ``` and include an action named ``` Index ``` and click ``` OK ```.
+result = messages.create_send_messages(body)
+```
 
-![Add a new Controller](https://apidocs.io/illustration/ruby?step=addCode2&workspaceFolder=MessageMediaMessages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0)
+Make sure you update the credentials and the destination number.
+Now save it as ruby file inside the "mm_ruby" folder and name the file "messagemedia".
+In case you are wondering, this is a "starter pack" code for sending a SMS to a mobile number.
 
-A new controller class anmed ``` HelloController ``` will be created in a file named ``` hello_controller.rb ``` containing a method named ``` Index ```. In this method, add code for initialization and a sample for its usage.
-
-![Initialize the library](https://apidocs.io/illustration/ruby?step=addCode3&workspaceFolder=MessageMediaMessages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0)
+### 4. Running the application
+* Open your command prompt
+* ``` cd ``` into the "mm_ruby" folder
+* Run the command ``` ruby messagemedia.rb ```
+* Voila!
 
 ## How to Test
 
