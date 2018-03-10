@@ -99,7 +99,7 @@ result = messages.create_send_messages(body)
 ```
 
 #### Make sure you update the credentials and the destination number.
-Now save it as a ruby file inside the "mm_ruby" folder and name the file "messagemedia".
+Now save it as a ruby file (.rb) inside the "mm_ruby" folder and name the file "messagemedia".
 In case you haven't figured it out yet, this is a "starter pack" code for sending a message to a mobile number.
 
 ### 5. Running the application
@@ -108,42 +108,9 @@ In case you haven't figured it out yet, this is a "starter pack" code for sendin
 * Run the command ``` ruby messagemedia.rb ```
 * Voila!
 
-## How to Test
 
-You can test the generated SDK and the server with automatically generated test
-cases as follows:
+## Ruby on Rails
 
-  1. From terminal/cmd navigate to the root directory of the SDK.
-  2. Invoke: `bundle exec rake`
-
-## Initialization
-
-### Authentication
-In order to setup authentication and initialization of the API client, you need the following information.
-
-| Parameter | Description |
-|-----------|-------------|
-| basic_auth_user_name | The username to use with basic authentication |
-| basic_auth_password | The password to use with basic authentication |
-
-
-
-API client can be initialized as following.
-
-```ruby
-# Configuration parameters and credentials
-basic_auth_user_name = 'basic_auth_user_name' # The username to use with basic authentication
-basic_auth_password = 'basic_auth_password' # The password to use with basic authentication
-
-client = MessageMediaMessages::MessageMediaMessagesClient.new(
-  basic_auth_user_name: basic_auth_user_name,
-  basic_auth_password: basic_auth_password
-)
-```
-
-The added initlization code can be debugged by putting a breakpoint in the ``` Index ``` method and running the project in debug mode by selecting ``` Run -> Debug 'Development: TestApp' ```.
-
-![Debug the TestApp](https://apidocs.io/illustration/ruby?step=addCode4&workspaceFolder=Messages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0&initLine=client%2520%253D%2520MessageMediaMessagesClient.new%2528%2527basic_auth_user_name%2527%252C%2520%2527basic_auth_password%2527%2529)
 
 
 ## Supported Ruby Versions
