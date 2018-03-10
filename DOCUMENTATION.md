@@ -68,7 +68,7 @@ The SDK can be downloaded directly from Github. On the right side of the main pa
 ### 3. Getting the neccessary components ready
 Inside the extracted folder (messages-ruby-sdk-master), you will find a lot of files that you can explore if you're interested in the structure of the SDK. For now we're going to focus on two certain components. Click on the "lib" folder and inside you will find a file and a folder called "message_media_messages". Copy-paste both of these into the "mm_ruby" folder created earlier. We're halfway through!
 
-### 3. Creating the main file
+### 4. Creating the main file
 Open your text editor and copy-paste this chunk of code into it:
 
 ```
@@ -102,7 +102,7 @@ result = messages.create_send_messages(body)
 Now save it as a ruby file inside the "mm_ruby" folder and name the file "messagemedia".
 In case you haven't figured it out yet, this is a "starter pack" code for sending a message to a mobile number.
 
-### 4. Running the application
+### 5. Running the application
 * Open your command prompt
 * ``` cd ``` into the "mm_ruby" folder
 * Run the command ``` ruby messagemedia.rb ```
