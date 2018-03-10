@@ -101,6 +101,7 @@ result = messages.create_send_messages(body)
 #### Make sure you update the credentials and the destination number.
 Now save it as a ruby file (.rb) inside the "mm_ruby" folder and name the file "messagemedia".
 In case you haven't figured it out yet, this is a "starter pack" code for sending a message to a mobile number.
+You can add lots of other properties to the body. To find out more visit https://developers.messagemedia.com/code/messages-api-documentation/
 
 ### 5. Running the application
 * Open your command prompt
@@ -111,7 +112,14 @@ In case you haven't figured it out yet, this is a "starter pack" code for sendin
 
 ## Ruby on Rails
 
+### 1. Pre-requisites
+* [Ruby](https://www.ruby-lang.org/en/downloads/)
+* IDE (We will be using [RubyMine](https://www.jetbrains.com/ruby) for this guide)
 
+### 2. Downloading the SDK
+The SDK can be downloaded directly from Github. On the right side of the main page of the master branch, click on the green button that says "Clone or download" and then click on "Download ZIP". Extract this folder to your desktop.
+
+### 3. Creating a new Rails project
 
 ## Supported Ruby Versions
 
@@ -122,7 +130,6 @@ This library supports and is [tested against](https://travis-ci.org/messagemedia
 * Ruby 2.2.0
 * Ruby 2.1.0
 * Ruby 2.0.0
-
 
 
 # Class Reference
