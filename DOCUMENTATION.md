@@ -53,7 +53,7 @@ This documentation will guide on how to install and run the SDK on:
 * Vanilla Ruby
 * Ruby on Rails
 
-### Vanilla Ruby
+### > Vanilla Ruby
 
 #### 1. Pre-requisites
 
