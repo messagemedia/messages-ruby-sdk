@@ -63,7 +63,7 @@ This documentation will guide on how to get up and running with the SDK on:
   * [Visual Studio Code](https://code.visualstudio.com/)
 
 ### 2. Downloading the SDK
-The SDK can be downloaded directly from Github. On the right side of the main page of the master branch, click on the ![alt-text](http://i67.tinypic.com/m9mxqp.jpg "Clone Button") green button that says "Clone or download" and then click on "Download ZIP". Extract this folder to your desktop. Now create a folder on your desktop called "mm_ruby". We will use this in the next step.
+The SDK can be downloaded directly from Github. On the right side of the main page of the master branch, click on the ![alt-text](https://imgur.com/pmTuYGP "Clone Button") green button that says "Clone or download" and then click on "Download ZIP". Extract this folder to your desktop. Now create a folder on your desktop called "mm_ruby". We will use this in the next step.
 
 ### 3. Getting the neccessary components ready
 Inside the extracted folder (messages-ruby-sdk-master), you will find a lot of files that you can explore if you're interested in the structure of the SDK. For now we're going to focus on two certain components. Click on the "lib" folder and inside you will find a file and a folder called "message_media_messages". Copy-paste both of these into the "mm_ruby" folder created earlier. We're halfway through!
