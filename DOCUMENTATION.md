@@ -62,16 +62,6 @@ This documentation will guide on how to get up and running with the SDK on:
   * [Notepad++](https://notepad-plus-plus.org/)
   * [Visual Studio Code](https://code.visualstudio.com/)
 
-To check if Ruby was successfully installed on Windows: 
-1. Open the command prompt
-2. Type ``` ruby -v ``` and press Enter
-3. You should see the current ruby version displayed on the command prompt
-
-To check if Ruby was successfully installed on MAC:
-1. Open the terminal
-2. Run the command ``` which -a ruby ``` 
-3. You should see the current ruby version displayed on the terminal
-
 ### 2. Downloading the SDK
 The SDK can be downloaded directly from Github. On the right side of the main page of the master branch, click on the green button that says "Clone or download" and then click on "Download ZIP". Extract this folder to your desktop. Now create a folder on your desktop called "mm_ruby". We will use this in the next step.
 
@@ -85,7 +75,7 @@ Open your text editor and copy-paste this chunk of code into it:
 $LOAD_PATH.unshift('.')
 require 'message_media_messages.rb'
 
-basic_auth_user_name = 'YOUR_API_KEY' # 
+basic_auth_user_name = 'YOUR_API_KEY' 
 basic_auth_password = 'YOUR_API_SECRET' 
 
 client = MessageMediaMessages::MessageMediaMessagesClient.new(
@@ -108,9 +98,9 @@ body = JSON.parse(body_value);
 result = messages.create_send_messages(body)
 ```
 
-Make sure you update the credentials and the destination number.
-Now save it as ruby file inside the "mm_ruby" folder and name the file "messagemedia".
-In case you are wondering, this is a "starter pack" code for sending a SMS to a mobile number.
+#### Make sure you update the credentials and the destination number.
+Now save it as a ruby file inside the "mm_ruby" folder and name the file "messagemedia".
+In case you haven't figured it out yet, this is a "starter pack" code for sending a message to a mobile number.
 
 ### 4. Running the application
 * Open your command prompt
