@@ -7,18 +7,13 @@ The MessageMedia Messages API provides a number of endpoints for building powerf
 
 Authentication is done via API keys. Sign up at https://developers.messagemedia.com/register/ to get your API keys.
 
-Requests are authenticated using HTTP Basic Auth or by signing with a HMAC signature. Provide your API keys as the basic auth username and basic auth password.
+Requests are authenticated using HTTP Basic Auth. Provide your API keys as the basic auth username and basic auth password.
 
 ## Errors
 
 Our API returns standard HTTP success or error status codes. For errors, we will also include extra information about what went wrong encoded in the response as JSON. The various HTTP status codes we might return are listed below.
 
-| Parameter | Description |
-|-----------|-------------|
-| basic_auth_user_name | The username to use with basic authentication |
-| basic_auth_password | The password to use with basic authentication |
-
-HTTP Status Codes
+#### HTTP Status Codes
 
 | Code      | Title       | Description |
 |-----------|-------------|-------------|
@@ -27,25 +22,29 @@ HTTP Status Codes
 | 400 | Bad Request | Bad request |
 | 401 | Unauthorized | Your API key is invalid |
 | 402 | Over Quota | Over plan quota on this endpoint |
+| 402 | Disabled feature | Feature cannot be accessed |
 | 404 | Not Found |	The resource does not exist |
 | 50X | Internal Server Error | An error occurred with our API |
 
 
-### 1. Starting a new project
+### Information
 
-Close any existing projects in RubyMine&trade; by selecting ``` File -> Close Project ```. Next, click on ``` Create New Project ``` to create a new project from scratch.
+#### Slack and Mailing List
 
-![Create a new project in RubyMine](https://apidocs.io/illustration/ruby?step=createNewProject0&workspaceFolder=MessageMediaMessages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0)
+If you have any questions, comments, or concerns, please join our Slack channel:
+https://developers.messagemedia.com/collaborate/slack/
 
-Next, provide ``` TestApp ``` as the project name, choose ``` Rails Application ``` as the project type, and click ``` OK ```.
+Alternatively you can email us at:
+developers@messagemedia.com
 
-![Create a new Rails Application in RubyMine - step 1](https://apidocs.io/illustration/ruby?step=createNewProject1&workspaceFolder=MessageMediaMessages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0)
+#### Bug reports
 
-In the next dialog make sure that correct *Ruby SDK* is being used (minimum 2.0.0) and click ``` OK ```.
+If you discover a problem with the SDK, we would like to know about it. Send an email to:
+developers@messagemedia.com
 
-![Create a new Rails Application in RubyMine - step 2](https://apidocs.io/illustration/ruby?step=createNewProject2&workspaceFolder=MessageMediaMessages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0)
+#### Rate Limits
 
-This will create a new Rails Application project with an existing set of files and folder.
+To protect the stability of the API and keep it available to all users, MessageMedia enforces standard rate limiting. Currently, we have set the quota to 100 SMS per account. We may change these quotas or add new quotas (such as maximum requests per hour) in the future. Requests that hit any of our rate limits will receive a 402 response and you will be notified via email that your quota has been exceeded.
 
 ### 2. Add reference of the gem
 
