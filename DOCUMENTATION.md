@@ -29,7 +29,7 @@ Our API returns standard HTTP success or error status codes. For errors, we will
 
 ## Information
 
-#### Slack and Mailing List
+#### :mailbox_with_mail: Slack and Mailing List
 
 If you have any questions, comments, or concerns, please join our Slack channel:
 https://developers.messagemedia.com/collaborate/slack/
@@ -37,12 +37,12 @@ https://developers.messagemedia.com/collaborate/slack/
 Alternatively you can email us at:
 developers@messagemedia.com
 
-#### Bug reports
+#### :bug: Bug reports
 
 If you discover a problem with the SDK, we would like to know about it. Send an email to:
 developers@messagemedia.com
 
-#### Rate Limits
+#### :chart_with_upwards_trend: Rate Limits
 
 To protect the stability of the API and keep it available to all users, MessageMedia enforces standard rate limiting. Currently, we have set the quota to 100 SMS per account. We may change these quotas or add new quotas (such as maximum requests per hour) in the future. Requests that hit any of our rate limits will receive a 402 response and you will be notified via email that your quota has been exceeded. If you think you’ll need a higher rate limit, drop us a line at support@messagemedia.com.au
 
