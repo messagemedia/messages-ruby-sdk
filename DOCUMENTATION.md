@@ -27,7 +27,7 @@ Our API returns standard HTTP success or error status codes. For errors, we will
 | 50X | Internal Server Error | An error occurred with our API |
 
 
-### Information
+## Information
 
 #### Slack and Mailing List
 
@@ -44,7 +44,10 @@ developers@messagemedia.com
 
 #### Rate Limits
 
-To protect the stability of the API and keep it available to all users, MessageMedia enforces standard rate limiting. Currently, we have set the quota to 100 SMS per account. We may change these quotas or add new quotas (such as maximum requests per hour) in the future. Requests that hit any of our rate limits will receive a 402 response and you will be notified via email that your quota has been exceeded.
+To protect the stability of the API and keep it available to all users, MessageMedia enforces standard rate limiting. Currently, we have set the quota to 100 SMS per account. We may change these quotas or add new quotas (such as maximum requests per hour) in the future. Requests that hit any of our rate limits will receive a 402 response and you will be notified via email that your quota has been exceeded. If you think you’ll need a higher rate limit, drop us a line at support@messagemedia.com.au
+
+
+## Getting Started
 
 ### 2. Add reference of the gem
 
@@ -106,6 +109,17 @@ client = MessageMediaMessages::MessageMediaMessagesClient.new(
 The added initlization code can be debugged by putting a breakpoint in the ``` Index ``` method and running the project in debug mode by selecting ``` Run -> Debug 'Development: TestApp' ```.
 
 ![Debug the TestApp](https://apidocs.io/illustration/ruby?step=addCode4&workspaceFolder=Messages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0&initLine=client%2520%253D%2520MessageMediaMessagesClient.new%2528%2527basic_auth_user_name%2527%252C%2520%2527basic_auth_password%2527%2529)
+
+
+## Supported Ruby Versions
+
+This library supports and is [tested against](https://travis-ci.org/messagemedia/messages-ruby-sdk) the following Ruby implementations:
+
+* Ruby 2.4.0
+* Ruby 2.3.0
+* Ruby 2.2.0
+* Ruby 2.1.0
+* Ruby 2.0.0
 
 
 
