@@ -144,7 +144,17 @@ You will see the following displayed in the console after a successful installat
 
 ![picture](http://i66.tinypic.com/t8ubrs.png)
 
-### 5.
+### 5. Adding additional dependency files
+
+* Open the lib folder and create a new folder called "mm"
+* Now open the SDK folder (messages-ruby-sdk) you downloaded earlier in Step 2
+* Click on lib and copy-paste the file and folder (message_media_messages) to the "mm" folder in your Rails application
+* Click on config -> application.rb
+* Under ``` config.load_defaults 5.1 ``` add the following line ``` config.autoload_paths << Rails.root.join('lib/mm') ```
+* In case you were wondering, this line basically loads the files for our Rails applications
+
+### 6. Create a controller
+
 
 
 
