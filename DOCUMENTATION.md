@@ -75,8 +75,8 @@ Open your text editor and copy-paste this chunk of code into it:
 $LOAD_PATH.unshift('.')
 require 'message_media_messages.rb'
 
-basic_auth_user_name = 'YOUR_API_KEY' 
-basic_auth_password = 'YOUR_API_SECRET' 
+basic_auth_user_name = 'YOUR_API_KEY'
+basic_auth_password = 'YOUR_API_SECRET'
 
 client = MessageMediaMessages::MessageMediaMessagesClient.new(
   basic_auth_user_name: basic_auth_user_name,
@@ -120,6 +120,15 @@ You can add lots of other properties to the body. To find out more visit https:/
 The SDK can be downloaded directly from Github. On the right side of the main page of the master branch, click on the green button that says "Clone or download" and then click on "Download ZIP". Extract this folder to your desktop.
 
 ### 3. Creating a new Rails project
+
+* Open RubyMine
+* Click on File -> New project
+* On the mini-screen, under Rails click Application
+* The ruby interpreter should be automatically detected in the Ruby SDK option
+* Rename your project from "untitled" to your "messagemedia_messages"
+* Click create
+
+![picture](http://i64.tinypic.com/2gumhyp.png)
 
 ## Supported Ruby Versions
 
