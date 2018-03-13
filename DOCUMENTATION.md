@@ -119,7 +119,7 @@ You can add lots of other properties to the body. To find out more visit https:/
 ### 2. Downloading the SDK
 The SDK can be downloaded directly from Github. On the right side of the main page of the master branch, click on the green button that says "Clone or download" and then click on "Download ZIP". Extract this folder to your desktop.
 
-![picture](http://i66.tinypic.com/2m2dxet.jpg)
+![picture](http://i68.tinypic.com/2lvij5s.jpg)
 
 ### 3. Creating a new Rails project
 
