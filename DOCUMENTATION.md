@@ -3,94 +3,218 @@
 
 The MessageMedia Messages API provides a number of endpoints for building powerful two-way messaging applications.
 
-## How to Install
+## Authentication
 
-This client library is a Ruby gem which can be compiled and used in your Ruby and Ruby on Rails project. This library requires a few gems from the RubyGems repository.
+Authentication is done via API keys. Sign up at https://developers.messagemedia.com/register/ to get your API keys.
 
-1. Open the command line interface or the terminal and navigate to the folder containing the source code.
-2. Run ``` gem install messagemedia_messages_sdk-1.1.0.gem ``` to install the gem.
+Requests are authenticated using HTTP Basic Auth. Provide your API keys as the basic auth username and basic auth password.
 
-## How to Use
+## Errors
 
-The following section explains how to use the MessageMediaMessages Ruby Gem in a new Rails project using RubyMine&trade;. The basic workflow presented here is also applicable if you prefer using a different editor or IDE.
+Our API returns standard HTTP success or error status codes. For errors, we will also include extra information about what went wrong encoded in the response as JSON. The various HTTP status codes we might return are listed below.
 
-### 1. Starting a new project
+#### HTTP Status Codes
 
-Close any existing projects in RubyMine&trade; by selecting ``` File -> Close Project ```. Next, click on ``` Create New Project ``` to create a new project from scratch.
-
-![Create a new project in RubyMine](https://apidocs.io/illustration/ruby?step=createNewProject0&workspaceFolder=MessageMediaMessages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0)
-
-Next, provide ``` TestApp ``` as the project name, choose ``` Rails Application ``` as the project type, and click ``` OK ```.
-
-![Create a new Rails Application in RubyMine - step 1](https://apidocs.io/illustration/ruby?step=createNewProject1&workspaceFolder=MessageMediaMessages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0)
-
-In the next dialog make sure that correct *Ruby SDK* is being used (minimum 2.0.0) and click ``` OK ```.
-
-![Create a new Rails Application in RubyMine - step 2](https://apidocs.io/illustration/ruby?step=createNewProject2&workspaceFolder=MessageMediaMessages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0)
-
-This will create a new Rails Application project with an existing set of files and folder.
-
-### 2. Add reference of the gem
-
-In order to use the MessageMediaMessages gem in the new project we must add a gem reference. Locate the ```Gemfile``` in the *Project Explorer* window under the ``` TestApp ``` project node. The file contains references to all gems being used in the project. Here, add the reference to the library gem by adding the following line: ``` gem 'message_media_messages', '~> 1.0.0' ```
-
-![Add references of the Gemfile](https://apidocs.io/illustration/ruby?step=addReference&workspaceFolder=MessageMediaMessages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0)
-
-### 3. Adding a new Rails Controller
-
-Once the ``` TestApp ``` project is created, a folder named ``` controllers ``` will be visible in the *Project Explorer* under the following path: ``` TestApp > app > controllers ```. Right click on this folder and select ``` New -> Run Rails Generator... ```.
-
-![Run Rails Generator on Controllers Folder](https://apidocs.io/illustration/ruby?step=addCode0&workspaceFolder=MessageMediaMessages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0)
-
-Selecting the said option will popup a small window where the generator names are displayed. Here, select the ``` controller ``` template.
-
-![Create a new Controller](https://apidocs.io/illustration/ruby?step=addCode1&workspaceFolder=MessageMediaMessages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0)
-
-Next, a popup window will ask you for a Controller name and included Actions. For controller name provide ``` Hello ``` and include an action named ``` Index ``` and click ``` OK ```.
-
-![Add a new Controller](https://apidocs.io/illustration/ruby?step=addCode2&workspaceFolder=MessageMediaMessages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0)
-
-A new controller class anmed ``` HelloController ``` will be created in a file named ``` hello_controller.rb ``` containing a method named ``` Index ```. In this method, add code for initialization and a sample for its usage.
-
-![Initialize the library](https://apidocs.io/illustration/ruby?step=addCode3&workspaceFolder=MessageMediaMessages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0)
-
-## How to Test
-
-You can test the generated SDK and the server with automatically generated test
-cases as follows:
-
-  1. From terminal/cmd navigate to the root directory of the SDK.
-  2. Invoke: `bundle exec rake`
-
-## Initialization
-
-### Authentication
-In order to setup authentication and initialization of the API client, you need the following information.
-
-| Parameter | Description |
-|-----------|-------------|
-| basic_auth_user_name | The username to use with basic authentication |
-| basic_auth_password | The password to use with basic authentication |
+| Code      | Title       | Description |
+|-----------|-------------|-------------|
+| 202 | OK | The request was successful |
+| 202 | Async | The resource was asynchronously created |
+| 400 | Bad Request | Bad request |
+| 401 | Unauthorized | Your API key is invalid |
+| 402 | Over Quota | Over plan quota on this endpoint |
+| 402 | Disabled feature | Feature cannot be accessed |
+| 404 | Not Found |	The resource does not exist |
+| 50X | Internal Server Error | An error occurred with our API |
 
 
+## Information
 
-API client can be initialized as following.
+#### :mailbox_with_mail: Slack and Mailing List
 
-```ruby
-# Configuration parameters and credentials
-basic_auth_user_name = 'basic_auth_user_name' # The username to use with basic authentication
-basic_auth_password = 'basic_auth_password' # The password to use with basic authentication
+If you have any questions, comments, or concerns, please join our Slack channel:
+https://developers.messagemedia.com/collaborate/slack/
+
+Alternatively you can email us at:
+developers@messagemedia.com
+
+#### :bug: Bug reports
+
+If you discover a problem with the SDK, we would like to know about it. Send an email to:
+developers@messagemedia.com
+
+#### :chart_with_upwards_trend: Rate Limits
+
+To protect the stability of the API and keep it available to all users, MessageMedia enforces standard rate limiting. Currently, we have set the quota to 100 SMS per account. We may change these quotas or add new quotas (such as maximum requests per hour) in the future. Requests that hit any of our rate limits will receive a 402 response and you will be notified via email that your quota has been exceeded. If you think you’ll need a higher rate limit, drop us a line at support@messagemedia.com.au
+
+
+## Getting Started
+
+This documentation will guide on how to get up and running with the SDK on:
+* Vanilla Ruby
+* Ruby on Rails
+
+## Vanilla Ruby
+
+### 1. Pre-requisites
+* [Ruby](https://www.ruby-lang.org/en/downloads/)
+* Text Editor (We've provided a list of suggestions)
+  * [Atom](https://atom.io/)
+  * [Notepad++](https://notepad-plus-plus.org/)
+  * [Visual Studio Code](https://code.visualstudio.com/)
+
+### 2. Downloading the SDK
+The SDK can be downloaded directly from Github. On the right side of the main page of the master branch, click on the green button that says "Clone or download" and then click on "Download ZIP". Extract this folder to your desktop. Now create a folder on your desktop called "mm_ruby". We will use this in the next step.
+
+![picture](http://i68.tinypic.com/2lvij5s.jpg)
+
+### 3. Getting the neccessary components ready
+Inside the extracted folder (messages-ruby-sdk-master), you will find a lot of files that you can explore if you're interested in the structure of the SDK. For now we're going to focus on two certain components. Click on the "lib" folder and inside you will find a file and a folder called "message_media_messages". Copy-paste both of these into the "mm_ruby" folder created earlier. We're halfway through!
+
+![picture](http://i64.tinypic.com/32zq71z.jpg)
+
+### 4. Creating the main file
+Open your text editor and copy-paste this chunk of code into it:
+
+```
+$LOAD_PATH.unshift('.')
+require 'message_media_messages.rb'
+
+basic_auth_user_name = 'YOUR_API_KEY'
+basic_auth_password = 'YOUR_API_SECRET'
 
 client = MessageMediaMessages::MessageMediaMessagesClient.new(
   basic_auth_user_name: basic_auth_user_name,
   basic_auth_password: basic_auth_password
 )
+
+messages = client.messages
+body_value = '{
+   "messages":[
+      {
+         "content":"Greeting from MessageMedia!",
+         "destination_number":"MOBILE_NUMBER"
+      }
+   ]
+}';
+
+body = JSON.parse(body_value);
+
+result = messages.create_send_messages(body)
 ```
 
-The added initlization code can be debugged by putting a breakpoint in the ``` Index ``` method and running the project in debug mode by selecting ``` Run -> Debug 'Development: TestApp' ```.
+#### Make sure you update the credentials and the destination number.
+Now save it as a ruby file (.rb) inside the "mm_ruby" folder and name the file "messagemedia".
+In case you haven't figured it out yet, this is a "starter pack" code for sending a message to a mobile number.
+You can add lots of other properties to the body. To find out more visit https://developers.messagemedia.com/code/messages-api-documentation/
 
-![Debug the TestApp](https://apidocs.io/illustration/ruby?step=addCode4&workspaceFolder=Messages-Ruby&workspaceName=MessageMediaMessages&projectName=message_media_messages&gemName=message_media_messages&gemVer=1.0.0&initLine=client%2520%253D%2520MessageMediaMessagesClient.new%2528%2527basic_auth_user_name%2527%252C%2520%2527basic_auth_password%2527%2529)
+### 5. Running the application
+* Open your command prompt
+* ``` cd ``` into the "mm_ruby" folder
+* Run the command ``` ruby messagemedia.rb ```
+* Voila!
 
+
+## Ruby on Rails
+
+### 1. Pre-requisites
+* [Ruby](https://www.ruby-lang.org/en/downloads/)
+* IDE (We will be using [RubyMine](https://www.jetbrains.com/ruby) for this guide)
+
+### 2. Downloading the SDK
+The SDK can be downloaded directly from Github. On the right side of the main page of the master branch, click on the green button that says "Clone or download" and then click on "Download ZIP". Extract this folder to your desktop.
+
+![picture](http://i68.tinypic.com/2lvij5s.jpg)
+
+### 3. Creating a new Rails project
+
+* Open RubyMine
+* Click on File -> New project
+* On the mini-screen, under Rails, click Application
+* The ruby interpreter should be automatically detected in the Ruby SDK option
+* Rename your project from "untitled" to "messagemedia_messages"
+* Click create
+
+![picture](http://i64.tinypic.com/2gumhyp.png)
+
+You will see the following displayed in the terminal after a successful installation
+
+![picture](http://i67.tinypic.com/2e208li.png)
+
+### 4. Referencing the MessageMedia gem
+
+* Open the Gemfile
+* Add the following line ``` gem 'messagemedia_messages_sdk', '~> 1.0' ```
+* Save the file
+* Click on View -> Tool Windows -> Terminal
+* Run the following command ``` bundle install ``` to install the SDK
+
+![picture](http://i66.tinypic.com/t8ubrs.png)
+
+### 5. Adding additional dependency files
+
+* Open the lib folder and create a new directory/folder called "mm"
+* Now open the SDK folder (messages-ruby-sdk) you downloaded earlier in Step 2
+* Click on lib and copy-paste the file and folder (message_media_messages) to the "mm" folder in your Rails application
+
+![picture](http://i68.tinypic.com/f20epu.jpg)
+* Click on config -> application.rb
+* Under ``` config.load_defaults ``` add the following line ``` config.autoload_paths << Rails.root.join('lib/mm') ```
+
+![picture](http://i68.tinypic.com/16hj42c.jpg)
+In case you were wondering, this line basically loads the dependency files for our Rails application
+
+### 6. Adding a controller
+
+* In the terminal, run the following command ``` rails g controller Home index ```
+* This will create a controller with the name "Home" with an action/method called "index"
+* Open the generated controller which can be found under app -> controller -> home_controller.rb
+* Inside the index action, paste this chunk of code:
+
+```
+# Configuration parameters and credentials
+basic_auth_user_name = 'YOUR_API_KEY' # The username to use with basic authentication
+basic_auth_password = 'YOUR_API_SECRET' # The password to use with basic authentication
+
+client = MessageMediaMessages::MessageMediaMessagesClient.new(
+  basic_auth_user_name: basic_auth_user_name,
+  basic_auth_password: basic_auth_password
+)
+
+messages = client.messages
+body_value = '{
+   "messages":[
+      {
+         "content":"My first message",
+         "destination_number":"YOUR_MOBILE_NUMBER"
+      }
+   ]
+}';
+
+body = JSON.parse(body_value);
+
+result = messages.create_send_messages(body)
+```
+
+#### Make sure you update the credentials and the destination number.
+
+### 7. Running the application
+
+* Click on Run -> Run -> Development: messagemedia_messages
+* You will see the following displayed in the console after the application starts running
+
+![picture](http://i68.tinypic.com/213qeqv.jpg)
+* Once you see that, open your browser and type in http://localhost:3000/ and press Enter
+* You should see a heading that says "Home#index" and within a few seconds your message should be delivered to the destination number
+
+## Supported Ruby Versions
+
+This library supports and is [tested against](https://travis-ci.org/messagemedia/messages-ruby-sdk) the following Ruby implementations:
+
+* Ruby 2.4.0
+* Ruby 2.3.0
+* Ruby 2.2.0
+* Ruby 2.1.0
+* Ruby 2.0.0
 
 
 # Class Reference
