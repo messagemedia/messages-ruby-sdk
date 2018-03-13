@@ -161,7 +161,7 @@ You will see the following displayed in the terminal after a successful installa
 * Under ``` config.load_defaults ``` add the following line ``` config.autoload_paths << Rails.root.join('lib/mm') ```
 
 ![picture](http://i68.tinypic.com/16hj42c.jpg)
-* In case you were wondering, this line basically loads the dependency files for our Rails application
+In case you were wondering, this line basically loads the dependency files for our Rails application
 
 ### 6. Adding a controller
 
@@ -197,7 +197,7 @@ result = messages.create_send_messages(body)
 
 #### Make sure you update the credentials and the destination number.
 
-### 5. Running the application
+### 7. Running the application
 
 * Click on Run -> Run -> Development: messagemedia_messages
 * You will see the following displayed in the console after the application starts running
