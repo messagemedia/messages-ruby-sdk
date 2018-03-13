@@ -196,9 +196,10 @@ result = messages.create_send_messages(body)
 
 * Click on Run -> Run -> Development: messagemedia_messages
 * You will see the following displayed in the console after the application starts running
-<INSERT IMAGE>
+![picture](http://i68.tinypic.com/213qeqv.jpg)
 * Once you see that, open your browser and type in http://localhost:3000/ and press Enter
 * You should see a heading that says "Home#index" and within a few seconds your message should be delivered to the destination number
+![picture](http://i68.tinypic.com/2j5gcgz.jpg)
 
 ## Supported Ruby Versions
 
