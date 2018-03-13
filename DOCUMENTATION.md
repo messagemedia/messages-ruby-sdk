@@ -134,7 +134,7 @@ You will see the following displayed in the console after a successful installat
 
 ![picture](http://i67.tinypic.com/2e208li.png)
 
-### 4. Adding the MessageMedia SDK
+### 4. Referencing the MessageMedia gem
 
 * Open the Gemfile
 * Add the following line ``` gem 'messagemedia_messages_sdk', '~> 1.0' ```
@@ -146,19 +146,54 @@ You will see the following displayed in the console after a successful installat
 
 ### 5. Adding additional dependency files
 
-* Open the lib folder and create a new folder called "mm"
+* Open the lib folder and create a new directory/folder called "mm"
 * Now open the SDK folder (messages-ruby-sdk) you downloaded earlier in Step 2
 * Click on lib and copy-paste the file and folder (message_media_messages) to the "mm" folder in your Rails application
 * Click on config -> application.rb
-* Under ``` config.load_defaults 5.1 ``` add the following line ``` config.autoload_paths << Rails.root.join('lib/mm') ```
-* In case you were wondering, this line basically loads the files for our Rails applications
+* Under ``` config.load_defaults ``` add the following line ``` config.autoload_paths << Rails.root.join('lib/mm') ```
+* In case you were wondering, this line basically loads the dependency files for our Rails application
 
-### 6. Create a controller
+### 6. Adding a controller
 
+* In the terminal, run the following command ``` rails g controller Home index ```
+* This will create a controller with the name "Home" with an action/method called "index"
+* Open the generated controller which can be found under app -> controller -> home_controller.rb
+* Inside the index action, paste this chunk of code:
 
+```
+# Configuration parameters and credentials
+basic_auth_user_name = 'YOUR_API_KEY' # The username to use with basic authentication
+basic_auth_password = 'YOUR_API_SECRET' # The password to use with basic authentication
 
+client = MessageMediaMessages::MessageMediaMessagesClient.new(
+  basic_auth_user_name: basic_auth_user_name,
+  basic_auth_password: basic_auth_password
+)
 
+messages = client.messages
+body_value = '{
+   "messages":[
+      {
+         "content":"My first message",
+         "destination_number":"YOUR_MOBILE_NUMBER"
+      }
+   ]
+}';
 
+body = JSON.parse(body_value);
+
+result = messages.create_send_messages(body)
+```
+
+#### Make sure you update the credentials and the destination number.
+
+### 5. Running the application
+
+* Click on Run -> Run -> Development: messagemedia_messages
+* You will see the following displayed in the console after the application starts running
+<INSERT IMAGE>
+* Once you see that, open your browser and type in "http://localhost:3000/" and press Enter
+* You should see a heading that says "Home#index" and within a few seconds your message should be delivered to the destination number
 
 ## Supported Ruby Versions
 
