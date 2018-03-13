@@ -262,8 +262,8 @@ def update_cancel_scheduled_message(message_id,
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| message_id |  ``` Required ```  | TODO: Add a parameter description |
-| body |  ``` Required ```  | TODO: Add a parameter description |
+| message_id |  ``` Required ```  | The ID of the message |
+| body |  ``` Required ```  | The content of the message |
 
 
 #### Example Usage
@@ -275,14 +275,6 @@ body = CancelScheduledMessageRequest.new
 result = messages.update_cancel_scheduled_message(message_id, body)
 
 ```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | TODO: Add an error description |
-| 404 | TODO: Add an error description |
-
 
 
 ### <a name="get_message_status"></a>![Method: ](https://apidocs.io/img/method.png ".MessagesController.get_message_status") get_message_status
@@ -322,7 +314,7 @@ def get_message_status(message_id); end
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| message_id |  ``` Required ```  | TODO: Add a parameter description |
+| message_id |  ``` Required ```  | The ID of the message |
 
 
 #### Example Usage
@@ -333,13 +325,6 @@ message_id = 'messageId'
 result = messages.get_message_status(message_id)
 
 ```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 404 | TODO: Add an error description |
-
 
 
 ### <a name="create_send_messages"></a>![Method: ](https://apidocs.io/img/method.png ".MessagesController.create_send_messages") create_send_messages
@@ -416,7 +401,7 @@ def create_send_messages(body); end
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| body |  ``` Required ```  | TODO: Add a parameter description |
+| body |  ``` Required ```  | The content of the message |
 
 
 #### Example Usage
@@ -428,13 +413,6 @@ body = JSON.parse(body_value);
 result = messages.create_send_messages(body)
 
 ```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | TODO: Add an error description |
-
 
 
 [Back to List of Controllers](#list_of_controllers)
@@ -559,7 +537,7 @@ def create_confirm_delivery_reports_as_received(body); end
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| body |  ``` Required ```  | TODO: Add a parameter description |
+| body |  ``` Required ```  | The content of the message |
 
 
 #### Example Usage
@@ -571,13 +549,6 @@ body = JSON.parse(body_value);
 result = deliveryReports.create_confirm_delivery_reports_as_received(body)
 
 ```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | TODO: Add an error description |
-
 
 
 [Back to List of Controllers](#list_of_controllers)
@@ -620,7 +591,7 @@ def create_confirm_replies_as_received(body); end
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| body |  ``` Required ```  | TODO: Add a parameter description |
+| body |  ``` Required ```  | The content of the message |
 
 
 #### Example Usage
@@ -632,13 +603,6 @@ body = JSON.parse(body_value);
 result = replies.create_confirm_replies_as_received(body)
 
 ```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | TODO: Add an error description |
-
 
 
 ### <a name="get_check_replies"></a>![Method: ](https://apidocs.io/img/method.png ".RepliesController.get_check_replies") get_check_replies
