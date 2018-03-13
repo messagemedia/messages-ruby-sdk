@@ -149,12 +149,13 @@ You will see the following displayed in the terminal after a successful installa
 ### 5. Adding additional dependency files
 
 * Open the lib folder and create a new directory/folder called "mm"
-![picture](http://i68.tinypic.com/2nm1303.jpg)
 * Now open the SDK folder (messages-ruby-sdk) you downloaded earlier in Step 2
 * Click on lib and copy-paste the file and folder (message_media_messages) to the "mm" folder in your Rails application
-![picture](http://i65.tinypic.com/ofy6pk.jpg)
+
+![picture](http://i68.tinypic.com/f20epu.jpg)
 * Click on config -> application.rb
 * Under ``` config.load_defaults ``` add the following line ``` config.autoload_paths << Rails.root.join('lib/mm') ```
+
 ![picture](http://i68.tinypic.com/16hj42c.jpg)
 * In case you were wondering, this line basically loads the dependency files for our Rails application
 
@@ -196,10 +197,10 @@ result = messages.create_send_messages(body)
 
 * Click on Run -> Run -> Development: messagemedia_messages
 * You will see the following displayed in the console after the application starts running
+
 ![picture](http://i68.tinypic.com/213qeqv.jpg)
 * Once you see that, open your browser and type in http://localhost:3000/ and press Enter
 * You should see a heading that says "Home#index" and within a few seconds your message should be delivered to the destination number
-![picture](http://i68.tinypic.com/2j5gcgz.jpg)
 
 ## Supported Ruby Versions
 
