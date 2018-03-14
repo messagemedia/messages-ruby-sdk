@@ -11,7 +11,7 @@ Requests are authenticated using HTTP Basic Auth. Provide your API keys as the b
 
 ## Errors
 
-Our API returns standard HTTP success or error status codes. For errors, we will also include extra information about what went wrong encoded in the response as JSON. The various HTTP status codes we might return are listed below.
+Our API returns standard HTTP success or error status codes. For errors, we will also include extra information about what went wrong encoded in the response as JSON. The most common status codes are listed below. To view the full list, visit https://github.com/messagemedia/messages-ruby-sdk/wiki/HTTP-Status-Codes
 
 #### HTTP Status Codes
 
