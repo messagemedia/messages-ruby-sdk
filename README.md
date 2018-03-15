@@ -2,8 +2,9 @@
 [![Travis Build Status](https://api.travis-ci.org/messagemedia/messages-ruby-sdk.svg?branch=master)](https://travis-ci.org/messagemedia/messages-ruby-sdk)
 [![gem](https://img.shields.io/badge/gem-v1.1.0-red.svg)](https://rubygems.org/gems/messagemedia_messages_sdk)
 
-
 The MessageMedia Messages API provides a number of endpoints for building powerful two-way messaging applications.
+
+![Alt Text](https://media.giphy.com/media/l0Exov2QmxF5Xwjkc/giphy.gif)
 
 ## ⭐️ Install via .gem file
 * Download [messagemedia_messages_sdk-1.0.0.gem](https://github.com/messagemedia/messages-ruby-sdk/releases/download/v1.0.0/messagemedia_messages_sdk-1.0.0.gem)
