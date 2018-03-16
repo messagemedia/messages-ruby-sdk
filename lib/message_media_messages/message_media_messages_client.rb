@@ -29,11 +29,14 @@ module MessageMediaMessages
     end
 
     # Initializer with authentication and configuration parameters.
-    def initialize(basic_auth_user_name: nil, basic_auth_password: nil)
-      Configuration.basic_auth_user_name = basic_auth_user_name if
-        basic_auth_user_name
-      Configuration.basic_auth_password = basic_auth_password if
-        basic_auth_password
+    def initialize(auth_user_name: nil, auth_password: nil, use_hmac: false)
+      if (use_hmac == false)
+        Configuration.basic_auth_user_name = auth_user_name
+        Configuration.basic_auth_password = auth_password
+      else
+        Configuration.hmac_auth_user_name = auth_user_name
+        Configuration.hmac_auth_password = auth_password
+      end
     end
   end
 end
