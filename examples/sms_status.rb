@@ -1,12 +1,14 @@
 require 'message_media_messages'
 
 # Configuration parameters and credentials
-basic_auth_user_name = 'YOUR_API_KEY' # The username to use with basic authentication
-basic_auth_password = 'YOUR_API_SECRET' # The password to use with basic authentication
+auth_user_name = 'API_SECRET' # The username to use with basic/HMAC authentication
+auth_password = 'API_KEY' # The password to use with basic/HMAC authentication
+use_hmac = false # Change this to true if you are using HMAC keys
 
 client = MessageMediaMessages::MessageMediaMessagesClient.new(
-  basic_auth_user_name: basic_auth_user_name,
-  basic_auth_password: basic_auth_password
+    auth_user_name: auth_user_name,
+    auth_password: auth_password,
+    use_hmac: use_hmac
 )
 
 messages = client.messages
