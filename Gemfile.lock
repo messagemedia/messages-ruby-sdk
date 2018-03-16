@@ -28,7 +28,9 @@ GEM
       power_assert
 
 PLATFORMS
+  ruby
   x86-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   messagemedia_messages_sdk!
