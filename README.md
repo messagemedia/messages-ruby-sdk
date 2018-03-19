@@ -109,7 +109,10 @@ result = deliveryReports.get_check_delivery_reports()
 ```
 
 ## 📕 Documentation
-The Ruby SDK Documentation can be viewed [here](DOCUMENTATION.md)
+Check out the [full API documentation](DOCUMENTATION.md) for more detailed information.
 
 ## 😕 Got Stuck?
 Please contact developer support at developers@messagemedia.com or check out the developer portal at [developers.messagemedia.com](https://developers.messagemedia.com/)
+
+## 📃 License
+Apache License. See the [LICENSE](LICENSE) file.
