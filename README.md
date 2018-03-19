@@ -2,7 +2,7 @@
 [![Travis Build Status](https://api.travis-ci.org/messagemedia/messages-ruby-sdk.svg?branch=master)](https://travis-ci.org/messagemedia/messages-ruby-sdk)
 [![gem](https://img.shields.io/badge/gem-v1.1.0-red.svg)](https://rubygems.org/gems/messagemedia_messages_sdk)
 
-The MessageMedia Messages API provides a number of endpoints for building powerful two-way messaging applications.
+> The MessageMedia Messages API provides a number of endpoints for building powerful two-way messaging applications.
 
 ![Alt Text](https://media.giphy.com/media/l0Exov2QmxF5Xwjkc/giphy.gif)
 
