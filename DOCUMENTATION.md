@@ -7,12 +7,12 @@ The MessageMedia Messages API provides a number of endpoints for building powerf
 * [Authentication](#authentication)
 * [Errors](#errors)
 * [Information](#information)
- * [Slack and Mailing List](#mailbox_with_mail-slack-and-mailing-list)
- * [Bug Reports](#bug-reports)
- * [Rate Limits](#rate-limits)
+  * [Slack and Mailing List](#mailbox_with_mail-slack-and-mailing-list)
+  * [Bug Reports](#bug-reports)
+  * [Rate Limits](#rate-limits)
 * [Getting Started](#getting-started)
- * [Vanilla Ruby](#vanilla-ruby)
- * [Ruby on Rails](#ruby-on-rails)
+  * [Vanilla Ruby](#vanilla-ruby)
+  * [Ruby on Rails](#ruby-on-rails)
 * [Supported Ruby Versions](#supported-ruby-versions)
 
 ## Authentication
