@@ -49,7 +49,7 @@ To protect the stability of the API and keep it available to all users, MessageM
 
 This documentation will guide on how to get up and running with the SDK on:
 * Vanilla Ruby
-* Ruby on Rails
+* [Ruby on Rails](#rails-anchor)
 
 ## Vanilla Ruby
 
