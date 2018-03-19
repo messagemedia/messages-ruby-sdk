@@ -8,7 +8,7 @@ The MessageMedia Messages API provides a number of endpoints for building powerf
 * [Errors](#errors)
 * [Information](#information)
   * [Slack and Mailing List](#mailbox_with_mail-slack-and-mailing-list)
-  * [Bug Reports](#bug-reports)
+  * [Bug Reports](#bug-bug-reports)
   * [Rate Limits](#rate-limits)
 * [Getting Started](#getting-started)
   * [Vanilla Ruby](#vanilla-ruby)
