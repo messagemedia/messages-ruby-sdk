@@ -18,10 +18,8 @@ Our API returns standard HTTP success or error status codes. For errors, we will
 | Code      | Title       | Description |
 |-----------|-------------|-------------|
 | 202 | OK | The request was successful |
-| 202 | Async | The resource was asynchronously created |
 | 400 | Bad Request | Bad request |
 | 401 | Unauthorized | Your API key is invalid |
-| 402 | Over Quota | Over plan quota on this endpoint |
 | 402 | Disabled feature | Feature cannot be accessed |
 | 404 | Not Found |	The resource does not exist |
 | 50X | Internal Server Error | An error occurred with our API |
