@@ -3,6 +3,18 @@
 
 The MessageMedia Messages API provides a number of endpoints for building powerful two-way messaging applications.
 
+## Table of Contents
+* [Authentication](#authentication)
+* [Errors](#errors)
+* [Information](#information)
+ * [Slack and Mailing List](#mailbox_with_mail-slack-and-mailing-list)
+ * [Bug Reports](#bug-reports)
+ * [Rate Limits](#rate-limits)
+* [Getting Started](#getting-started)
+ * [Vanilla Ruby](#vanilla-ruby)
+ * [Ruby on Rails](#ruby-on-rails)
+* [Supported Ruby Versions](#supported-ruby-versions)
+
 ## Authentication
 
 Authentication is done via API keys. Sign up at https://developers.messagemedia.com/register/ to get your API keys.
@@ -48,7 +60,7 @@ To protect the stability of the API and keep it available to all users, MessageM
 ## Getting Started
 
 This documentation will guide on how to get up and running with the SDK on:
-* Vanilla Ruby
+* [Vanilla Ruby](#vanilla-ruby)
 * [Ruby on Rails](#ruby-on-rails)
 
 ## Vanilla Ruby
