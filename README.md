@@ -7,7 +7,7 @@ The MessageMedia Messages API provides a number of endpoints for building powerf
 ![Alt Text](https://media.giphy.com/media/l0Exov2QmxF5Xwjkc/giphy.gif)
 
 ## ⭐️ Install via RubyGems
-* Run `gem install messagemedia_messages_sdk`
+* Run the following command to install the SDK via RubyGems: `gem install messagemedia_messages_sdk`
 
 ## 🎬 Get Started
 It's easy to get started. Simply enter the API Key and secret you obtained from the [MessageMedia Developers Portal](https://developers.messagemedia.com) into the code snippet below and a mobile number you wish to send to.
