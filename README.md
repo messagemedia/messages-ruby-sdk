@@ -6,9 +6,8 @@ The MessageMedia Messages API provides a number of endpoints for building powerf
 
 ![Alt Text](https://media.giphy.com/media/l0Exov2QmxF5Xwjkc/giphy.gif)
 
-## ⭐️ Install via .gem file
-* Download [messagemedia_messages_sdk-1.0.0.gem](https://github.com/messagemedia/messages-ruby-sdk/releases/download/v1.0.0/messagemedia_messages_sdk-1.0.0.gem)
-run `gem install messagemedia_messages_sdk-1.0.0.gem`
+## ⭐️ Install via RubyGems
+* Run `gem install messagemedia_messages_sdk`
 
 ## 🎬 Get Started
 It's easy to get started. Simply enter the API Key and secret you obtained from the [MessageMedia Developers Portal](https://developers.messagemedia.com) into the code snippet below and a mobile number you wish to send to.
@@ -19,12 +18,14 @@ It's easy to get started. Simply enter the API Key and secret you obtained from 
 require 'message_media_messages'
 
 # Configuration parameters and credentials
-basic_auth_user_name = 'YOUR_API_KEY' # The username to use with basic authentication
-basic_auth_password = 'YOUR_API_SECRET' # The password to use with basic authentication
+auth_user_name = 'API_KEY' # The username to use with basic/HMAC authentication
+auth_password = 'API_SECRET' # The password to use with basic/HMAC authentication
+use_hmac = false # Change this to true if you are using HMAC keys
 
 client = MessageMediaMessages::MessageMediaMessagesClient.new(
-  basic_auth_user_name: basic_auth_user_name,
-  basic_auth_password: basic_auth_password
+    auth_user_name: auth_user_name,
+    auth_password: auth_password,
+    use_hmac: use_hmac
 )
 
 messages = client.messages
