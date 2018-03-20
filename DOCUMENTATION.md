@@ -21,7 +21,7 @@ The MessageMedia Messages API provides a number of endpoints for building powerf
 
 Authentication is done via API keys. Sign up at https://developers.messagemedia.com/register/ to get your API keys.
 
-Requests are authenticated using HTTP Basic Auth. Provide your API keys as the basic auth username and basic auth password.
+Requests are authenticated using HTTP Basic Auth or HMAC. Provide your API key as the auth_user_name and API secret as the auth_password.
 
 ## Errors
 
@@ -92,12 +92,14 @@ Open your text editor and copy-paste this chunk of code into it:
 $LOAD_PATH.unshift('.')
 require 'message_media_messages.rb'
 
-basic_auth_user_name = 'YOUR_API_KEY'
-basic_auth_password = 'YOUR_API_SECRET'
+auth_user_name = 'API_KEY' 
+auth_password = 'API_SECRET'
+use_hmac = false # Change this to true if you are using HMAC keys
 
 client = MessageMediaMessages::MessageMediaMessagesClient.new(
-  basic_auth_user_name: basic_auth_user_name,
-  basic_auth_password: basic_auth_password
+    auth_user_name: auth_user_name,
+    auth_password: auth_password,
+    use_hmac: use_hmac
 )
 
 messages = client.messages
@@ -185,12 +187,14 @@ In case you were wondering, this line basically loads the dependency files for o
 
 ```
 # Configuration parameters and credentials
-basic_auth_user_name = 'YOUR_API_KEY' # The username to use with basic authentication
-basic_auth_password = 'YOUR_API_SECRET' # The password to use with basic authentication
+auth_user_name = 'API_KEY' 
+auth_password = 'API_SECRET'
+use_hmac = false # Change this to true if you are using HMAC keys
 
 client = MessageMediaMessages::MessageMediaMessagesClient.new(
-  basic_auth_user_name: basic_auth_user_name,
-  basic_auth_password: basic_auth_password
+    auth_user_name: auth_user_name,
+    auth_password: auth_password,
+    use_hmac: use_hmac
 )
 
 messages = client.messages
