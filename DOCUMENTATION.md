@@ -3,6 +3,8 @@
 
 The MessageMedia Messages API provides a number of endpoints for building powerful two-way messaging applications.
 
+![picture](http://i63.tinypic.com/33tox83.jpg)
+
 ## Table of Contents
 * [Authentication](#authentication)
 * [Errors](#errors)
