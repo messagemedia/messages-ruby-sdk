@@ -38,6 +38,7 @@ Our API returns standard HTTP success or error status codes. For errors, we will
 | 404 | Not Found |	The resource does not exist |
 | 50X | Internal Server Error | An error occurred with our API |
 
+To view the full list https://github.com/messagemedia/messages-ruby-sdk/wiki/HTTP-Status-Codes
 
 ## Information
 
