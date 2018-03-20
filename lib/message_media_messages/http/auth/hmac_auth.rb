@@ -14,7 +14,7 @@ module MessageMediaMessages
       end
 
       signing_string = "date: #{date}\n#{content_signature}#{request_type} #{url} HTTP/1.1"
-      hmac = OpenSSL::HMAC.digest(OpenSSL::Digest::Digest.new('sha1'), Configuration.hmac_auth_password.encode("ASCII"), signing_string.encode("ASCII"))
+      hmac = OpenSSL::HMAC.digest(OpenSSL::Digest::Digest.new('sha1'), Configuration.auth_password.encode("ASCII"), signing_string.encode("ASCII"))
 
       return Base64.encode64(hmac).chomp
     end
