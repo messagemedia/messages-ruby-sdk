@@ -160,7 +160,7 @@ You will see the following displayed in the terminal after a successful installa
 * Open the Gemfile
 * Add the following line ``` gem 'messagemedia_messages_sdk', '~> 1.0' ```
 * Save the file
-* Click on View -> Tool Windows -> Terminal
+* On the navigation bar, Click on View -> Tool Windows -> Terminal
 * Run the following command ``` bundle install ``` to install the SDK
 
 ![picture](http://i66.tinypic.com/t8ubrs.png)
