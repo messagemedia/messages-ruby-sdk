@@ -14,3 +14,4 @@ client = MessageMediaMessages::MessageMediaMessagesClient.new(
 deliveryReports = client.delivery_reports
 
 result = deliveryReports.get_check_delivery_reports()
+print result.inspect
