@@ -24,3 +24,4 @@ body_value = '{
 body = JSON.parse(body_value);
 
 result = messages.create_send_messages(body)
+print result.inspect
