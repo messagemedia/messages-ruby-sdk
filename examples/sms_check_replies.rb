@@ -14,3 +14,4 @@ client = MessageMediaMessages::MessageMediaMessagesClient.new(
 replies = client.replies
 
 result = replies.get_check_replies()
+print result.inspect
