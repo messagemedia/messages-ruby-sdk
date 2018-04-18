@@ -15,4 +15,4 @@ messages = client.messages
 message_id = 'YOUR_MESSAGE_ID'
 
 result = messages.get_message_status(message_id)
-print result
+print result.inspect
