@@ -39,6 +39,7 @@ body_value = '{
 body = JSON.parse(body_value);
 
 result = messages.create_send_messages(body)
+print result.inspect
 ```
 
 ### 🕓 Get Status of a Message
@@ -61,7 +62,7 @@ messages = client.messages
 message_id = 'YOUR_MESSAGE_ID'
 
 result = messages.get_message_status(message_id)
-print result
+print result.inspect
 ```
 
 ### 💬 Get replies to a message
@@ -83,6 +84,7 @@ client = MessageMediaMessages::MessageMediaMessagesClient.new(
 replies = client.replies
 
 result = replies.get_check_replies()
+print result.inspect
 ```
 
 ### ✅ Check Delivery Reports
@@ -104,6 +106,7 @@ client = MessageMediaMessages::MessageMediaMessagesClient.new(
 deliveryReports = client.delivery_reports
 
 result = deliveryReports.get_check_delivery_reports()
+print result.inspect
 ```
 
 ## 📕 Documentation
