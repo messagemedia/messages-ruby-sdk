@@ -14,6 +14,7 @@ It's easy to get started. Simply enter the API Key and secret you obtained from 
 * Destination numbers (`destination_number`) should be in the [E.164](http://en.wikipedia.org/wiki/E.164) format. For example, `+61491570156`.
 ```ruby
 require 'message_media_messages'
+require 'pp'
 
 # Configuration parameters and credentials
 auth_user_name = 'API_KEY' # The username to use with basic/HMAC authentication
@@ -39,13 +40,14 @@ body_value = '{
 body = JSON.parse(body_value);
 
 result = messages.create_send_messages(body)
-print result.inspect
+pp result
 ```
 
 ### 🕓 Get Status of a Message
 You can get a messsage ID from a sent message by looking at the `message_id` from the response of the above example.
 ```ruby
 require 'message_media_messages'
+require 'pp'
 
 # Configuration parameters and credentials
 auth_user_name = 'API_KEY' # The username to use with basic/HMAC authentication
@@ -62,13 +64,14 @@ messages = client.messages
 message_id = 'YOUR_MESSAGE_ID'
 
 result = messages.get_message_status(message_id)
-print result.inspect
+pp result
 ```
 
 ### 💬 Get replies to a message
 You can check for replies that are sent to your messages
 ```ruby
 require 'message_media_messages'
+require 'pp'
 
 # Configuration parameters and credentials
 auth_user_name = 'API_KEY' # The username to use with basic/HMAC authentication
@@ -84,13 +87,14 @@ client = MessageMediaMessages::MessageMediaMessagesClient.new(
 replies = client.replies
 
 result = replies.get_check_replies()
-print result.inspect
+pp result
 ```
 
 ### ✅ Check Delivery Reports
 This endpoint allows you to check for delivery reports to inbound and outbound messages.
 ```ruby
 require 'message_media_messages'
+require 'pp'
 
 # Configuration parameters and credentials
 auth_user_name = 'API_KEY' # The username to use with basic/HMAC authentication
@@ -106,7 +110,7 @@ client = MessageMediaMessages::MessageMediaMessagesClient.new(
 deliveryReports = client.delivery_reports
 
 result = deliveryReports.get_check_delivery_reports()
-print result.inspect
+pp result
 ```
 
 ## 📕 Documentation
