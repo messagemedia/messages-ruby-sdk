@@ -67,7 +67,7 @@ body_value = '{
          "content":"My first message",
          "destination_number":"+61491570156",
          "format":"MMS",
-         "media":"https://upload.wikimedia.org/wikipedia/commons/6/6a/L80385-flash-superhero-logo-1544.png"
+         "media":["https://upload.wikimedia.org/wikipedia/commons/6/6a/L80385-flash-superhero-logo-1544.png"]
       }
    ]
 }';
