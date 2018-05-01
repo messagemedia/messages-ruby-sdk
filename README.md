@@ -43,7 +43,7 @@ result = messages.create_send_messages(body)
 pp result
 ```
 
-🖼 Send an MMS
+## 🖼 Send an MMS
 * Destination numbers (`destination_number`) should be in the [E.164](http://en.wikipedia.org/wiki/E.164) format. For example, `+61491570156`.
 ```ruby
 require 'message_media_messages'
