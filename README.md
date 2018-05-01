@@ -43,6 +43,41 @@ result = messages.create_send_messages(body)
 pp result
 ```
 
+🖼 Send an MMS
+* Destination numbers (`destination_number`) should be in the [E.164](http://en.wikipedia.org/wiki/E.164) format. For example, `+61491570156`.
+```ruby
+require 'message_media_messages'
+require 'pp'
+
+# Configuration parameters and credentials
+auth_user_name = 'API_KEY' # The username to use with basic/HMAC authentication
+auth_password = 'API_SECRET' # The password to use with basic/HMAC authentication
+use_hmac = false # Change this to true if you are using HMAC keys
+
+client = MessageMediaMessages::MessageMediaMessagesClient.new(
+    auth_user_name: auth_user_name,
+    auth_password: auth_password,
+    use_hmac: use_hmac
+)
+
+messages = client.messages
+body_value = '{
+   "messages":[
+      {
+         "content":"My first message",
+         "destination_number":"+61491570156",
+         "format":"MMS",
+         "media":"https://upload.wikimedia.org/wikipedia/commons/6/6a/L80385-flash-superhero-logo-1544.png"
+      }
+   ]
+}';
+
+body = JSON.parse(body_value);
+
+result = messages.create_send_messages(body)
+pp result
+```
+
 ### 🕓 Get Status of a Message
 You can get a messsage ID from a sent message by looking at the `message_id` from the response of the above example.
 ```ruby
