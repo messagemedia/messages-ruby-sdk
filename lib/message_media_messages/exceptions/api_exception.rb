@@ -13,7 +13,7 @@ module MessageMediaMessages
       @context = context
       begin
         json_body = JSON.parse(@context.response.raw_body)
-        reason = json_body["message"] + ": " + json_body["details"]
+        reason = json_body["message"] + ": " + json_body["details"].join(", ")
       rescue StandardError => e
       end
       super(reason)
