@@ -10,8 +10,13 @@ module MessageMediaMessages
     # @param [String] reason The reason for raising an exception.
     # @param [HttpContext] context The HttpContext of the API call.
     def initialize(reason, context)
-      super(reason)
       @context = context
+      begin
+        json_body = JSON.parse(@context.response.raw_body)
+        reason = json_body["message"] + ": " + json_body["details"].join(", ")
+      rescue StandardError => e
+      end
+      super(reason)
       @response_code = context.response.status_code
     end
   end
