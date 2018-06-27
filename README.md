@@ -35,9 +35,9 @@ body_value = '{
          "destination_number":"+61491570156"
       }
    ]
-}';
+}'
 
-body = JSON.parse(body_value);
+body = JSON.parse(body_value)
 
 result = messages.create_send_messages(body)
 pp result
