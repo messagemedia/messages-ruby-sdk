@@ -4,6 +4,8 @@
 
 The MessageMedia Messages API provides a number of endpoints for building powerful two-way messaging applications.
 
+![Isometric](https://i.imgur.com/jJeHwf5.png)
+
 ## ⭐️ Install via RubyGems
 * Run the following command to install the SDK via RubyGems: `gem install messagemedia_messages_sdk`
 
