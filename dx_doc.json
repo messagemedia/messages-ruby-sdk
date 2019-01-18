@@ -1,0 +1,4346 @@
+{
+  "WhiteLabel": false,
+  "NavItems": [
+    {
+      "Text": null,
+      "Link": "$h/__intro",
+      "SubItems": [],
+      "Label": null,
+      "Skip": true
+    },
+    {
+      "Text": "How to Install",
+      "Link": "$h/__how_to_install",
+      "SubItems": [],
+      "Label": null,
+      "Skip": true
+    },
+    {
+      "Text": "How to Build",
+      "Link": "$h/__how_to_build",
+      "SubItems": [],
+      "Label": null,
+      "Skip": false
+    },
+    {
+      "Text": "How to Use",
+      "Link": "$h/__how_to_use",
+      "SubItems": [],
+      "Label": null,
+      "Skip": false
+    },
+    {
+      "Text": "How to Test",
+      "Link": "$h/__how_to_test",
+      "SubItems": [],
+      "Label": null,
+      "Skip": true
+    },
+    {
+      "Text": "Initializing",
+      "Link": "$h/__initializing",
+      "SubItems": [],
+      "Label": null,
+      "Skip": false
+    },
+    {
+      "Text": "Environments",
+      "Link": "$h/__enviroments",
+      "SubItems": [],
+      "Label": null,
+      "Skip": true
+    },
+    {
+      "Text": "Authorizing your client",
+      "Link": "$h/__authorize",
+      "SubItems": [],
+      "Label": null,
+      "Skip": false
+    },
+    {
+      "Text": "API Errors",
+      "Link": "$h/__api_errors",
+      "SubItems": [],
+      "Label": null,
+      "Skip": false
+    },
+    {
+      "Text": "API Reference",
+      "Link": "$h/__api_reference",
+      "SubItems": [
+        {
+          "Text": "List of APIs",
+          "Link": "$h/__api_reference/List+of+APIs",
+          "SubItems": [],
+          "Label": null,
+          "Skip": false
+        },
+        {
+          "Text": "`MessagesController`",
+          "Link": "$e/Messages",
+          "SubItems": [
+            {
+              "Text": "Overview",
+              "Link": "$h/__api_reference/Messages/Overview",
+              "SubItems": [
+                {
+                  "Text": "Get singleton instance",
+                  "Link": "$h/__api_reference/Messages/Overview/Get+singleton+instance",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": "endpoint-group-overview",
+              "Skip": false
+            },
+            {
+              "Text": "`get_message_status`",
+              "Link": "$e/Messages/Get+message+status",
+              "SubItems": [
+                {
+                  "Text": "Parameters",
+                  "Link": "$h/__api_reference/Messages/Get+message+status/Parameters",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Response Type",
+                  "Link": "$h/__api_reference/Messages/Get+message+status/Response+Type",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example Usage",
+                  "Link": "$h/__api_reference/Messages/Get+message+status/Example+Usage",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Errors",
+                  "Link": "$h/__api_reference/Messages/Get+message+status/Errors",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`send_messages`",
+              "Link": "$e/Messages/Send+messages",
+              "SubItems": [
+                {
+                  "Text": "Parameters",
+                  "Link": "$h/__api_reference/Messages/Send+messages/Parameters",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Response Type",
+                  "Link": "$h/__api_reference/Messages/Send+messages/Response+Type",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example Usage",
+                  "Link": "$h/__api_reference/Messages/Send+messages/Example+Usage",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Errors",
+                  "Link": "$h/__api_reference/Messages/Send+messages/Errors",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`cancel_scheduled_message`",
+              "Link": "$e/Messages/Cancel+scheduled+message",
+              "SubItems": [
+                {
+                  "Text": "Parameters",
+                  "Link": "$h/__api_reference/Messages/Cancel+scheduled+message/Parameters",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Response Type",
+                  "Link": "$h/__api_reference/Messages/Cancel+scheduled+message/Response+Type",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example Usage",
+                  "Link": "$h/__api_reference/Messages/Cancel+scheduled+message/Example+Usage",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`check_credits_remaining`",
+              "Link": "$e/Messages/Check+credits+remaining",
+              "SubItems": [
+                {
+                  "Text": "Response Type",
+                  "Link": "$h/__api_reference/Messages/Check+credits+remaining/Response+Type",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example Usage",
+                  "Link": "$h/__api_reference/Messages/Check+credits+remaining/Example+Usage",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example Response",
+                  "Link": "$h/__api_reference/Messages/Check+credits+remaining/Example+Response",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            }
+          ],
+          "Label": null,
+          "Skip": false
+        },
+        {
+          "Text": "`DeliveryReportsController`",
+          "Link": "$e/Delivery+Reports",
+          "SubItems": [
+            {
+              "Text": "Overview",
+              "Link": "$h/__api_reference/Delivery+Reports/Overview",
+              "SubItems": [
+                {
+                  "Text": "Get singleton instance",
+                  "Link": "$h/__api_reference/Delivery+Reports/Overview/Get+singleton+instance",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": "endpoint-group-overview",
+              "Skip": false
+            },
+            {
+              "Text": "`check_delivery_reports`",
+              "Link": "$e/Delivery+Reports/Check+delivery+reports",
+              "SubItems": [
+                {
+                  "Text": "Response Type",
+                  "Link": "$h/__api_reference/Delivery+Reports/Check+delivery+reports/Response+Type",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example Usage",
+                  "Link": "$h/__api_reference/Delivery+Reports/Check+delivery+reports/Example+Usage",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example Response *(as JSON)*",
+                  "Link": "$h/__api_reference/Delivery+Reports/Check+delivery+reports/Example+Response+*(as+JSON)*",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`confirm_delivery_reports_as_received`",
+              "Link": "$e/Delivery+Reports/Confirm+delivery+reports+as+received",
+              "SubItems": [
+                {
+                  "Text": "Parameters",
+                  "Link": "$h/__api_reference/Delivery+Reports/Confirm+delivery+reports+as+received/Parameters",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Response Type",
+                  "Link": "$h/__api_reference/Delivery+Reports/Confirm+delivery+reports+as+received/Response+Type",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example Usage",
+                  "Link": "$h/__api_reference/Delivery+Reports/Confirm+delivery+reports+as+received/Example+Usage",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            }
+          ],
+          "Label": null,
+          "Skip": false
+        },
+        {
+          "Text": "`RepliesController`",
+          "Link": "$e/Replies",
+          "SubItems": [
+            {
+              "Text": "Overview",
+              "Link": "$h/__api_reference/Replies/Overview",
+              "SubItems": [
+                {
+                  "Text": "Get singleton instance",
+                  "Link": "$h/__api_reference/Replies/Overview/Get+singleton+instance",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": "endpoint-group-overview",
+              "Skip": false
+            },
+            {
+              "Text": "`check_replies`",
+              "Link": "$e/Replies/Check+replies",
+              "SubItems": [
+                {
+                  "Text": "Response Type",
+                  "Link": "$h/__api_reference/Replies/Check+replies/Response+Type",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example Usage",
+                  "Link": "$h/__api_reference/Replies/Check+replies/Example+Usage",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example Response *(as JSON)*",
+                  "Link": "$h/__api_reference/Replies/Check+replies/Example+Response+*(as+JSON)*",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`confirm_replies_as_received`",
+              "Link": "$e/Replies/Confirm+replies+as+received",
+              "SubItems": [
+                {
+                  "Text": "Parameters",
+                  "Link": "$h/__api_reference/Replies/Confirm+replies+as+received/Parameters",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Response Type",
+                  "Link": "$h/__api_reference/Replies/Confirm+replies+as+received/Response+Type",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example Usage",
+                  "Link": "$h/__api_reference/Replies/Confirm+replies+as+received/Example+Usage",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            }
+          ],
+          "Label": null,
+          "Skip": false
+        }
+      ],
+      "Label": null,
+      "Skip": false
+    },
+    {
+      "Text": "Model Reference",
+      "Link": "$h/__model_reference",
+      "SubItems": [
+        {
+          "Text": "Structures",
+          "Link": "$h/__model_reference/Structures",
+          "SubItems": [
+            {
+              "Text": "`ConfirmDeliveryReportsAsReceivedRequest1`",
+              "Link": "$m/Confirm+delivery+reports+as+received+request1",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Structures/Confirm+delivery+reports+as+received+request1/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example (as JSON)",
+                  "Link": "$h/__model_reference/Structures/Confirm+delivery+reports+as+received+request1/Example+(as+JSON)",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`ConfirmDeliveryReportsAsReceivedRequest`",
+              "Link": "$m/Confirm+delivery+reports+as+received+request",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Structures/Confirm+delivery+reports+as+received+request/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example (as JSON)",
+                  "Link": "$h/__model_reference/Structures/Confirm+delivery+reports+as+received+request/Example+(as+JSON)",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`CheckDeliveryReportsResponse`",
+              "Link": "$m/Check+delivery+reports+response",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Structures/Check+delivery+reports+response/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example (as JSON)",
+                  "Link": "$h/__model_reference/Structures/Check+delivery+reports+response/Example+(as+JSON)",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`ConfirmRepliesAsReceivedRequest1`",
+              "Link": "$m/Confirm+replies+as+received+request1",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Structures/Confirm+replies+as+received+request1/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example (as JSON)",
+                  "Link": "$h/__model_reference/Structures/Confirm+replies+as+received+request1/Example+(as+JSON)",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`ConfirmRepliesAsReceivedRequest`",
+              "Link": "$m/Confirm+replies+as+received+request",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Structures/Confirm+replies+as+received+request/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example (as JSON)",
+                  "Link": "$h/__model_reference/Structures/Confirm+replies+as+received+request/Example+(as+JSON)",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`VendorAccountId`",
+              "Link": "$m/VendorAccountId",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Structures/VendorAccountId/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example (as JSON)",
+                  "Link": "$h/__model_reference/Structures/VendorAccountId/Example+(as+JSON)",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`CheckRepliesResponse`",
+              "Link": "$m/Check+replies+response",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Structures/Check+replies+response/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example (as JSON)",
+                  "Link": "$h/__model_reference/Structures/Check+replies+response/Example+(as+JSON)",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`CancelScheduledMessageRequest`",
+              "Link": "$m/Cancel+scheduled+message+request",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Structures/Cancel+scheduled+message+request/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example (as JSON)",
+                  "Link": "$h/__model_reference/Structures/Cancel+scheduled+message+request/Example+(as+JSON)",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`SendMessagesRequest`",
+              "Link": "$m/Send+messages+request",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Structures/Send+messages+request/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example (as JSON)",
+                  "Link": "$h/__model_reference/Structures/Send+messages+request/Example+(as+JSON)",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`Reply`",
+              "Link": "$m/Reply",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Structures/Reply/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example (as JSON)",
+                  "Link": "$h/__model_reference/Structures/Reply/Example+(as+JSON)",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`DeliveryReport`",
+              "Link": "$m/DeliveryReport",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Structures/DeliveryReport/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example (as JSON)",
+                  "Link": "$h/__model_reference/Structures/DeliveryReport/Example+(as+JSON)",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`GetMessageStatusResponse`",
+              "Link": "$m/Get+message+status+response",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Structures/Get+message+status+response/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example (as JSON)",
+                  "Link": "$h/__model_reference/Structures/Get+message+status+response/Example+(as+JSON)",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`Message`",
+              "Link": "$m/Message",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Structures/Message/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example (as JSON)",
+                  "Link": "$h/__model_reference/Structures/Message/Example+(as+JSON)",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`SendMessagesResponse`",
+              "Link": "$m/Send+messages+response",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Structures/Send+messages+response/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example (as JSON)",
+                  "Link": "$h/__model_reference/Structures/Send+messages+response/Example+(as+JSON)",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            }
+          ],
+          "Label": null,
+          "Skip": false
+        },
+        {
+          "Text": "Enumerations",
+          "Link": "$h/__model_reference/Enumerations",
+          "SubItems": [
+            {
+              "Text": "`SourceNumberTypeEnum`",
+              "Link": "$m/SourceNumberType",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Enumerations/SourceNumberType/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example",
+                  "Link": "$h/__model_reference/Enumerations/SourceNumberType/Example",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`Status2Enum`",
+              "Link": "$m/Status2",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Enumerations/Status2/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example",
+                  "Link": "$h/__model_reference/Enumerations/Status2/Example",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`StatusEnum`",
+              "Link": "$m/Status",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Enumerations/Status/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example",
+                  "Link": "$h/__model_reference/Enumerations/Status/Example",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`Format1Enum`",
+              "Link": "$m/Format1",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Enumerations/Format1/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example",
+                  "Link": "$h/__model_reference/Enumerations/Format1/Example",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            },
+            {
+              "Text": "`FormatEnum`",
+              "Link": "$m/Format",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Enumerations/Format/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            }
+          ],
+          "Label": null,
+          "Skip": false
+        },
+        {
+          "Text": "Exceptions",
+          "Link": "$h/__model_reference/Exceptions",
+          "SubItems": [
+            {
+              "Text": "`SendMessages400ResponseException`",
+              "Link": "$m/Send+messages+400+response",
+              "SubItems": [
+                {
+                  "Text": "Fields",
+                  "Link": "$h/__model_reference/Exceptions/Send+messages+400+response/Fields",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                },
+                {
+                  "Text": "Example (as JSON)",
+                  "Link": "$h/__model_reference/Exceptions/Send+messages+400+response/Example+(as+JSON)",
+                  "SubItems": [],
+                  "Label": null,
+                  "Skip": true
+                }
+              ],
+              "Label": null,
+              "Skip": false
+            }
+          ],
+          "Label": null,
+          "Skip": false
+        }
+      ],
+      "Label": null,
+      "Skip": false
+    }
+  ],
+  "DataModel": {
+    "showFullCode": false,
+    "skipSslCertVerification": null,
+    "config": {},
+    "environment": null,
+    "auth": null,
+    "call": {
+      "additionalQueryParams": null,
+      "additionalFieldParams": null,
+      "args": {}
+    }
+  },
+  "DataModelSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "showFullCode": {
+        "title": "Show Complete File",
+        "description": "Show complete file for code, with bootstrap and error handling included.",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "showFullCode"
+    ]
+  },
+  "PublishedPackage": null,
+  "AuthHttpCallTemplate": null,
+  "Title": "Getting Started with Messages",
+  "Sections": [
+    {
+      "Nodes": [
+        {
+          "Text": "The MessageMedia Messages API provides a number of endpoints for building powerful two-way messaging applications.\n\n",
+          "Type": "paragraph"
+        }
+      ],
+      "HideFromNavigation": true,
+      "Title": null,
+      "PlaceholderId": "__intro",
+      "Hidden": false,
+      "LanguageSpecific": false,
+      "Languages": [],
+      "SuggestedLinkText": null,
+      "SuggestedLink": "$h/__intro",
+      "SuggestedLinkLevel": 1,
+      "LinkLabel": null,
+      "Type": "section"
+    },
+    {
+      "Nodes": [],
+      "HideFromNavigation": true,
+      "Title": "How to Install",
+      "PlaceholderId": "__how_to_install",
+      "Hidden": false,
+      "LanguageSpecific": false,
+      "Languages": [],
+      "SuggestedLinkText": "How to Install",
+      "SuggestedLink": "$h/__how_to_install",
+      "SuggestedLinkLevel": 1,
+      "LinkLabel": null,
+      "Type": "section"
+    },
+    {
+      "Nodes": [
+        {
+          "Text": "The generated code depends on a few Ruby gems. The references to these gems are added in the gemspec file. The easiest way to resolve the dependencies, build the gem and install it is through Rake: ",
+          "Type": "paragraph"
+        },
+        {
+          "Text": "  1. Install Rake if not already installed: `gem install rake`\n  2. Install Bundler if not already installed: `gem install bundler`\n  3. From terminal/cmd navigate to the root directory of the SDK.\n  4. Invoke: `rake install`",
+          "Type": "paragraph"
+        },
+        {
+          "Text": "Alternatively, you can build and install the gem manually:",
+          "Type": "paragraph"
+        },
+        {
+          "Text": "  1. From terminal/cmd navigate to the root directory of the SDK.\n  2. Run the build command: `gem build message_media_messages.gemspec`\n  3. Run the install command: `gem install message_media_messages-2.0.0.gem`",
+          "Type": "paragraph"
+        },
+        {
+          "Url": "https://apidocs.io/illustration/ruby?workspaceFolder=MessageMediaMessages&gemVer=2.0.0&gemName=message_media_messages&step=buildSDK",
+          "AlterateText": "Installing Gem",
+          "Type": "image"
+        }
+      ],
+      "HideFromNavigation": false,
+      "Title": "How to Build",
+      "PlaceholderId": "__how_to_build",
+      "Hidden": false,
+      "LanguageSpecific": false,
+      "Languages": [],
+      "SuggestedLinkText": "How to Build",
+      "SuggestedLink": "$h/__how_to_build",
+      "SuggestedLinkLevel": 1,
+      "LinkLabel": null,
+      "Type": "section"
+    },
+    {
+      "Nodes": [
+        {
+          "Text": "The following section explains how to use the message_media_messages ruby gem in a new Rails project using RubyMine&trade;. The basic workflow presented here is also applicable if you prefer using a different editor or IDE.",
+          "Type": "paragraph"
+        },
+        {
+          "Steps": [
+            {
+              "Nodes": [
+                {
+                  "Text": "Close any existing projects in RubyMine&trade; by selecting `File -> Close Project`. Next, click on `Create New Project` to create a new project from scratch.",
+                  "Type": "paragraph"
+                },
+                {
+                  "Url": "https://apidocs.io/illustration/ruby?workspaceFolder=MessageMediaMessages&step=createNewProject0",
+                  "AlterateText": "Create a new project in RubyMine - Step 1",
+                  "Type": "image"
+                },
+                {
+                  "Text": "Next, provide `TestApp` as the project name, choose `Rails Application` as the project type, and click `OK`.",
+                  "Type": "paragraph"
+                },
+                {
+                  "Url": "https://apidocs.io/illustration/ruby?workspaceFolder=MessageMediaMessages&step=createNewProject1",
+                  "AlterateText": "Create a new Rails Application in RubyMine - Step 2",
+                  "Type": "image"
+                },
+                {
+                  "Text": "In the next dialog make sure that the correct Ruby SDK is being used (minimum 2.0.0) and click `OK`.",
+                  "Type": "paragraph"
+                },
+                {
+                  "Url": "https://apidocs.io/illustration/ruby?workspaceFolder=MessageMediaMessages&step=createNewProject2",
+                  "AlterateText": "Create a new Rails Application in RubyMine - Step 3",
+                  "Type": "image"
+                }
+              ],
+              "Title": "Starting a new project",
+              "Type": "step"
+            },
+            {
+              "Nodes": [
+                {
+                  "Text": "In order to use the Tester gem in the new project we must add a gem reference. Locate the `Gemfile` in the Project Explorer window under the `TestApp` project node. The file contains references to all gems being used in the project. Here, add the reference to the library gem by adding the following line: `gem 'message_media_messages', '~> 2.0.0'`",
+                  "Type": "paragraph"
+                },
+                {
+                  "Url": "https://apidocs.io/illustration/ruby?workspaceFolder=MessageMediaMessages&gemVer=2.0.0&gemName=message_media_messages&step=addReference",
+                  "AlterateText": "Add new reference to the Gemfile",
+                  "Type": "image"
+                }
+              ],
+              "Title": "Add reference of the gem",
+              "Type": "step"
+            },
+            {
+              "Nodes": [
+                {
+                  "Text": "Once the `TestApp` project is created, a folder named `controllers` will be visible in the *Project Explorer* under the following path: `TestApp > app > controllers`. Right click on this folder and select `New -> Run Rails Generator...`.",
+                  "Type": "paragraph"
+                },
+                {
+                  "Url": "https://apidocs.io/illustration/ruby?workspaceFolder=MessageMediaMessages&gemVer=2.0.0&gemName=message_media_messages&step=addCode0",
+                  "AlterateText": "Run Rails Generator on Controllers Folder",
+                  "Type": "image"
+                },
+                {
+                  "Text": "Selecting the said option will popup a small window where the generator names are displayed. Here, select the `controller` template.",
+                  "Type": "paragraph"
+                },
+                {
+                  "Url": "https://apidocs.io/illustration/ruby?workspaceFolder=MessageMediaMessages&step=addCode1",
+                  "AlterateText": "Create a new Controller",
+                  "Type": "image"
+                },
+                {
+                  "Text": "Next, a popup window will ask you for a Controller name and included Actions. For controller name provide `Hello` and include an action named `Index` and click `OK`.",
+                  "Type": "paragraph"
+                },
+                {
+                  "Url": "https://apidocs.io/illustration/ruby?workspaceFolder=MessageMediaMessages&gemVer=2.0.0&gemName=message_media_messages&step=addCode2",
+                  "AlterateText": "Add a new Controller",
+                  "Type": "image"
+                },
+                {
+                  "Text": "A new controller class named `HelloController` will be created in a file named `hello_controller.rb` containing a method named `Index`. In this method, add code for initialization and a sample for its usage.",
+                  "Type": "paragraph"
+                },
+                {
+                  "Url": "https://apidocs.io/illustration/ruby?workspaceFolder=MessageMediaMessages&gemName=message_media_messages&step=addCode3",
+                  "AlterateText": "Initialize the library",
+                  "Type": "image"
+                }
+              ],
+              "Title": "Adding a new Rails Controller",
+              "Type": "step"
+            }
+          ],
+          "Type": "steppedguide"
+        }
+      ],
+      "HideFromNavigation": false,
+      "Title": "How to Use",
+      "PlaceholderId": "__how_to_use",
+      "Hidden": false,
+      "LanguageSpecific": false,
+      "Languages": [],
+      "SuggestedLinkText": "How to Use",
+      "SuggestedLink": "$h/__how_to_use",
+      "SuggestedLinkLevel": 1,
+      "LinkLabel": null,
+      "Type": "section"
+    },
+    {
+      "Nodes": [],
+      "HideFromNavigation": true,
+      "Title": "How to Test",
+      "PlaceholderId": "__how_to_test",
+      "Hidden": false,
+      "LanguageSpecific": false,
+      "Languages": [],
+      "SuggestedLinkText": "How to Test",
+      "SuggestedLink": "$h/__how_to_test",
+      "SuggestedLinkLevel": 1,
+      "LinkLabel": null,
+      "Type": "section"
+    },
+    {
+      "Nodes": [
+        {
+          "Text": "The API client can be initialized as following.",
+          "Type": "paragraph"
+        },
+        {
+          "Text": "\r\nclient = MessageMediaMessagesClient.new",
+          "Language": "ruby",
+          "Type": "codeblock"
+        }
+      ],
+      "HideFromNavigation": false,
+      "Title": "Initializing",
+      "PlaceholderId": "__initializing",
+      "Hidden": false,
+      "LanguageSpecific": false,
+      "Languages": [],
+      "SuggestedLinkText": "Initializing",
+      "SuggestedLink": "$h/__initializing",
+      "SuggestedLinkLevel": 1,
+      "LinkLabel": null,
+      "Type": "section"
+    },
+    {
+      "Nodes": [],
+      "HideFromNavigation": true,
+      "Title": "Environments",
+      "PlaceholderId": "__enviroments",
+      "Hidden": false,
+      "LanguageSpecific": false,
+      "Languages": [],
+      "SuggestedLinkText": "Environments",
+      "SuggestedLink": "$h/__enviroments",
+      "SuggestedLinkLevel": 1,
+      "LinkLabel": null,
+      "Type": "section"
+    },
+    {
+      "Nodes": [
+        {
+          "Text": "This API does not require authentication.",
+          "Type": "paragraph"
+        }
+      ],
+      "HideFromNavigation": false,
+      "Title": "Authorizing your client",
+      "PlaceholderId": "__authorize",
+      "Hidden": false,
+      "LanguageSpecific": false,
+      "Languages": [],
+      "SuggestedLinkText": "Authorizing your client",
+      "SuggestedLink": "$h/__authorize",
+      "SuggestedLinkLevel": 1,
+      "LinkLabel": null,
+      "Type": "section"
+    },
+    {
+      "Nodes": [
+        {
+          "Text": "Here is the list of errors that the API might throw.",
+          "Type": "paragraph"
+        },
+        {
+          "Header": {
+            "Data": [
+              "HTTP Status Code",
+              "Error Description",
+              "Exception Class"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "400",
+                "Request was invalid",
+                "`APIException`"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "404",
+                "Message not found",
+                "`APIException`"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        }
+      ],
+      "HideFromNavigation": false,
+      "Title": "API Errors",
+      "PlaceholderId": "__api_errors",
+      "Hidden": false,
+      "LanguageSpecific": false,
+      "Languages": [],
+      "SuggestedLinkText": "API Errors",
+      "SuggestedLink": "$h/__api_errors",
+      "SuggestedLinkLevel": 1,
+      "LinkLabel": null,
+      "Type": "section"
+    },
+    {
+      "Nodes": [
+        {
+          "Level": 1,
+          "Text": "List of APIs",
+          "SuggestedLinkText": "List of APIs",
+          "SuggestedLink": "$h/__api_reference/List+of+APIs",
+          "SuggestedLinkLevel": 2,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Text": "* [MessagesController]($e/Messages)\n* [DeliveryReportsController]($e/Delivery+Reports)\n* [RepliesController]($e/Replies)",
+          "Type": "paragraph"
+        },
+        {
+          "Level": 1,
+          "Text": "`MessagesController`",
+          "SuggestedLinkText": "`MessagesController`",
+          "SuggestedLink": "$e/Messages",
+          "SuggestedLinkLevel": 2,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 2,
+          "Text": "Overview",
+          "SuggestedLinkText": "Overview",
+          "SuggestedLink": "$h/__api_reference/Messages/Overview",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": "endpoint-group-overview",
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Get singleton instance",
+          "SuggestedLinkText": "Get singleton instance",
+          "SuggestedLink": "$h/__api_reference/Messages/Overview/Get+singleton+instance",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "The singleton instance of the `MessagesController` class can be accessed from the API Client.",
+          "Type": "paragraph"
+        },
+        {
+          "Text": "messages_controller = client.messages",
+          "Language": null,
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`get_message_status`",
+          "SuggestedLinkText": "`get_message_status`",
+          "SuggestedLink": "$e/Messages/Get+message+status",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Text": "Retrieve the current status of a message using the message ID returned in the send messages end point.\nA successful request to the get message status endpoint will return a response body as follows:\n```json\n{\n    \"format\": \"SMS\",\n    \"content\": \"My first message!\",\n    \"metadata\": {\n        \"key1\": \"value1\",\n        \"key2\": \"value2\"\n    },\n    \"message_id\": \"877c19ef-fa2e-4cec-827a-e1df9b5509f7\",\n    \"callback_url\": \"https://my.callback.url.com\",\n    \"delivery_report\": true,\n    \"destination_number\": \"+61401760575\",\n    \"scheduled\": \"2016-11-03T11:49:02.807Z\",\n    \"source_number\": \"+61491570157\",\n    \"source_number_type\": \"INTERNATIONAL\",\n    \"message_expiry_timestamp\": \"2016-11-03T11:49:02.807Z\",\n    \"status\": \"enroute\"\n}\n```\nThe status property of the response indicates the current status of the message. See the Delivery\nReports section of this documentation for more information on message statues.\n*Note: If an invalid or non existent message ID parameter is specified in the request, then\na HTTP 404 Not Found response will be returned*",
+          "Type": "paragraph"
+        },
+        {
+          "Text": "def get_message_status(message_id)",
+          "Language": "ruby",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 3,
+          "Text": "Parameters",
+          "SuggestedLinkText": "Parameters",
+          "SuggestedLink": "$h/__api_reference/Messages/Get+message+status/Parameters",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Parameter",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`messageId`",
+                "`String`",
+                "Required",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Response Type",
+          "SuggestedLinkText": "Response Type",
+          "SuggestedLink": "$h/__api_reference/Messages/Get+message+status/Response+Type",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "[`GetMessageStatusResponse`]($m/Get+message+status+response)",
+          "Type": "paragraph"
+        },
+        {
+          "Level": 3,
+          "Text": "Example Usage",
+          "SuggestedLinkText": "Example Usage",
+          "SuggestedLink": "$h/__api_reference/Messages/Get+message+status/Example+Usage",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "EndpointGroupName": "Messages",
+          "EndpointName": "Get message status",
+          "Index": 0,
+          "CallModel": {
+            "additionalQueryParams": null,
+            "additionalFieldParams": null,
+            "args": {
+              "messageId": "messageId2"
+            }
+          },
+          "CallModelSchema": {
+            "title": "Endpoint Arguments",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "args": {
+                "id": "endpoint_7C26ABBCDB1F9",
+                "title": "endpoint_7C26ABBCDB1F9",
+                "type": "object",
+                "properties": {
+                  "messageId": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "messageId"
+                ]
+              }
+            },
+            "required": [
+              "args"
+            ]
+          },
+          "HttpCallTemplate": "{\"method\":\"GET\",\"url\":\"https://api.messagemedia.com/v1/messages/{{ call[\"args\"][\"messageId\"] }}{% capture inline_query_capture_876234 %}{% endcapture %}{% if inline_query_capture_876234.size > 0 %}?{% endif %}{{ inline_query_capture_876234 | remove_first:'&' }}\",\"headers\":{% capture header_capture_9023987234 %},\"Accept\":\"application/json\"{% endcapture %}{{ '{' }}{{ header_capture_9023987234 | remove_first:',' }}},\"body\":{{ '{' }}\"type\":\"none\"}}",
+          "Templates": {
+            "RUBY_GENERIC_LIB": "{% if showFullCode %}require 'message_media_messages'\r\n\r\ninclude MessageMediaMessages\r\n\r\n\r\nclient = MessageMediaMessagesClient.new\r\n\r\nmessages_controller = client.messages\r\n{% endif %}message_id = {% if call[\"args\"][\"messageId\"] != nil %}'{{ call[\"args\"][\"messageId\"] | replace: \"\\\\\", \"\\\\\" | replace: \"'\", \"\\'\" }}'{% else %}nil{% endif %}\n\r\n{% if showFullCode %}begin\n  {% endif %}result = messages_controller.get_message_status(message_id){% if showFullCode %}\nrescue APIException => ex\n  puts \"Caught APIException: #{ex.message}\"\nend\r\n{% endif %}"
+          },
+          "Type": "compilablecodeblock"
+        },
+        {
+          "Level": 3,
+          "Text": "Errors",
+          "SuggestedLinkText": "Errors",
+          "SuggestedLink": "$h/__api_reference/Messages/Get+message+status/Errors",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "HTTP Status Code",
+              "Error Description",
+              "Exception Class"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "404",
+                "Resource not found",
+                "`APIException`"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 2,
+          "Text": "`send_messages`",
+          "SuggestedLinkText": "`send_messages`",
+          "SuggestedLink": "$e/Messages/Send+messages",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Text": "Submit one or more (up to 100 per request) SMS, MMS or text to voice messages for delivery.\nThe most basic message has the following structure:\n```json\n{\n    \"messages\": [\n        {\n            \"content\": \"My first message!\",\n            \"destination_number\": \"+61491570156\"\n        }\n    ]\n}\n```\nMore advanced delivery features can be specified by setting the following properties in a message:\n- ```callback_url``` A URL can be included with each message to which Webhooks will be pushed to\n  via a HTTP POST request. Webhooks will be sent if and when the status of the message changes as\n  it is processed (if the delivery report property of the request is set to ```true```) and when replies\n  are received. Specifying a callback URL is optional.\n- ```content``` The content of the message. This can be a Unicode string, up to 5,000 characters long.\n  Message content is required.\n- ```delivery_report``` Delivery reports can be requested with each message. If delivery reports are requested, a webhook\n  will be submitted to the ```callback_url``` property specified for the message (or to the webhooks)\n  specified for the account every time the status of the message changes as it is processed. The\n  current status of the message can also be retrieved via the Delivery Reports endpoint of the\n  Messages API. Delivery reports are optional and by default will not be requested.\n- ```destination_number``` The destination number the message should be delivered to. This should be specified in E.164\n  international format. For information on E.164, please refer to http://en.wikipedia.org/wiki/E.164.\n  A destination number is required.\n- ```format``` The format specifies which format the message will be sent as, ```SMS``` (text message), ```MMS``` (multimedia message)\n  or ```TTS``` (text to speech). With ```TTS``` format, we will call the destination number and read out the\n  message using a computer generated voice. Specifying a format is optional, by default ```SMS``` will be used.\n- ```source_number``` A source number may be specified for the message, this will be the number that\n  the message appears from on the handset. By default this feature is _not_ available and will be ignored\n  in the request. Please contact <support@messagemedia.com> for more information. Specifying a source\n  number is optional and a by default a source number will be assigned to the message.\n- ```media``` The media is used to specify the url of the media file that you are trying to send. Supported file formats include png, jpeg and gif. ```format``` parameter must be set to ```MMS``` for this to work.\n- ```subject``` The subject field is used to denote subject of the MMS message and has a maximum size of 64 characters long. Specifying a subject is optional.\n- ```source_number_type``` If a source number is specified, the type of source number may also be\n  specified. This is recommended when using a source address type that is not an internationally\n  formatted number, available options are ```INTERNATIONAL```, ```ALPHANUMERIC``` or ```SHORTCODE```. Specifying a\n  source number type is only valid when the ```source_number``` parameter is specified and is optional.\n  If a source number is specified and no source number type is specified, the source number type will be\n  inferred from the source number, however this may be inaccurate.\n- ```scheduled``` A message can be scheduled for delivery in the future by setting the scheduled property.\n  The scheduled property expects a date time specified in ISO 8601 format. The scheduled time must be\n  provided in UTC and is optional. If no scheduled property is set, the message will be delivered immediately.\n- ```message_expiry_timestamp``` A message expiry timestamp can be provided to specify the latest time\n  at which the message should be delivered. If the message cannot be delivered before the specified\n  message expiry timestamp elapses, the message will be discarded. Specifying a message expiry \n  timestamp is optional.\n- ```metadata``` Metadata can be included with the message which will then be included with any delivery\n  reports or replies matched to the message. This can be used to create powerful two-way messaging\n  applications without having to store persistent data in the application. Up to 10 key / value metadata data\n  pairs can be specified in a message. Each key can be up to 100 characters long, and each value up to \n  256 characters long. Specifying metadata for a message is optional.\nThe response body of a successful POST request to the messages endpoint will include a ```messages```\nproperty which contains a list of all messages submitted. The list of messages submitted will\nreflect the list of messages included in the request, but each message will also contain two new\nproperties, ```message_id``` and ```status```. The returned message ID will be a 36 character UUID\nwhich can be used to check the status of the message via the Get Message Status endpoint. The status\nof the message which reflect the status of the message at submission time which will always be\n```queued```. See the Delivery Reports section of this documentation for more information on message\nstatues.\n*Note: when sending multiple messages in a request, all messages must be valid for the request to be successful.\nIf any messages in the request are invalid, no messages will be sent.*",
+          "Type": "paragraph"
+        },
+        {
+          "Text": "def send_messages(body)",
+          "Language": "ruby",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 3,
+          "Text": "Parameters",
+          "SuggestedLinkText": "Parameters",
+          "SuggestedLink": "$h/__api_reference/Messages/Send+messages/Parameters",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Parameter",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`body`",
+                "[`SendMessagesRequest`]($m/Send+messages+request)",
+                "Required",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Response Type",
+          "SuggestedLinkText": "Response Type",
+          "SuggestedLink": "$h/__api_reference/Messages/Send+messages/Response+Type",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "[`SendMessagesResponse`]($m/Send+messages+response)",
+          "Type": "paragraph"
+        },
+        {
+          "Level": 3,
+          "Text": "Example Usage",
+          "SuggestedLinkText": "Example Usage",
+          "SuggestedLink": "$h/__api_reference/Messages/Send+messages/Example+Usage",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "EndpointGroupName": "Messages",
+          "EndpointName": "Send messages",
+          "Index": 2,
+          "CallModel": {
+            "additionalQueryParams": null,
+            "additionalFieldParams": null,
+            "args": {
+              "body": {
+                "messages": [
+                  {
+                    "callback_url": "https://my.callback.url.com",
+                    "content": "My first message",
+                    "destination_number": "+61491570156",
+                    "delivery_report": true,
+                    "format": "SMS",
+                    "message_expiry_timestamp": "2016-11-03T11:49:02.807Z",
+                    "metadata": {
+                      "key1": "value1",
+                      "key2": "value2"
+                    },
+                    "scheduled": "2016-11-03T11:49:02.807Z",
+                    "source_number": "+61491570157",
+                    "source_number_type": "INTERNATIONAL",
+                    "message_id": null,
+                    "status": null,
+                    "media": null,
+                    "subject": null
+                  },
+                  {
+                    "callback_url": "https://my.callback.url.com",
+                    "content": "My second message",
+                    "destination_number": "+61491570158",
+                    "delivery_report": true,
+                    "format": "MMS",
+                    "message_expiry_timestamp": "2016-11-03T11:49:02.807Z",
+                    "metadata": {
+                      "key1": "value1",
+                      "key2": "value2"
+                    },
+                    "scheduled": "2016-11-03T11:49:02.807Z",
+                    "source_number": "+61491570159",
+                    "source_number_type": "INTERNATIONAL",
+                    "message_id": null,
+                    "status": null,
+                    "media": [
+                      "https://images.pexels.com/photos/1018350/pexels-photo-1018350.jpeg?cs=srgb&dl=architecture-buildings-city-1018350.jpg"
+                    ],
+                    "subject": "This is an MMS message"
+                  }
+                ]
+              }
+            }
+          },
+          "CallModelSchema": {
+            "title": "Endpoint Arguments",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "args": {
+                "id": "endpoint_7C26ABBCDB1F9",
+                "title": "endpoint_7C26ABBCDB1F9",
+                "type": "object",
+                "properties": {
+                  "body": {
+                    "id": "Send messages request",
+                    "title": "Send messages request",
+                    "example": {
+                      "messages": [
+                        {
+                          "callback_url": "https://my.callback.url.com",
+                          "content": "My first message",
+                          "destination_number": "+61491570156",
+                          "delivery_report": true,
+                          "format": "SMS",
+                          "message_expiry_timestamp": "2016-11-03T11:49:02.807Z",
+                          "metadata": {
+                            "key1": "value1",
+                            "key2": "value2"
+                          },
+                          "scheduled": "2016-11-03T11:49:02.807Z",
+                          "source_number": "+61491570157",
+                          "source_number_type": "INTERNATIONAL"
+                        },
+                        {
+                          "callback_url": "https://my.callback.url.com",
+                          "content": "My second message",
+                          "destination_number": "+61491570158",
+                          "delivery_report": true,
+                          "format": "MMS",
+                          "subject": "This is an MMS message",
+                          "media": [
+                            "https://images.pexels.com/photos/1018350/pexels-photo-1018350.jpeg?cs=srgb&dl=architecture-buildings-city-1018350.jpg"
+                          ],
+                          "message_expiry_timestamp": "2016-11-03T11:49:02.807Z",
+                          "metadata": {
+                            "key1": "value1",
+                            "key2": "value2"
+                          },
+                          "scheduled": "2016-11-03T11:49:02.807Z",
+                          "source_number": "+61491570159",
+                          "source_number_type": "INTERNATIONAL"
+                        }
+                      ]
+                    },
+                    "type": "object",
+                    "properties": {
+                      "messages": {
+                        "description": "",
+                        "type": "array",
+                        "items": {
+                          "id": "Message",
+                          "title": "Message",
+                          "type": "object",
+                          "properties": {
+                            "content": {
+                              "description": "Content of the message",
+                              "example": "Hello world!",
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 5000
+                            },
+                            "destination_number": {
+                              "description": "Destination number of the message",
+                              "example": "+61491570156",
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 15
+                            },
+                            "callback_url": {
+                              "description": "URL replies and delivery reports to this message will be pushed to",
+                              "example": "https://my.url.com",
+                              "type": "string"
+                            },
+                            "delivery_report": {
+                              "description": "Request a delivery report for this message",
+                              "example": false,
+                              "type": "boolean"
+                            },
+                            "format": {
+                              "title": "Format",
+                              "description": "Format of message, SMS or TTS (Text To Speech).",
+                              "example": "SMS",
+                              "x-enum-elements": [
+                                {
+                                  "name": "SMS",
+                                  "description": ""
+                                },
+                                {
+                                  "name": "TTS",
+                                  "description": ""
+                                },
+                                {
+                                  "name": "MMS",
+                                  "description": ""
+                                }
+                              ],
+                              "type": "string",
+                              "enum": [
+                                "SMS",
+                                "TTS",
+                                "MMS"
+                              ]
+                            },
+                            "message_expiry_timestamp": {
+                              "description": "Date time after which the message expires and will not be sent",
+                              "example": "11/3/2016 11:49:02 AM",
+                              "type": "string",
+                              "format": "date-time"
+                            },
+                            "metadata": {
+                              "description": "Metadata for the message specified as a set of key value pairs, each key can be up to 100 characters long and each value can be up to 256 characters long\n```\n{\n   \"myKey\": \"myValue\",\n   \"anotherKey\": \"anotherValue\"\n}\n```",
+                              "type": "object"
+                            },
+                            "scheduled": {
+                              "description": "Scheduled delivery date time of the message",
+                              "example": "11/3/2016 11:49:02 AM",
+                              "type": "string",
+                              "format": "date-time"
+                            },
+                            "source_number": {
+                              "example": "+61491570156",
+                              "type": "string"
+                            },
+                            "source_number_type": {
+                              "title": "SourceNumberType",
+                              "description": "Type of source address specified, this can be INTERNATIONAL, ALPHANUMERIC or SHORTCODE",
+                              "example": "INTERNATIONAL",
+                              "x-enum-elements": [
+                                {
+                                  "name": "INTERNATIONAL",
+                                  "description": ""
+                                },
+                                {
+                                  "name": "ALPHANUMERIC",
+                                  "description": ""
+                                },
+                                {
+                                  "name": "SHORTCODE",
+                                  "description": ""
+                                }
+                              ],
+                              "type": "string",
+                              "enum": [
+                                "INTERNATIONAL",
+                                "ALPHANUMERIC",
+                                "SHORTCODE"
+                              ]
+                            },
+                            "message_id": {
+                              "description": "Unique ID of this message",
+                              "type": "string",
+                              "format": "uuid"
+                            },
+                            "status": {
+                              "title": "Status",
+                              "description": "The status of the message",
+                              "example": "enroute",
+                              "x-enum-elements": [
+                                {
+                                  "name": "enroute",
+                                  "description": ""
+                                },
+                                {
+                                  "name": "submitted",
+                                  "description": ""
+                                },
+                                {
+                                  "name": "delivered",
+                                  "description": ""
+                                },
+                                {
+                                  "name": "expired",
+                                  "description": ""
+                                },
+                                {
+                                  "name": "rejected",
+                                  "description": ""
+                                },
+                                {
+                                  "name": "undeliverable",
+                                  "description": ""
+                                },
+                                {
+                                  "name": "queued",
+                                  "description": ""
+                                },
+                                {
+                                  "name": "processed",
+                                  "description": ""
+                                },
+                                {
+                                  "name": "cancelled",
+                                  "description": ""
+                                },
+                                {
+                                  "name": "scheduled",
+                                  "description": ""
+                                },
+                                {
+                                  "name": "failed",
+                                  "description": ""
+                                }
+                              ],
+                              "type": "string",
+                              "enum": [
+                                "enroute",
+                                "submitted",
+                                "delivered",
+                                "expired",
+                                "rejected",
+                                "undeliverable",
+                                "queued",
+                                "processed",
+                                "cancelled",
+                                "scheduled",
+                                "failed"
+                              ]
+                            },
+                            "media": {
+                              "description": "The media is used to specify the url of the media file that you are trying to send. Supported file formats include png, jpeg and gif. format parameter must be set to MMS for this to work.",
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "subject": {
+                              "description": "The subject field is used to denote subject of the MMS message and has a maximum size of 64 characters long",
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "content",
+                            "destination_number"
+                          ]
+                        }
+                      }
+                    },
+                    "required": [
+                      "messages"
+                    ]
+                  }
+                },
+                "required": [
+                  "body"
+                ]
+              }
+            },
+            "required": [
+              "args"
+            ]
+          },
+          "HttpCallTemplate": "{\"method\":\"POST\",\"url\":\"https://api.messagemedia.com/v1/messages{% capture inline_query_capture_876234 %}{% endcapture %}{% if inline_query_capture_876234.size > 0 %}?{% endif %}{{ inline_query_capture_876234 | remove_first:'&' }}\",\"headers\":{% capture header_capture_9023987234 %},\"Accept\":\"application/json\"{% endcapture %}{{ '{' }}{{ header_capture_9023987234 | remove_first:',' }}},\"body\":{{ '{' }}\"type\":\"json\",\"data\":{{ call[\"args\"][\"body\"] | json: false }}}}",
+          "Templates": {
+            "RUBY_GENERIC_LIB": "{% if showFullCode %}require 'message_media_messages'\r\n\r\ninclude MessageMediaMessages\r\n\r\n\r\nclient = MessageMediaMessagesClient.new\r\n\r\nmessages_controller = client.messages\r\n{% endif %}body = SendMessagesRequest.new\r\nbody.messages = []\n\r\n{% for this in call[\"args\"][\"body\"][\"messages\"] %}{% assign a1 = forloop.index0 %}\r\nbody.messages[{{ a1 }}] = Message.new\r\n{% if this[\"callback_url\"] != nil %}body.messages[{{ a1 }}].callback_url = {% if this[\"callback_url\"] != nil %}'{{ this[\"callback_url\"] | replace: \"\\\\\", \"\\\\\" | replace: \"'\", \"\\'\" }}'{% else %}nil{% endif %}\n{% endif %}body.messages[{{ a1 }}].content = {% if this[\"content\"] != nil %}'{{ this[\"content\"] | replace: \"\\\\\", \"\\\\\" | replace: \"'\", \"\\'\" }}'{% else %}nil{% endif %}\nbody.messages[{{ a1 }}].destination_number = {% if this[\"destination_number\"] != nil %}'{{ this[\"destination_number\"] | replace: \"\\\\\", \"\\\\\" | replace: \"'\", \"\\'\" }}'{% else %}nil{% endif %}\n{% if this[\"delivery_report\"] != nil %}body.messages[{{ a1 }}].delivery_report = {% if this[\"delivery_report\"] != nil %}{{ this[\"delivery_report\"] }}{% else %}nil{% endif %}\n{% endif %}{% if this[\"format\"] != nil %}body.messages[{{ a1 }}].format = {% case this[\"format\"] %}{% when 'SMS' %}FormatEnum::SMS{% when 'TTS' %}FormatEnum::TTS{% when 'MMS' %}FormatEnum::MMS{% endcase %}\n{% endif %}{% if this[\"message_expiry_timestamp\"] != nil %}body.messages[{{ a1 }}].message_expiry_timestamp = DateTime.rfc3339({% if this[\"message_expiry_timestamp\"] != nil %}'{{ this[\"message_expiry_timestamp\"] | replace: \"\\\\\", \"\\\\\" | replace: \"'\", \"\\'\" }}'{% else %}nil{% endif %})\n{% endif %}{% if this[\"metadata\"] != nil %}body.messages[{{ a1 }}].metadata = JSON.parse({% if this[\"metadata\"] != nil %}'{{ this[\"metadata\"] | json | replace: \"\\\\\", \"\\\\\" | replace: \"'\", \"\\'\" }}'{% else %}nil{% endif %})\n{% endif %}{% if this[\"scheduled\"] != nil %}body.messages[{{ a1 }}].scheduled = DateTime.rfc3339({% if this[\"scheduled\"] != nil %}'{{ this[\"scheduled\"] | replace: \"\\\\\", \"\\\\\" | replace: \"'\", \"\\'\" }}'{% else %}nil{% endif %})\n{% endif %}{% if this[\"source_number\"] != nil %}body.messages[{{ a1 }}].source_number = {% if this[\"source_number\"] != nil %}'{{ this[\"source_number\"] | replace: \"\\\\\", \"\\\\\" | replace: \"'\", \"\\'\" }}'{% else %}nil{% endif %}\n{% endif %}{% if this[\"source_number_type\"] != nil %}body.messages[{{ a1 }}].source_number_type = {% case this[\"source_number_type\"] %}{% when 'INTERNATIONAL' %}SourceNumberTypeEnum::INTERNATIONAL{% when 'ALPHANUMERIC' %}SourceNumberTypeEnum::ALPHANUMERIC{% when 'SHORTCODE' %}SourceNumberTypeEnum::SHORTCODE{% endcase %}\n{% endif %}{% if this[\"message_id\"] != nil %}body.messages[{{ a1 }}].message_id = {% if this[\"message_id\"] != nil %}'{{ this[\"message_id\"] | replace: \"\\\\\", \"\\\\\" | replace: \"'\", \"\\'\" }}'{% else %}nil{% endif %}\n{% endif %}{% if this[\"status\"] != nil %}body.messages[{{ a1 }}].status = {% case this[\"status\"] %}{% when 'enroute' %}StatusEnum::ENROUTE{% when 'submitted' %}StatusEnum::SUBMITTED{% when 'delivered' %}StatusEnum::DELIVERED{% when 'expired' %}StatusEnum::EXPIRED{% when 'rejected' %}StatusEnum::REJECTED{% when 'undeliverable' %}StatusEnum::UNDELIVERABLE{% when 'queued' %}StatusEnum::QUEUED{% when 'processed' %}StatusEnum::PROCESSED{% when 'cancelled' %}StatusEnum::CANCELLED{% when 'scheduled' %}StatusEnum::SCHEDULED{% when 'failed' %}StatusEnum::FAILED{% endcase %}\n{% endif %}{% if this[\"media\"] != nil %}body.messages[{{ a1 }}].media = [{% for this in this[\"media\"] %}{% if this != nil %}'{{ this | replace: \"\\\\\", \"\\\\\" | replace: \"'\", \"\\'\" }}'{% else %}nil{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}]\n{% endif %}{% if this[\"subject\"] != nil %}body.messages[{{ a1 }}].subject = {% if this[\"subject\"] != nil %}'{{ this[\"subject\"] | replace: \"\\\\\", \"\\\\\" | replace: \"'\", \"\\'\" }}'{% else %}nil{% endif %}\n{% endif %}{% endfor %}\r\n\r\n{% if showFullCode %}begin\n  {% endif %}result = messages_controller.send_messages(body){% if showFullCode %}\nrescue SendMessages400ResponseException => ex\n  puts \"Caught SendMessages400ResponseException: #{ex.message}\"\nrescue APIException => ex\n  puts \"Caught APIException: #{ex.message}\"\nend\r\n{% endif %}"
+          },
+          "Type": "compilablecodeblock"
+        },
+        {
+          "Level": 3,
+          "Text": "Errors",
+          "SuggestedLinkText": "Errors",
+          "SuggestedLink": "$h/__api_reference/Messages/Send+messages/Errors",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "HTTP Status Code",
+              "Error Description",
+              "Exception Class"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "400",
+                "Unexpected error in API call. See HTTP response body for details.",
+                "[`SendMessages400ResponseException`]($m/Send+messages+400+response)"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 2,
+          "Text": "`cancel_scheduled_message`",
+          "SuggestedLinkText": "`cancel_scheduled_message`",
+          "SuggestedLink": "$e/Messages/Cancel+scheduled+message",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Text": "Cancel a scheduled message that has not yet been delivered.\nA scheduled message can be cancelled by updating the status of a message from ```scheduled```\nto ```cancelled```. This is done by submitting a PUT request to the messages endpoint using\nthe message ID as a parameter (the same endpoint used above to retrieve the status of a message).\nThe body of the request simply needs to contain a ```status``` property with the value set\nto ```cancelled```.\n```json\n{\n    \"status\": \"cancelled\"\n}\n```\n*Note: Only messages with a status of scheduled can be cancelled. If an invalid or non existent\nmessage ID parameter is specified in the request, then a HTTP 404 Not Found response will be \nreturned*",
+          "Type": "paragraph"
+        },
+        {
+          "Text": "def cancel_scheduled_message(message_id,\r\n                                 body)",
+          "Language": "ruby",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 3,
+          "Text": "Parameters",
+          "SuggestedLinkText": "Parameters",
+          "SuggestedLink": "$h/__api_reference/Messages/Cancel+scheduled+message/Parameters",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Parameter",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`messageId`",
+                "`String`",
+                "Required",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`body`",
+                "[`CancelScheduledMessageRequest`]($m/Cancel+scheduled+message+request)",
+                "Required",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Response Type",
+          "SuggestedLinkText": "Response Type",
+          "SuggestedLink": "$h/__api_reference/Messages/Cancel+scheduled+message/Response+Type",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "`Mixed`",
+          "Type": "paragraph"
+        },
+        {
+          "Level": 3,
+          "Text": "Example Usage",
+          "SuggestedLinkText": "Example Usage",
+          "SuggestedLink": "$h/__api_reference/Messages/Cancel+scheduled+message/Example+Usage",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "EndpointGroupName": "Messages",
+          "EndpointName": "Cancel scheduled message",
+          "Index": 4,
+          "CallModel": {
+            "additionalQueryParams": null,
+            "additionalFieldParams": null,
+            "args": {
+              "messageId": "messageId2",
+              "body": {
+                "status": "cancelled"
+              }
+            }
+          },
+          "CallModelSchema": {
+            "title": "Endpoint Arguments",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "args": {
+                "id": "endpoint_7C26ABBCDB1F9",
+                "title": "endpoint_7C26ABBCDB1F9",
+                "type": "object",
+                "properties": {
+                  "messageId": {
+                    "type": "string"
+                  },
+                  "body": {
+                    "id": "Cancel scheduled message request",
+                    "title": "Cancel scheduled message request",
+                    "example": {
+                      "status": "cancelled"
+                    },
+                    "type": "object",
+                    "properties": {
+                      "status": {
+                        "example": "cancelled",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "status"
+                    ]
+                  }
+                },
+                "required": [
+                  "messageId",
+                  "body"
+                ]
+              }
+            },
+            "required": [
+              "args"
+            ]
+          },
+          "HttpCallTemplate": "{\"method\":\"PUT\",\"url\":\"https://api.messagemedia.com/v1/messages/{{ call[\"args\"][\"messageId\"] }}{% capture inline_query_capture_876234 %}{% endcapture %}{% if inline_query_capture_876234.size > 0 %}?{% endif %}{{ inline_query_capture_876234 | remove_first:'&' }}\",\"headers\":{% capture header_capture_9023987234 %},\"Accept\":\"application/json\"{% endcapture %}{{ '{' }}{{ header_capture_9023987234 | remove_first:',' }}},\"body\":{{ '{' }}\"type\":\"json\",\"data\":{{ call[\"args\"][\"body\"] | json: false }}}}",
+          "Templates": {
+            "RUBY_GENERIC_LIB": "{% if showFullCode %}require 'message_media_messages'\r\n\r\ninclude MessageMediaMessages\r\n\r\n\r\nclient = MessageMediaMessagesClient.new\r\n\r\nmessages_controller = client.messages\r\n{% endif %}message_id = {% if call[\"args\"][\"messageId\"] != nil %}'{{ call[\"args\"][\"messageId\"] | replace: \"\\\\\", \"\\\\\" | replace: \"'\", \"\\'\" }}'{% else %}nil{% endif %}\nbody = CancelScheduledMessageRequest.new\r\nbody.status = {% if call[\"args\"][\"body\"][\"status\"] != nil %}'{{ call[\"args\"][\"body\"][\"status\"] | replace: \"\\\\\", \"\\\\\" | replace: \"'\", \"\\'\" }}'{% else %}nil{% endif %}\n\r\n{% if showFullCode %}begin\n  {% endif %}result = messages_controller.cancel_scheduled_message(message_id, body){% if showFullCode %}\nrescue APIException => ex\n  puts \"Caught APIException: #{ex.message}\"\nend\r\n{% endif %}"
+          },
+          "Type": "compilablecodeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`check_credits_remaining`",
+          "SuggestedLinkText": "`check_credits_remaining`",
+          "SuggestedLink": "$e/Messages/Check+credits+remaining",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Text": "def check_credits_remaining",
+          "Language": "ruby",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 3,
+          "Text": "Response Type",
+          "SuggestedLinkText": "Response Type",
+          "SuggestedLink": "$h/__api_reference/Messages/Check+credits+remaining/Response+Type",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "`Mixed`",
+          "Type": "paragraph"
+        },
+        {
+          "Level": 3,
+          "Text": "Example Usage",
+          "SuggestedLinkText": "Example Usage",
+          "SuggestedLink": "$h/__api_reference/Messages/Check+credits+remaining/Example+Usage",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "EndpointGroupName": "Messages",
+          "EndpointName": "Check credits remaining",
+          "Index": 6,
+          "CallModel": {
+            "additionalQueryParams": null,
+            "additionalFieldParams": null,
+            "args": {}
+          },
+          "CallModelSchema": {
+            "title": "Endpoint Arguments",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "args": {
+                "id": "endpoint_7C26ABBCDB1F9",
+                "title": "endpoint_7C26ABBCDB1F9",
+                "type": "object"
+              }
+            },
+            "required": [
+              "args"
+            ]
+          },
+          "HttpCallTemplate": "{\"method\":\"GET\",\"url\":\"https://api.messagemedia.com/v1/messaging/credits{% capture inline_query_capture_876234 %}{% endcapture %}{% if inline_query_capture_876234.size > 0 %}?{% endif %}{{ inline_query_capture_876234 | remove_first:'&' }}\",\"headers\":{% capture header_capture_9023987234 %},\"Accept\":\"application/json\"{% endcapture %}{{ '{' }}{{ header_capture_9023987234 | remove_first:',' }}},\"body\":{{ '{' }}\"type\":\"none\"}}",
+          "Templates": {
+            "RUBY_GENERIC_LIB": "{% if showFullCode %}require 'message_media_messages'\r\n\r\ninclude MessageMediaMessages\r\n\r\n\r\nclient = MessageMediaMessagesClient.new\r\n\r\nmessages_controller = client.messages\r\n{% endif %}{% if showFullCode %}begin\n  {% endif %}result = messages_controller.check_credits_remaining(){% if showFullCode %}\nrescue APIException => ex\n  puts \"Caught APIException: #{ex.message}\"\nend\r\n{% endif %}"
+          },
+          "Type": "compilablecodeblock"
+        },
+        {
+          "Level": 3,
+          "Text": "Example Response",
+          "SuggestedLinkText": "Example Response",
+          "SuggestedLink": "$h/__api_reference/Messages/Check+credits+remaining/Example+Response",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"remaining_credits\": {}\r\n}",
+          "Language": "",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 1,
+          "Text": "`DeliveryReportsController`",
+          "SuggestedLinkText": "`DeliveryReportsController`",
+          "SuggestedLink": "$e/Delivery+Reports",
+          "SuggestedLinkLevel": 2,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 2,
+          "Text": "Overview",
+          "SuggestedLinkText": "Overview",
+          "SuggestedLink": "$h/__api_reference/Delivery+Reports/Overview",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": "endpoint-group-overview",
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Get singleton instance",
+          "SuggestedLinkText": "Get singleton instance",
+          "SuggestedLink": "$h/__api_reference/Delivery+Reports/Overview/Get+singleton+instance",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "The singleton instance of the `DeliveryReportsController` class can be accessed from the API Client.",
+          "Type": "paragraph"
+        },
+        {
+          "Text": "delivery_reports_controller = client.delivery_reports",
+          "Language": null,
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`check_delivery_reports`",
+          "SuggestedLinkText": "`check_delivery_reports`",
+          "SuggestedLink": "$e/Delivery+Reports/Check+delivery+reports",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Text": "Check for any delivery reports that have been received.\nDelivery reports are a notification of the change in status of a message as it is being processed.\nEach request to the check delivery reports endpoint will return any delivery reports received that\nhave not yet been confirmed using the confirm delivery reports endpoint. A response from the check\ndelivery reports endpoint will have the following structure:\n```json\n{\n    \"delivery_reports\": [\n        {\n            \"callback_url\": \"https://my.callback.url.com\",\n            \"delivery_report_id\": \"01e1fa0a-6e27-4945-9cdb-18644b4de043\",\n            \"source_number\": \"+61491570157\",\n            \"date_received\": \"2017-05-20T06:30:37.642Z\",\n            \"status\": \"enroute\",\n            \"delay\": 0,\n            \"submitted_date\": \"2017-05-20T06:30:37.639Z\",\n            \"original_text\": \"My first message!\",\n            \"message_id\": \"d781dcab-d9d8-4fb2-9e03-872f07ae94ba\",\n            \"vendor_account_id\": {\n                \"vendor_id\": \"MessageMedia\",\n                \"account_id\": \"MyAccount\"\n            },\n            \"metadata\": {\n                \"key1\": \"value1\",\n                \"key2\": \"value2\"\n            }\n        },\n        {\n            \"callback_url\": \"https://my.callback.url.com\",\n            \"delivery_report_id\": \"0edf9022-7ccc-43e6-acab-480e93e98c1b\",\n            \"source_number\": \"+61491570158\",\n            \"date_received\": \"2017-05-21T01:46:42.579Z\",\n            \"status\": \"enroute\",\n            \"delay\": 0,\n            \"submitted_date\": \"2017-05-21T01:46:42.574Z\",\n            \"original_text\": \"My second message!\",\n            \"message_id\": \"fbb3b3f5-b702-4d8b-ab44-65b2ee39a281\",\n            \"vendor_account_id\": {\n                \"vendor_id\": \"MessageMedia\",\n                \"account_id\": \"MyAccount\"\n            },\n            \"metadata\": {\n                \"key1\": \"value1\",\n                \"key2\": \"value2\"\n            }\n        }\n    ]\n}\n```\nEach delivery report will contain details about the message, including any metadata specified\nand the new status of the message (as each delivery report indicates a change in status of a\nmessage) and the timestamp at which the status changed. Every delivery report will have a \nunique delivery report ID for use with the confirm delivery reports endpoint.\n*Note: The source number and destination number properties in a delivery report are the inverse of\nthose specified in the message that the delivery report relates to. The source number of the\ndelivery report is the destination number of the original message.*\nSubsequent requests to the check delivery reports endpoint will return the same delivery reports\nand a maximum of 100 delivery reports will be returned in each request. Applications should use the\nconfirm delivery reports endpoint in the following pattern so that delivery reports that have been\nprocessed are no longer returned in subsequent check delivery reports requests.\n1. Call check delivery reports endpoint\n2. Process each delivery report\n3. Confirm all processed delivery reports using the confirm delivery reports endpoint\n*Note: It is recommended to use the Webhooks feature to receive reply messages rather than\npolling the check delivery reports endpoint.*",
+          "Type": "paragraph"
+        },
+        {
+          "Text": "def check_delivery_reports",
+          "Language": "ruby",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 3,
+          "Text": "Response Type",
+          "SuggestedLinkText": "Response Type",
+          "SuggestedLink": "$h/__api_reference/Delivery+Reports/Check+delivery+reports/Response+Type",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "[`CheckDeliveryReportsResponse`]($m/Check+delivery+reports+response)",
+          "Type": "paragraph"
+        },
+        {
+          "Level": 3,
+          "Text": "Example Usage",
+          "SuggestedLinkText": "Example Usage",
+          "SuggestedLink": "$h/__api_reference/Delivery+Reports/Check+delivery+reports/Example+Usage",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "EndpointGroupName": "Delivery Reports",
+          "EndpointName": "Check delivery reports",
+          "Index": 1,
+          "CallModel": {
+            "additionalQueryParams": null,
+            "additionalFieldParams": null,
+            "args": {}
+          },
+          "CallModelSchema": {
+            "title": "Endpoint Arguments",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "args": {
+                "id": "endpoint_7C26ABBCDB1F9",
+                "title": "endpoint_7C26ABBCDB1F9",
+                "type": "object"
+              }
+            },
+            "required": [
+              "args"
+            ]
+          },
+          "HttpCallTemplate": "{\"method\":\"GET\",\"url\":\"https://api.messagemedia.com/v1/delivery_reports{% capture inline_query_capture_876234 %}{% endcapture %}{% if inline_query_capture_876234.size > 0 %}?{% endif %}{{ inline_query_capture_876234 | remove_first:'&' }}\",\"headers\":{% capture header_capture_9023987234 %},\"Accept\":\"application/json\"{% endcapture %}{{ '{' }}{{ header_capture_9023987234 | remove_first:',' }}},\"body\":{{ '{' }}\"type\":\"none\"}}",
+          "Templates": {
+            "RUBY_GENERIC_LIB": "{% if showFullCode %}require 'message_media_messages'\r\n\r\ninclude MessageMediaMessages\r\n\r\n\r\nclient = MessageMediaMessagesClient.new\r\n\r\ndelivery_reports_controller = client.delivery_reports\r\n{% endif %}{% if showFullCode %}begin\n  {% endif %}result = delivery_reports_controller.check_delivery_reports(){% if showFullCode %}\nrescue APIException => ex\n  puts \"Caught APIException: #{ex.message}\"\nend\r\n{% endif %}"
+          },
+          "Type": "compilablecodeblock"
+        },
+        {
+          "Level": 3,
+          "Text": "Example Response *(as JSON)*",
+          "SuggestedLinkText": "Example Response *(as JSON)*",
+          "SuggestedLink": "$h/__api_reference/Delivery+Reports/Check+delivery+reports/Example+Response+*(as+JSON)*",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"delivery_reports\": [\r\n    {\r\n      \"callback_url\": \"https://my.callback.url.com\",\r\n      \"delivery_report_id\": \"01e1fa0a-6e27-4945-9cdb-18644b4de043\",\r\n      \"source_number\": \"+61491570157\",\r\n      \"date_received\": \"2017-05-20T06:30:37.642Z\",\r\n      \"status\": \"enroute\",\r\n      \"delay\": 0,\r\n      \"submitted_date\": \"2017-05-20T06:30:37.639Z\",\r\n      \"original_text\": \"My first message!\",\r\n      \"message_id\": \"d781dcab-d9d8-4fb2-9e03-872f07ae94ba\",\r\n      \"vendor_account_id\": {\r\n        \"vendor_id\": \"MessageMedia\",\r\n        \"account_id\": \"MyAccount\"\r\n      },\r\n      \"metadata\": {\r\n        \"key1\": \"value1\",\r\n        \"key2\": \"value2\"\r\n      }\r\n    },\r\n    {\r\n      \"callback_url\": \"https://my.callback.url.com\",\r\n      \"delivery_report_id\": \"0edf9022-7ccc-43e6-acab-480e93e98c1b\",\r\n      \"source_number\": \"+61491570158\",\r\n      \"date_received\": \"2017-05-21T01:46:42.579Z\",\r\n      \"status\": \"submitted\",\r\n      \"delay\": 0,\r\n      \"submitted_date\": \"2017-05-21T01:46:42.574Z\",\r\n      \"original_text\": \"My second message!\",\r\n      \"message_id\": \"fbb3b3f5-b702-4d8b-ab44-65b2ee39a281\",\r\n      \"vendor_account_id\": {\r\n        \"vendor_id\": \"MessageMedia\",\r\n        \"account_id\": \"MyAccount\"\r\n      },\r\n      \"metadata\": {\r\n        \"key1\": \"value1\",\r\n        \"key2\": \"value2\"\r\n      }\r\n    }\r\n  ]\r\n}",
+          "Language": "json",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`confirm_delivery_reports_as_received`",
+          "SuggestedLinkText": "`confirm_delivery_reports_as_received`",
+          "SuggestedLink": "$e/Delivery+Reports/Confirm+delivery+reports+as+received",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Text": "Mark a delivery report as confirmed so it is no longer return in check delivery reports requests.\nThe confirm delivery reports endpoint is intended to be used in conjunction with the check delivery\nreports endpoint to allow for robust processing of delivery reports. Once one or more delivery\nreports have been processed, they can then be confirmed using the confirm delivery reports endpoint so they\nare no longer returned in subsequent check delivery reports requests.\nThe confirm delivery reports endpoint takes a list of delivery report IDs as follows:\n```json\n{\n    \"delivery_report_ids\": [\n        \"011dcead-6988-4ad6-a1c7-6b6c68ea628d\",\n        \"3487b3fa-6586-4979-a233-2d1b095c7718\",\n        \"ba28e94b-c83d-4759-98e7-ff9c7edb87a1\"\n    ]\n}\n```\nUp to 100 delivery reports can be confirmed in a single confirm delivery reports request.",
+          "Type": "paragraph"
+        },
+        {
+          "Text": "def confirm_delivery_reports_as_received(body)",
+          "Language": "ruby",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 3,
+          "Text": "Parameters",
+          "SuggestedLinkText": "Parameters",
+          "SuggestedLink": "$h/__api_reference/Delivery+Reports/Confirm+delivery+reports+as+received/Parameters",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Parameter",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`body`",
+                "[`ConfirmDeliveryReportsAsReceivedRequest`]($m/Confirm+delivery+reports+as+received+request)",
+                "Required",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Response Type",
+          "SuggestedLinkText": "Response Type",
+          "SuggestedLink": "$h/__api_reference/Delivery+Reports/Confirm+delivery+reports+as+received/Response+Type",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "`Mixed`",
+          "Type": "paragraph"
+        },
+        {
+          "Level": 3,
+          "Text": "Example Usage",
+          "SuggestedLinkText": "Example Usage",
+          "SuggestedLink": "$h/__api_reference/Delivery+Reports/Confirm+delivery+reports+as+received/Example+Usage",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "EndpointGroupName": "Delivery Reports",
+          "EndpointName": "Confirm delivery reports as received",
+          "Index": 7,
+          "CallModel": {
+            "additionalQueryParams": null,
+            "additionalFieldParams": null,
+            "args": {
+              "body": {
+                "delivery_report_ids": [
+                  "011dcead-6988-4ad6-a1c7-6b6c68ea628d",
+                  "3487b3fa-6586-4979-a233-2d1b095c7718",
+                  "ba28e94b-c83d-4759-98e7-ff9c7edb87a1"
+                ]
+              }
+            }
+          },
+          "CallModelSchema": {
+            "title": "Endpoint Arguments",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "args": {
+                "id": "endpoint_7C26ABBCDB1F9",
+                "title": "endpoint_7C26ABBCDB1F9",
+                "type": "object",
+                "properties": {
+                  "body": {
+                    "id": "Confirm delivery reports as received request",
+                    "title": "Confirm delivery reports as received request",
+                    "example": {
+                      "delivery_report_ids": [
+                        "011dcead-6988-4ad6-a1c7-6b6c68ea628d",
+                        "3487b3fa-6586-4979-a233-2d1b095c7718",
+                        "ba28e94b-c83d-4759-98e7-ff9c7edb87a1"
+                      ]
+                    },
+                    "type": "object",
+                    "properties": {
+                      "delivery_report_ids": {
+                        "description": "",
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "required": [
+                      "delivery_report_ids"
+                    ]
+                  }
+                },
+                "required": [
+                  "body"
+                ]
+              }
+            },
+            "required": [
+              "args"
+            ]
+          },
+          "HttpCallTemplate": "{\"method\":\"POST\",\"url\":\"https://api.messagemedia.com/v1/delivery_reports/confirmed{% capture inline_query_capture_876234 %}{% endcapture %}{% if inline_query_capture_876234.size > 0 %}?{% endif %}{{ inline_query_capture_876234 | remove_first:'&' }}\",\"headers\":{% capture header_capture_9023987234 %},\"Accept\":\"application/json\"{% endcapture %}{{ '{' }}{{ header_capture_9023987234 | remove_first:',' }}},\"body\":{{ '{' }}\"type\":\"json\",\"data\":{{ call[\"args\"][\"body\"] | json: false }}}}",
+          "Templates": {
+            "RUBY_GENERIC_LIB": "{% if showFullCode %}require 'message_media_messages'\r\n\r\ninclude MessageMediaMessages\r\n\r\n\r\nclient = MessageMediaMessagesClient.new\r\n\r\ndelivery_reports_controller = client.delivery_reports\r\n{% endif %}body = ConfirmDeliveryReportsAsReceivedRequest.new\r\nbody.delivery_report_ids = [{% for this in call[\"args\"][\"body\"][\"delivery_report_ids\"] %}{% if this != nil %}'{{ this | replace: \"\\\\\", \"\\\\\" | replace: \"'\", \"\\'\" }}'{% else %}nil{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}]\n\r\n{% if showFullCode %}begin\n  {% endif %}result = delivery_reports_controller.confirm_delivery_reports_as_received(body){% if showFullCode %}\nrescue APIException => ex\n  puts \"Caught APIException: #{ex.message}\"\nend\r\n{% endif %}"
+          },
+          "Type": "compilablecodeblock"
+        },
+        {
+          "Level": 1,
+          "Text": "`RepliesController`",
+          "SuggestedLinkText": "`RepliesController`",
+          "SuggestedLink": "$e/Replies",
+          "SuggestedLinkLevel": 2,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 2,
+          "Text": "Overview",
+          "SuggestedLinkText": "Overview",
+          "SuggestedLink": "$h/__api_reference/Replies/Overview",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": "endpoint-group-overview",
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Get singleton instance",
+          "SuggestedLinkText": "Get singleton instance",
+          "SuggestedLink": "$h/__api_reference/Replies/Overview/Get+singleton+instance",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "The singleton instance of the `RepliesController` class can be accessed from the API Client.",
+          "Type": "paragraph"
+        },
+        {
+          "Text": "replies_controller = client.replies",
+          "Language": null,
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`check_replies`",
+          "SuggestedLinkText": "`check_replies`",
+          "SuggestedLink": "$e/Replies/Check+replies",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Text": "Check for any replies that have been received.\nReplies are messages that have been sent from a handset in response to a message sent by an\napplication or messages that have been sent from a handset to a inbound number associated with\nan account, known as a dedicated inbound number (contact <support@messagemedia.com> for more\ninformation on dedicated inbound numbers).\nEach request to the check replies endpoint will return any replies received that have not yet\nbeen confirmed using the confirm replies endpoint. A response from the check replies endpoint\nwill have the following structure:\n```json\n{\n    \"replies\": [\n        {\n            \"metadata\": {\n                \"key1\": \"value1\",\n                \"key2\": \"value2\"\n            },\n            \"message_id\": \"877c19ef-fa2e-4cec-827a-e1df9b5509f7\",\n            \"reply_id\": \"a175e797-2b54-468b-9850-41a3eab32f74\",\n            \"date_received\": \"2016-12-07T08:43:00.850Z\",\n            \"callback_url\": \"https://my.callback.url.com\",\n            \"destination_number\": \"+61491570156\",\n            \"source_number\": \"+61491570157\",\n            \"vendor_account_id\": {\n                \"vendor_id\": \"MessageMedia\",\n                \"account_id\": \"MyAccount\"\n            },\n            \"content\": \"My first reply!\"\n        },\n        {\n            \"metadata\": {\n                \"key1\": \"value1\",\n                \"key2\": \"value2\"\n            },\n            \"message_id\": \"8f2f5927-2e16-4f1c-bd43-47dbe2a77ae4\",\n            \"reply_id\": \"3d8d53d8-01d3-45dd-8cfa-4dfc81600f7f\",\n            \"date_received\": \"2016-12-07T08:43:00.850Z\",\n            \"callback_url\": \"https://my.callback.url.com\",\n            \"destination_number\": \"+61491570157\",\n            \"source_number\": \"+61491570158\",\n            \"vendor_account_id\": {\n                \"vendor_id\": \"MessageMedia\",\n                \"account_id\": \"MyAccount\"\n            },\n            \"content\": \"My second reply!\"\n        }\n    ]\n}\n```\nEach reply will contain details about the reply message, as well as details of the message the reply was sent\nin response to, including any metadata specified. Every reply will have a reply ID to be used with the\nconfirm replies endpoint.\n*Note: The source number and destination number properties in a reply are the inverse of those\nspecified in the message the reply is in response to. The source number of the reply message is the\nsame as the destination number of the original message, and the destination number of the reply\nmessage is the same as the source number of the original message. If a source number\nwasn't specified in the original message, then the destination number property will not be present\nin the reply message.*\nSubsequent requests to the check replies endpoint will return the same reply messages and a maximum\nof 100 replies will be returned in each request. Applications should use the confirm replies endpoint\nin the following pattern so that replies that have been processed are no longer returned in\nsubsequent check replies requests.\n1. Call check replies endpoint\n2. Process each reply message\n3. Confirm all processed reply messages using the confirm replies endpoint\n*Note: It is recommended to use the Webhooks feature to receive reply messages rather than polling\nthe check replies endpoint.*",
+          "Type": "paragraph"
+        },
+        {
+          "Text": "def check_replies",
+          "Language": "ruby",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 3,
+          "Text": "Response Type",
+          "SuggestedLinkText": "Response Type",
+          "SuggestedLink": "$h/__api_reference/Replies/Check+replies/Response+Type",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "[`CheckRepliesResponse`]($m/Check+replies+response)",
+          "Type": "paragraph"
+        },
+        {
+          "Level": 3,
+          "Text": "Example Usage",
+          "SuggestedLinkText": "Example Usage",
+          "SuggestedLink": "$h/__api_reference/Replies/Check+replies/Example+Usage",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "EndpointGroupName": "Replies",
+          "EndpointName": "Check replies",
+          "Index": 3,
+          "CallModel": {
+            "additionalQueryParams": null,
+            "additionalFieldParams": null,
+            "args": {}
+          },
+          "CallModelSchema": {
+            "title": "Endpoint Arguments",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "args": {
+                "id": "endpoint_7C26ABBCDB1F9",
+                "title": "endpoint_7C26ABBCDB1F9",
+                "type": "object"
+              }
+            },
+            "required": [
+              "args"
+            ]
+          },
+          "HttpCallTemplate": "{\"method\":\"GET\",\"url\":\"https://api.messagemedia.com/v1/replies{% capture inline_query_capture_876234 %}{% endcapture %}{% if inline_query_capture_876234.size > 0 %}?{% endif %}{{ inline_query_capture_876234 | remove_first:'&' }}\",\"headers\":{% capture header_capture_9023987234 %},\"Accept\":\"application/json\"{% endcapture %}{{ '{' }}{{ header_capture_9023987234 | remove_first:',' }}},\"body\":{{ '{' }}\"type\":\"none\"}}",
+          "Templates": {
+            "RUBY_GENERIC_LIB": "{% if showFullCode %}require 'message_media_messages'\r\n\r\ninclude MessageMediaMessages\r\n\r\n\r\nclient = MessageMediaMessagesClient.new\r\n\r\nreplies_controller = client.replies\r\n{% endif %}{% if showFullCode %}begin\n  {% endif %}result = replies_controller.check_replies(){% if showFullCode %}\nrescue APIException => ex\n  puts \"Caught APIException: #{ex.message}\"\nend\r\n{% endif %}"
+          },
+          "Type": "compilablecodeblock"
+        },
+        {
+          "Level": 3,
+          "Text": "Example Response *(as JSON)*",
+          "SuggestedLinkText": "Example Response *(as JSON)*",
+          "SuggestedLink": "$h/__api_reference/Replies/Check+replies/Example+Response+*(as+JSON)*",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"replies\": [\r\n    {\r\n      \"metadata\": {\r\n        \"key1\": \"value1\",\r\n        \"key2\": \"value2\"\r\n      },\r\n      \"message_id\": \"877c19ef-fa2e-4cec-827a-e1df9b5509f7\",\r\n      \"reply_id\": \"a175e797-2b54-468b-9850-41a3eab32f74\",\r\n      \"date_received\": \"2016-12-07T08:43:00.850Z\",\r\n      \"callback_url\": \"https://my.callback.url.com\",\r\n      \"destination_number\": \"+61491570156\",\r\n      \"source_number\": \"+61491570157\",\r\n      \"vendor_account_id\": {\r\n        \"vendor_id\": \"MessageMedia\",\r\n        \"account_id\": \"MyAccount\"\r\n      },\r\n      \"content\": \"My first reply!\"\r\n    },\r\n    {\r\n      \"metadata\": {\r\n        \"key1\": \"value1\",\r\n        \"key2\": \"value2\"\r\n      },\r\n      \"message_id\": \"8f2f5927-2e16-4f1c-bd43-47dbe2a77ae4\",\r\n      \"reply_id\": \"3d8d53d8-01d3-45dd-8cfa-4dfc81600f7f\",\r\n      \"date_received\": \"2016-12-07T08:43:00.850Z\",\r\n      \"callback_url\": \"https://my.callback.url.com\",\r\n      \"destination_number\": \"+61491570157\",\r\n      \"source_number\": \"+61491570158\",\r\n      \"vendor_account_id\": {\r\n        \"vendor_id\": \"MessageMedia\",\r\n        \"account_id\": \"MyAccount\"\r\n      },\r\n      \"content\": \"My second reply!\"\r\n    }\r\n  ]\r\n}",
+          "Language": "json",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`confirm_replies_as_received`",
+          "SuggestedLinkText": "`confirm_replies_as_received`",
+          "SuggestedLink": "$e/Replies/Confirm+replies+as+received",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Text": "Mark a reply message as confirmed so it is no longer returned in check replies requests.\nThe confirm replies endpoint is intended to be used in conjunction with the check replies endpoint\nto allow for robust processing of reply messages. Once one or more reply messages have been processed\nthey can then be confirmed using the confirm replies endpoint so they are no longer returned in\nsubsequent check replies requests.\nThe confirm replies endpoint takes a list of reply IDs as follows:\n```json\n{\n    \"reply_ids\": [\n        \"011dcead-6988-4ad6-a1c7-6b6c68ea628d\",\n        \"3487b3fa-6586-4979-a233-2d1b095c7718\",\n        \"ba28e94b-c83d-4759-98e7-ff9c7edb87a1\"\n    ]\n}\n```\nUp to 100 replies can be confirmed in a single confirm replies request.",
+          "Type": "paragraph"
+        },
+        {
+          "Text": "def confirm_replies_as_received(body)",
+          "Language": "ruby",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 3,
+          "Text": "Parameters",
+          "SuggestedLinkText": "Parameters",
+          "SuggestedLink": "$h/__api_reference/Replies/Confirm+replies+as+received/Parameters",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Parameter",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`body`",
+                "[`ConfirmRepliesAsReceivedRequest`]($m/Confirm+replies+as+received+request)",
+                "Required",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Response Type",
+          "SuggestedLinkText": "Response Type",
+          "SuggestedLink": "$h/__api_reference/Replies/Confirm+replies+as+received/Response+Type",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "`Mixed`",
+          "Type": "paragraph"
+        },
+        {
+          "Level": 3,
+          "Text": "Example Usage",
+          "SuggestedLinkText": "Example Usage",
+          "SuggestedLink": "$h/__api_reference/Replies/Confirm+replies+as+received/Example+Usage",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "EndpointGroupName": "Replies",
+          "EndpointName": "Confirm replies as received",
+          "Index": 5,
+          "CallModel": {
+            "additionalQueryParams": null,
+            "additionalFieldParams": null,
+            "args": {
+              "body": {
+                "reply_ids": [
+                  "011dcead-6988-4ad6-a1c7-6b6c68ea628d",
+                  "3487b3fa-6586-4979-a233-2d1b095c7718",
+                  "ba28e94b-c83d-4759-98e7-ff9c7edb87a1"
+                ]
+              }
+            }
+          },
+          "CallModelSchema": {
+            "title": "Endpoint Arguments",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "args": {
+                "id": "endpoint_7C26ABBCDB1F9",
+                "title": "endpoint_7C26ABBCDB1F9",
+                "type": "object",
+                "properties": {
+                  "body": {
+                    "id": "Confirm replies as received request",
+                    "title": "Confirm replies as received request",
+                    "example": {
+                      "reply_ids": [
+                        "011dcead-6988-4ad6-a1c7-6b6c68ea628d",
+                        "3487b3fa-6586-4979-a233-2d1b095c7718",
+                        "ba28e94b-c83d-4759-98e7-ff9c7edb87a1"
+                      ]
+                    },
+                    "type": "object",
+                    "properties": {
+                      "reply_ids": {
+                        "description": "",
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "required": [
+                      "reply_ids"
+                    ]
+                  }
+                },
+                "required": [
+                  "body"
+                ]
+              }
+            },
+            "required": [
+              "args"
+            ]
+          },
+          "HttpCallTemplate": "{\"method\":\"POST\",\"url\":\"https://api.messagemedia.com/v1/replies/confirmed{% capture inline_query_capture_876234 %}{% endcapture %}{% if inline_query_capture_876234.size > 0 %}?{% endif %}{{ inline_query_capture_876234 | remove_first:'&' }}\",\"headers\":{% capture header_capture_9023987234 %},\"Accept\":\"application/json\"{% endcapture %}{{ '{' }}{{ header_capture_9023987234 | remove_first:',' }}},\"body\":{{ '{' }}\"type\":\"json\",\"data\":{{ call[\"args\"][\"body\"] | json: false }}}}",
+          "Templates": {
+            "RUBY_GENERIC_LIB": "{% if showFullCode %}require 'message_media_messages'\r\n\r\ninclude MessageMediaMessages\r\n\r\n\r\nclient = MessageMediaMessagesClient.new\r\n\r\nreplies_controller = client.replies\r\n{% endif %}body = ConfirmRepliesAsReceivedRequest.new\r\nbody.reply_ids = [{% for this in call[\"args\"][\"body\"][\"reply_ids\"] %}{% if this != nil %}'{{ this | replace: \"\\\\\", \"\\\\\" | replace: \"'\", \"\\'\" }}'{% else %}nil{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}]\n\r\n{% if showFullCode %}begin\n  {% endif %}result = replies_controller.confirm_replies_as_received(body){% if showFullCode %}\nrescue APIException => ex\n  puts \"Caught APIException: #{ex.message}\"\nend\r\n{% endif %}"
+          },
+          "Type": "compilablecodeblock"
+        }
+      ],
+      "HideFromNavigation": false,
+      "Title": "API Reference",
+      "PlaceholderId": "__api_reference",
+      "Hidden": false,
+      "LanguageSpecific": false,
+      "Languages": [],
+      "SuggestedLinkText": "API Reference",
+      "SuggestedLink": "$h/__api_reference",
+      "SuggestedLinkLevel": 1,
+      "LinkLabel": null,
+      "Type": "section"
+    },
+    {
+      "Nodes": [
+        {
+          "Level": 1,
+          "Text": "Structures",
+          "SuggestedLinkText": "Structures",
+          "SuggestedLink": "$h/__model_reference/Structures",
+          "SuggestedLinkLevel": 2,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Text": "* [`ConfirmDeliveryReportsAsReceivedRequest1`]($m/Confirm+delivery+reports+as+received+request1)\n* [`ConfirmDeliveryReportsAsReceivedRequest`]($m/Confirm+delivery+reports+as+received+request)\n* [`CheckDeliveryReportsResponse`]($m/Check+delivery+reports+response)\n* [`ConfirmRepliesAsReceivedRequest1`]($m/Confirm+replies+as+received+request1)\n* [`ConfirmRepliesAsReceivedRequest`]($m/Confirm+replies+as+received+request)\n* [`VendorAccountId`]($m/VendorAccountId)\n* [`CheckRepliesResponse`]($m/Check+replies+response)\n* [`CancelScheduledMessageRequest`]($m/Cancel+scheduled+message+request)\n* [`SendMessagesRequest`]($m/Send+messages+request)\n* [`Reply`]($m/Reply)\n* [`DeliveryReport`]($m/DeliveryReport)\n* [`GetMessageStatusResponse`]($m/Get+message+status+response)\n* [`Message`]($m/Message)\n* [`SendMessagesResponse`]($m/Send+messages+response)",
+          "Type": "paragraph"
+        },
+        {
+          "Level": 2,
+          "Text": "`ConfirmDeliveryReportsAsReceivedRequest1`",
+          "SuggestedLinkText": "`ConfirmDeliveryReportsAsReceivedRequest1`",
+          "SuggestedLink": "$m/Confirm+delivery+reports+as+received+request1",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Structures/Confirm+delivery+reports+as+received+request1/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`deliveryReportIds`",
+                "`List of UUID | String`",
+                "",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example (as JSON)",
+          "SuggestedLinkText": "Example (as JSON)",
+          "SuggestedLink": "$h/__model_reference/Structures/Confirm+delivery+reports+as+received+request1/Example+(as+JSON)",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"delivery_report_ids\": [\r\n    \"000007c4-0000-0000-0000-000000000000\",\r\n    \"000007c5-0000-0000-0000-000000000000\",\r\n    \"000007c6-0000-0000-0000-000000000000\"\r\n  ]\r\n}",
+          "Language": "json",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`ConfirmDeliveryReportsAsReceivedRequest`",
+          "SuggestedLinkText": "`ConfirmDeliveryReportsAsReceivedRequest`",
+          "SuggestedLink": "$m/Confirm+delivery+reports+as+received+request",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Structures/Confirm+delivery+reports+as+received+request/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`deliveryReportIds`",
+                "`List of String`",
+                "",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example (as JSON)",
+          "SuggestedLinkText": "Example (as JSON)",
+          "SuggestedLink": "$h/__model_reference/Structures/Confirm+delivery+reports+as+received+request/Example+(as+JSON)",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"delivery_report_ids\": [\r\n    \"011dcead-6988-4ad6-a1c7-6b6c68ea628d\",\r\n    \"3487b3fa-6586-4979-a233-2d1b095c7718\",\r\n    \"ba28e94b-c83d-4759-98e7-ff9c7edb87a1\"\r\n  ]\r\n}",
+          "Language": "json",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`CheckDeliveryReportsResponse`",
+          "SuggestedLinkText": "`CheckDeliveryReportsResponse`",
+          "SuggestedLink": "$m/Check+delivery+reports+response",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Structures/Check+delivery+reports+response/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`deliveryReports`",
+                "[`DeliveryReport[]`]($m/DeliveryReport)",
+                "Optional",
+                "The oldest 100 unconfirmed delivery reports"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example (as JSON)",
+          "SuggestedLinkText": "Example (as JSON)",
+          "SuggestedLink": "$h/__model_reference/Structures/Check+delivery+reports+response/Example+(as+JSON)",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"delivery_reports\": null\r\n}",
+          "Language": "json",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`ConfirmRepliesAsReceivedRequest1`",
+          "SuggestedLinkText": "`ConfirmRepliesAsReceivedRequest1`",
+          "SuggestedLink": "$m/Confirm+replies+as+received+request1",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Structures/Confirm+replies+as+received+request1/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`replyIds`",
+                "`List of UUID | String`",
+                "",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example (as JSON)",
+          "SuggestedLinkText": "Example (as JSON)",
+          "SuggestedLink": "$h/__model_reference/Structures/Confirm+replies+as+received+request1/Example+(as+JSON)",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"reply_ids\": [\r\n    \"00001bc1-0000-0000-0000-000000000000\",\r\n    \"00001bc2-0000-0000-0000-000000000000\"\r\n  ]\r\n}",
+          "Language": "json",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`ConfirmRepliesAsReceivedRequest`",
+          "SuggestedLinkText": "`ConfirmRepliesAsReceivedRequest`",
+          "SuggestedLink": "$m/Confirm+replies+as+received+request",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Structures/Confirm+replies+as+received+request/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`replyIds`",
+                "`List of String`",
+                "",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example (as JSON)",
+          "SuggestedLinkText": "Example (as JSON)",
+          "SuggestedLink": "$h/__model_reference/Structures/Confirm+replies+as+received+request/Example+(as+JSON)",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"reply_ids\": [\r\n    \"011dcead-6988-4ad6-a1c7-6b6c68ea628d\",\r\n    \"3487b3fa-6586-4979-a233-2d1b095c7718\",\r\n    \"ba28e94b-c83d-4759-98e7-ff9c7edb87a1\"\r\n  ]\r\n}",
+          "Language": "json",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`VendorAccountId`",
+          "SuggestedLinkText": "`VendorAccountId`",
+          "SuggestedLink": "$m/VendorAccountId",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Structures/VendorAccountId/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`vendorId`",
+                "`String`",
+                "Optional",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`accountId`",
+                "`String`",
+                "Optional",
+                "The account used to submit the original message."
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example (as JSON)",
+          "SuggestedLinkText": "Example (as JSON)",
+          "SuggestedLink": "$h/__model_reference/Structures/VendorAccountId/Example+(as+JSON)",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"vendor_id\": null,\r\n  \"account_id\": null\r\n}",
+          "Language": "json",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`CheckRepliesResponse`",
+          "SuggestedLinkText": "`CheckRepliesResponse`",
+          "SuggestedLink": "$m/Check+replies+response",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Structures/Check+replies+response/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`replies`",
+                "[`Reply[]`]($m/Reply)",
+                "Optional",
+                "The oldest 100 unconfirmed replies"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example (as JSON)",
+          "SuggestedLinkText": "Example (as JSON)",
+          "SuggestedLink": "$h/__model_reference/Structures/Check+replies+response/Example+(as+JSON)",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"replies\": null\r\n}",
+          "Language": "json",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`CancelScheduledMessageRequest`",
+          "SuggestedLinkText": "`CancelScheduledMessageRequest`",
+          "SuggestedLink": "$m/Cancel+scheduled+message+request",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Structures/Cancel+scheduled+message+request/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`status`",
+                "`String`",
+                "",
+                "*Default: `'cancelled'`*"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example (as JSON)",
+          "SuggestedLinkText": "Example (as JSON)",
+          "SuggestedLink": "$h/__model_reference/Structures/Cancel+scheduled+message+request/Example+(as+JSON)",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"status\": \"cancelled\"\r\n}",
+          "Language": "json",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`SendMessagesRequest`",
+          "SuggestedLinkText": "`SendMessagesRequest`",
+          "SuggestedLink": "$m/Send+messages+request",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Structures/Send+messages+request/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`messages`",
+                "[`Message[]`]($m/Message)",
+                "",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example (as JSON)",
+          "SuggestedLinkText": "Example (as JSON)",
+          "SuggestedLink": "$h/__model_reference/Structures/Send+messages+request/Example+(as+JSON)",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"messages\": [\r\n    {\r\n      \"callback_url\": \"https://my.callback.url.com\",\r\n      \"content\": \"My first message\",\r\n      \"destination_number\": \"+61491570156\",\r\n      \"delivery_report\": true,\r\n      \"format\": \"SMS\",\r\n      \"message_expiry_timestamp\": \"2016-11-03T11:49:02.807Z\",\r\n      \"metadata\": {\r\n        \"key1\": \"value1\",\r\n        \"key2\": \"value2\"\r\n      },\r\n      \"scheduled\": \"2016-11-03T11:49:02.807Z\",\r\n      \"source_number\": \"+61491570157\",\r\n      \"source_number_type\": \"INTERNATIONAL\"\r\n    },\r\n    {\r\n      \"callback_url\": \"https://my.callback.url.com\",\r\n      \"content\": \"My second message\",\r\n      \"destination_number\": \"+61491570158\",\r\n      \"delivery_report\": true,\r\n      \"format\": \"MMS\",\r\n      \"subject\": \"This is an MMS message\",\r\n      \"media\": [\r\n        \"https://images.pexels.com/photos/1018350/pexels-photo-1018350.jpeg?cs=srgb&dl=architecture-buildings-city-1018350.jpg\"\r\n      ],\r\n      \"message_expiry_timestamp\": \"2016-11-03T11:49:02.807Z\",\r\n      \"metadata\": {\r\n        \"key1\": \"value1\",\r\n        \"key2\": \"value2\"\r\n      },\r\n      \"scheduled\": \"2016-11-03T11:49:02.807Z\",\r\n      \"source_number\": \"+61491570159\",\r\n      \"source_number_type\": \"INTERNATIONAL\"\r\n    }\r\n  ]\r\n}",
+          "Language": "json",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`Reply`",
+          "SuggestedLinkText": "`Reply`",
+          "SuggestedLink": "$m/Reply",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Structures/Reply/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`callbackUrl`",
+                "`String`",
+                "Optional",
+                "The URL specified as the callback URL in the original submit message request"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`content`",
+                "`String`",
+                "Optional",
+                "Content of the reply"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`dateReceived`",
+                "`DateTime`",
+                "Optional",
+                "Date time when the reply was received"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`destinationNumber`",
+                "`String`",
+                "Optional",
+                "Address from which this reply was sent to"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`messageId`",
+                "`UUID | String`",
+                "Optional",
+                "Unique ID of the original message"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`metadata`",
+                "`Object`",
+                "Optional",
+                "Any metadata that was included in the original submit message request"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`replyId`",
+                "`UUID | String`",
+                "Optional",
+                "Unique ID of this reply"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`sourceNumber`",
+                "`String`",
+                "Optional",
+                "Address from which this reply was received from"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`vendorAccountId`",
+                "[`VendorAccountId`]($m/VendorAccountId)",
+                "Optional",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example (as JSON)",
+          "SuggestedLinkText": "Example (as JSON)",
+          "SuggestedLink": "$h/__model_reference/Structures/Reply/Example+(as+JSON)",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"callback_url\": null,\r\n  \"content\": null,\r\n  \"date_received\": null,\r\n  \"destination_number\": null,\r\n  \"message_id\": null,\r\n  \"metadata\": null,\r\n  \"reply_id\": null,\r\n  \"source_number\": null,\r\n  \"vendor_account_id\": null\r\n}",
+          "Language": "json",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`DeliveryReport`",
+          "SuggestedLinkText": "`DeliveryReport`",
+          "SuggestedLink": "$m/DeliveryReport",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Structures/DeliveryReport/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`callbackUrl`",
+                "`String`",
+                "Optional",
+                "The URL specified as the callback URL in the original submit message request"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`dateReceived`",
+                "`DateTime`",
+                "Optional",
+                "The date and time at which this delivery report was generated in UTC."
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`delay`",
+                "`Integer`",
+                "Optional",
+                "Deprecated, no longer in use"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`deliveryReportId`",
+                "`UUID | String`",
+                "Optional",
+                "Unique ID for this delivery report"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`messageId`",
+                "`UUID | String`",
+                "Optional",
+                "Unique ID of the original message"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`metadata`",
+                "`Object`",
+                "Optional",
+                "Any metadata that was included in the original submit message request"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`originalText`",
+                "`String`",
+                "Optional",
+                "Text of the original message."
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`sourceNumber`",
+                "`String`",
+                "Optional",
+                "Address from which this delivery report was received"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`status`",
+                "[`Status2Enum`]($m/Status2)",
+                "Optional",
+                "The status of the message as per the delivery report"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`submittedDate`",
+                "`DateTime`",
+                "Optional",
+                "The date and time when the message status changed in UTC. For a delivered DR this may indicate the time at which the message was received on the handset."
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`vendorAccountId`",
+                "[`VendorAccountId`]($m/VendorAccountId)",
+                "Optional",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example (as JSON)",
+          "SuggestedLinkText": "Example (as JSON)",
+          "SuggestedLink": "$h/__model_reference/Structures/DeliveryReport/Example+(as+JSON)",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"callback_url\": null,\r\n  \"date_received\": null,\r\n  \"delay\": null,\r\n  \"delivery_report_id\": null,\r\n  \"message_id\": null,\r\n  \"metadata\": null,\r\n  \"original_text\": null,\r\n  \"source_number\": null,\r\n  \"status\": null,\r\n  \"submitted_date\": null,\r\n  \"vendor_account_id\": null\r\n}",
+          "Language": "json",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`GetMessageStatusResponse`",
+          "SuggestedLinkText": "`GetMessageStatusResponse`",
+          "SuggestedLink": "$m/Get+message+status+response",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Structures/Get+message+status+response/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`callbackUrl`",
+                "`String`",
+                "Optional",
+                "URL replies and delivery reports to this message will be pushed to"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`content`",
+                "`String`",
+                "Optional",
+                "Content of the message"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`destinationNumber`",
+                "`String`",
+                "Optional",
+                "Destination number of the message"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`deliveryReport`",
+                "`Boolean`",
+                "Optional",
+                "Request a delivery report for this message<br>*Default: `false`*"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`format`",
+                "[`Format1Enum`]($m/Format1)",
+                "Optional",
+                "Format of message, SMS or TTS (Text To Speech)."
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`messageExpiryTimestamp`",
+                "`DateTime`",
+                "Optional",
+                "Date time after which the message expires and will not be sent"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`metadata`",
+                "`Object`",
+                "Optional",
+                "Metadata for the message specified as a set of key value pairs, each key can be up to 100 characters long and each value can be up to 256 characters long\n```\n{\n   \"myKey\": \"myValue\",\n   \"anotherKey\": \"anotherValue\"\n}\n```"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`scheduled`",
+                "`DateTime`",
+                "Optional",
+                "Scheduled delivery date time of the message"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`sourceNumber`",
+                "`String`",
+                "Optional",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`sourceNumberType`",
+                "[`SourceNumberTypeEnum`]($m/SourceNumberType)",
+                "Optional",
+                "Type of source address specified, this can be INTERNATIONAL, ALPHANUMERIC or SHORTCODE"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`messageId`",
+                "`UUID | String`",
+                "Optional",
+                "Unique ID of this message"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`status`",
+                "[`StatusEnum`]($m/Status)",
+                "Optional",
+                "The status of the message"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example (as JSON)",
+          "SuggestedLinkText": "Example (as JSON)",
+          "SuggestedLink": "$h/__model_reference/Structures/Get+message+status+response/Example+(as+JSON)",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"callback_url\": null,\r\n  \"content\": null,\r\n  \"destination_number\": null,\r\n  \"delivery_report\": null,\r\n  \"format\": null,\r\n  \"message_expiry_timestamp\": null,\r\n  \"metadata\": null,\r\n  \"scheduled\": null,\r\n  \"source_number\": null,\r\n  \"source_number_type\": null,\r\n  \"message_id\": null,\r\n  \"status\": null\r\n}",
+          "Language": "json",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`Message`",
+          "SuggestedLinkText": "`Message`",
+          "SuggestedLink": "$m/Message",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Structures/Message/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`callbackUrl`",
+                "`String`",
+                "Optional",
+                "URL replies and delivery reports to this message will be pushed to"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`content`",
+                "`String`",
+                "",
+                "Content of the message"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`destinationNumber`",
+                "`String`",
+                "",
+                "Destination number of the message"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`deliveryReport`",
+                "`Boolean`",
+                "Optional",
+                "Request a delivery report for this message<br>*Default: `false`*"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`format`",
+                "[`FormatEnum`]($m/Format)",
+                "Optional",
+                "Format of message, SMS or TTS (Text To Speech)."
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`messageExpiryTimestamp`",
+                "`DateTime`",
+                "Optional",
+                "Date time after which the message expires and will not be sent"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`metadata`",
+                "`Object`",
+                "Optional",
+                "Metadata for the message specified as a set of key value pairs, each key can be up to 100 characters long and each value can be up to 256 characters long\n```\n{\n   \"myKey\": \"myValue\",\n   \"anotherKey\": \"anotherValue\"\n}\n```"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`scheduled`",
+                "`DateTime`",
+                "Optional",
+                "Scheduled delivery date time of the message"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`sourceNumber`",
+                "`String`",
+                "Optional",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`sourceNumberType`",
+                "[`SourceNumberTypeEnum`]($m/SourceNumberType)",
+                "Optional",
+                "Type of source address specified, this can be INTERNATIONAL, ALPHANUMERIC or SHORTCODE"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`messageId`",
+                "`UUID | String`",
+                "Optional",
+                "Unique ID of this message"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`status`",
+                "[`StatusEnum`]($m/Status)",
+                "Optional",
+                "The status of the message"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`media`",
+                "`List of String`",
+                "Optional",
+                "The media is used to specify the url of the media file that you are trying to send. Supported file formats include png, jpeg and gif. format parameter must be set to MMS for this to work."
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`subject`",
+                "`String`",
+                "Optional",
+                "The subject field is used to denote subject of the MMS message and has a maximum size of 64 characters long"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example (as JSON)",
+          "SuggestedLinkText": "Example (as JSON)",
+          "SuggestedLink": "$h/__model_reference/Structures/Message/Example+(as+JSON)",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"content\": \"Hello world!\",\r\n  \"destination_number\": \"+61491570156\"\r\n}",
+          "Language": "json",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`SendMessagesResponse`",
+          "SuggestedLinkText": "`SendMessagesResponse`",
+          "SuggestedLink": "$m/Send+messages+response",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Structures/Send+messages+response/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`messages`",
+                "[`Message[]`]($m/Message)",
+                "Optional",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example (as JSON)",
+          "SuggestedLinkText": "Example (as JSON)",
+          "SuggestedLink": "$h/__model_reference/Structures/Send+messages+response/Example+(as+JSON)",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"messages\": null\r\n}",
+          "Language": "json",
+          "Type": "codeblock"
+        },
+        {
+          "Level": 1,
+          "Text": "Enumerations",
+          "SuggestedLinkText": "Enumerations",
+          "SuggestedLink": "$h/__model_reference/Enumerations",
+          "SuggestedLinkLevel": 2,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Text": "* [`SourceNumberTypeEnum`]($m/SourceNumberType)\n* [`Status2Enum`]($m/Status2)\n* [`StatusEnum`]($m/Status)\n* [`Format1Enum`]($m/Format1)\n* [`FormatEnum`]($m/Format)",
+          "Type": "paragraph"
+        },
+        {
+          "Level": 2,
+          "Text": "`SourceNumberTypeEnum`",
+          "SuggestedLinkText": "`SourceNumberTypeEnum`",
+          "SuggestedLink": "$m/SourceNumberType",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Text": "Type of source address specified, this can be INTERNATIONAL, ALPHANUMERIC or SHORTCODE",
+          "Type": "paragraph"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Enumerations/SourceNumberType/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`INTERNATIONAL`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`ALPHANUMERIC`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`SHORTCODE`",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example",
+          "SuggestedLinkText": "Example",
+          "SuggestedLink": "$h/__model_reference/Enumerations/SourceNumberType/Example",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "INTERNATIONAL",
+          "Language": null,
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`Status2Enum`",
+          "SuggestedLinkText": "`Status2Enum`",
+          "SuggestedLink": "$m/Status2",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Text": "The status of the message as per the delivery report",
+          "Type": "paragraph"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Enumerations/Status2/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`ENROUTE`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`FAILED`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`SUBMITTED`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`DELIVERED`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`EXPIRED`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`REJECTED`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`UNDELIVERABLE`",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example",
+          "SuggestedLinkText": "Example",
+          "SuggestedLink": "$h/__model_reference/Enumerations/Status2/Example",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "delivered",
+          "Language": null,
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`StatusEnum`",
+          "SuggestedLinkText": "`StatusEnum`",
+          "SuggestedLink": "$m/Status",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Text": "The status of the message",
+          "Type": "paragraph"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Enumerations/Status/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`ENROUTE`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`SUBMITTED`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`DELIVERED`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`EXPIRED`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`REJECTED`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`UNDELIVERABLE`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`QUEUED`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`PROCESSED`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`CANCELLED`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`SCHEDULED`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`FAILED`",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example",
+          "SuggestedLinkText": "Example",
+          "SuggestedLink": "$h/__model_reference/Enumerations/Status/Example",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "delivered",
+          "Language": null,
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`Format1Enum`",
+          "SuggestedLinkText": "`Format1Enum`",
+          "SuggestedLink": "$m/Format1",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Text": "Format of message, SMS or TTS (Text To Speech).",
+          "Type": "paragraph"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Enumerations/Format1/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`SMS`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`TTS`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`MMS`",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example",
+          "SuggestedLinkText": "Example",
+          "SuggestedLink": "$h/__model_reference/Enumerations/Format1/Example",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "SMS",
+          "Language": null,
+          "Type": "codeblock"
+        },
+        {
+          "Level": 2,
+          "Text": "`FormatEnum`",
+          "SuggestedLinkText": "`FormatEnum`",
+          "SuggestedLink": "$m/Format",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Enumerations/Format/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`SMS`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`TTS`",
+                "-"
+              ],
+              "Type": "tablerow"
+            },
+            {
+              "Data": [
+                "`MMS`",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 1,
+          "Text": "Exceptions",
+          "SuggestedLinkText": "Exceptions",
+          "SuggestedLink": "$h/__model_reference/Exceptions",
+          "SuggestedLinkLevel": 2,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Text": "* [`SendMessages400ResponseException`]($m/Send+messages+400+response)",
+          "Type": "paragraph"
+        },
+        {
+          "Level": 2,
+          "Text": "`SendMessages400ResponseException`",
+          "SuggestedLinkText": "`SendMessages400ResponseException`",
+          "SuggestedLink": "$m/Send+messages+400+response",
+          "SuggestedLinkLevel": 3,
+          "LinkLabel": null,
+          "HideFromNavigation": false,
+          "Type": "heading"
+        },
+        {
+          "Level": 3,
+          "Text": "Fields",
+          "SuggestedLinkText": "Fields",
+          "SuggestedLink": "$h/__model_reference/Exceptions/Send+messages+400+response/Fields",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Header": {
+            "Data": [
+              "Name",
+              "Type",
+              "Tags",
+              "Description"
+            ],
+            "Type": "tablerow"
+          },
+          "Rows": [
+            {
+              "Data": [
+                "`message`",
+                "`String`",
+                "",
+                "-"
+              ],
+              "Type": "tablerow"
+            }
+          ],
+          "Type": "table"
+        },
+        {
+          "Level": 3,
+          "Text": "Example (as JSON)",
+          "SuggestedLinkText": "Example (as JSON)",
+          "SuggestedLink": "$h/__model_reference/Exceptions/Send+messages+400+response/Example+(as+JSON)",
+          "SuggestedLinkLevel": 4,
+          "LinkLabel": null,
+          "HideFromNavigation": true,
+          "Type": "heading"
+        },
+        {
+          "Text": "{\r\n  \"message\": \"Something went wrong. Please try again later.\"\r\n}",
+          "Language": "json",
+          "Type": "codeblock"
+        }
+      ],
+      "HideFromNavigation": false,
+      "Title": "Model Reference",
+      "PlaceholderId": "__model_reference",
+      "Hidden": false,
+      "LanguageSpecific": false,
+      "Languages": [],
+      "SuggestedLinkText": "Model Reference",
+      "SuggestedLink": "$h/__model_reference",
+      "SuggestedLinkLevel": 1,
+      "LinkLabel": null,
+      "Type": "section"
+    }
+  ],
+  "Type": "document"
+}
