@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.homepage = 'https://developers.messagemedia.com'
   s.license = 'Apache-2.0'
   s.add_dependency('logging', '~> 2.0')
-  s.add_dependency('faraday', '~> 0.10.0')
+  s.add_dependency('faraday', '~> 0.10')
   s.add_dependency('test-unit', '~> 3.1.5')
   s.add_dependency('certifi', '~> 2016.9', '>= 2016.09.26')
   s.add_dependency('faraday-http-cache', '~> 1.2', '>= 1.2.2')
