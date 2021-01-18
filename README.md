@@ -290,5 +290,12 @@ Check out the [full API documentation](https://developers.messagemedia.com/code/
 ## :confused: Need help?
 Please contact developer support at developers@messagemedia.com or check out the developer portal at [developers.messagemedia.com](https://developers.messagemedia.com/)
 
+## Development
+
+```shell
+bundle install
+bundle exec rspec # run tests
+```
+
 ## :page_with_curl: License
 Apache License. See the [LICENSE](LICENSE) file.
