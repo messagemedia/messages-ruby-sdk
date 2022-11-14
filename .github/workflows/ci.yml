@@ -22,4 +22,4 @@ jobs:
         ruby-version: ${{ matrix.ruby-version }}
       
     - name: Build gem
-      run: gem build messagemedia_messages_sdk
+      run: gem build message_media_messages
