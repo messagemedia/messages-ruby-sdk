@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name = 'messagemedia_messages_sdk'
+  s.name = 'messages-ruby-sdk'
   s.version = '2.0.3'
   s.summary = 'MessageMedia Messages SDK'
   s.description = 'The MessageMedia Messages API provides a number of endpoints for building powerful two-way messaging applications.'
