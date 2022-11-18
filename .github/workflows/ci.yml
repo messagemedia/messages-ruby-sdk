@@ -1,42 +1,84 @@
-name: MessageMedia Messages SDK RubyGem
-
+name: Build Status
 on:
   push:
-    branches: [ "ruby_sdk_version3" ]
+    branches: [ '*' ]
+    tags: [ '*' ]
   pull_request:
-    branches: [ "ruby_sdk_version3" ]
+    branches: [ main ]
 
 jobs:
   build:
-    name: Install + Build
+    name: Build
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     strategy:
       matrix:
-        ruby-version: ['3.0']
+        ruby: [ '2.4', '2.5', '2.6', '2.7', '3.0', '3.1' ]
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Set up Ruby ${{ matrix.ruby-version }}
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: ${{ matrix.ruby-version }}
-      
-    - name: Build gem
-      run: gem build *.gemspec
-      
-    - uses: actions/upload-artifact@v3
-      with:
-       name: messages-ruby-sdk-artifact
-       path: ./*.gem
-       
-    - name: Publish to GPR
-      run: |
+      - name: Checkout messages-ruby-sdk
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true
+          
+      - name: Build gem
+        run: gem build *.gemspec
+
+  deploy:
+    name: Deploy
+    if: success() && github.ref_type == 'tag'
+    needs: [ build ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout messages-ruby-sdk
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0
+          bundler-cache: true
+
+      # The expression strips off the shortest match from the front of the string to yield just the tag name as the output
+      - name: Get tagged version
+        run: echo "GITHUB_TAG=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+
+      - name: Create GitHub Release
+        uses: sendgrid/dx-automator/actions/release@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish to Rubygems
+        env:
+          GEM_HOST_API_KEY: ${{ secrets.RUBY_SAMPLE_SECRET }}
+        run: |
           mkdir -p $HOME/.gem
           touch $HOME/.gem/credentials
           chmod 0600 $HOME/.gem/credentials
-          printf -- "---\n:github: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
+          printf -- "---\n:rubygems_api_key: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
           gem build *.gemspec
-          gem push --KEY github --host https://rubygems.pkg.github.com/${OWNER} *.gem
-      env:
-          GEM_HOST_API_KEY: "Bearer ${{secrets.GITHUB_TOKEN}}"
-          OWNER: ${{ github.repository_owner }}   
+          gem push *.gem
+      
+#    - uses: actions/upload-artifact@v3
+#      with:
+#       name: messages-ruby-sdk-artifact
+#       path: ./*.gem
+#      
+#    - name: Publish to GPR
+#      run: |
+#          mkdir -p $HOME/.gem
+#          touch $HOME/.gem/credentials
+#          chmod 0600 $HOME/.gem/credentials
+#          printf -- "---\n:github: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
+#          gem build *.gemspec
+#          gem push --KEY github --host https://rubygems.pkg.github.com/${OWNER} *.gem
+#      env:
+#          GEM_HOST_API_KEY: "Bearer ${{secrets.GITHUB_TOKEN}}"
+#          OWNER: ${{ github.repository_owner }}   
