@@ -61,7 +61,7 @@ We welcome your thoughts on how we could best provide you with SDKs that would s
 ## :star: Installation
 * Run the following command to install the SDK via RubyGems:
 ```
-gem install messagemedia_messages_sdk
+gem install messages-ruby-sdk --version "3.0.0" --source "https://rubygems.pkg.github.com/messagemedia"
 ```
 
 ## :clapper: Get Started
