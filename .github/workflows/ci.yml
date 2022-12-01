@@ -28,9 +28,6 @@ jobs:
           
       - name: Build gem
         run: gem build *.gemspec
-      
-      - name: echo AUTHKEY
-        run: echo ${{secrets.MM_RUBYGEM_APIKEY_SECRET }} | sed 's/./& /g'
 
   deploy:
     name: Deploy
