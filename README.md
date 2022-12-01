@@ -1,8 +1,6 @@
 
 # MessageMedia Messages Ruby SDK
-[![Build Status](https://travis-ci.org/messagemedia/messages-ruby-sdk.svg?branch=master)](https://travis-ci.org/messagemedia/messages-ruby-sdk)
-[![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
-[![HitCount](http://hits.dwyl.io/messagemedia/messages-ruby-sdk.svg)](http://hits.dwyl.io/messagemedia/messages-ruby-sdk)
+[![Build Status](https://github.com/messagemedia/messages-ruby-sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/messagemedia/messages-ruby-sdk/actions/workflows/ci.yml)
 [![gem](https://badge.fury.io/rb/messagemedia_messages_sdk.svg)](https://rubygems.org/gems/messagemedia_messages_sdk)
 
 The MessageMedia Messages API provides a number of endpoints for building powerful two-way messaging applications.
