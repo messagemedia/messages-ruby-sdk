@@ -6,15 +6,17 @@
 module MessageMediaMessages
   # Base controller.
   class BaseController
-    attr_accessor :http_client, :http_call_back
+    attr_accessor :http_client, :http_call_back, :account_id
 
-    def initialize(http_client: nil, http_call_back: nil)
+    def initialize(http_client: nil, http_call_back: nil, account_id: nil)
       @http_client = http_client || FaradayClient.new
       @http_call_back = http_call_back
 
       @global_headers = {
         'user-agent' => 'messagemedia-messages'
       }
+      @global_headers['Account'] = :account_id unless :account_id.nil?
+
     end
 
     def validate_parameters(args)
